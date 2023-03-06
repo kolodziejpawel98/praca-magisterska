@@ -4,45 +4,38 @@ using UnityEngine;
 
 public class MouseHover : MonoBehaviour
 {
+    [SerializeField]
+    private Color newSphereColor;
+    [SerializeField]
+    private GameObject sphere;
+    private Renderer sphereRenderer;
 
-    private bool coroutineAllowed;
-    // Start is called before the first frame update
     void Start()
     {
-        coroutineAllowed = true;
+        sphereRenderer = sphere.GetComponent<Renderer>();
     }
 
     private void OnMouseOver()
     {
-        if (coroutineAllowed)
-        {
-            StartCoroutine("StartPulsing");
-        }
+        UnityEngine.Debug.Log("OnMouseOver");
+        ActivateColor();
     }
 
-    private IEnumerator StartPulsing()
+    private void OnMouseExit()
     {
-        coroutineAllowed = false;
-
-        for(float i = 0f; i <= 1f; i += 0.1f)
-        {
-            transform.localScale = new Vector3(
-                (Mathf.Lerp(transform.localScale.x, transform.localScale.x + 0.025f, Mathf.SmoothStep(0f, 1f, i))),
-                (Mathf.Lerp(transform.localScale.y, transform.localScale.y + 0.025f, Mathf.SmoothStep(0f, 1f, i))),
-                (Mathf.Lerp(transform.localScale.z, transform.localScale.z + 0.025f, Mathf.SmoothStep(0f, 1f, i)))
-                );
-            yield return new WaitForSeconds(0.015f);
-        }
-        for(float i = 0f; i <= 1f; i += 0.1f)
-        {
-            transform.localScale = new Vector3(
-                (Mathf.Lerp(transform.localScale.x, transform.localScale.x - 0.025f, Mathf.SmoothStep(0f, 1f, i))),
-                (Mathf.Lerp(transform.localScale.y, transform.localScale.y - 0.025f, Mathf.SmoothStep(0f, 1f, i))),
-                (Mathf.Lerp(transform.localScale.z, transform.localScale.z - 0.025f, Mathf.SmoothStep(0f, 1f, i)))
-            );
-            yield return new WaitForSeconds(0.015f);
-        }
-        coroutineAllowed = true;
+        UnityEngine.Debug.Log("OnMouseExit");
+        DefaultColor();
     }
 
+    private void ActivateColor()
+    {
+        newSphereColor = new Color(0.2f, 0.2f, 0.2f, 1f);
+        sphereRenderer.material.SetColor("_Color", newSphereColor);
+    }
+
+    private void DefaultColor()
+    {
+        newSphereColor = new Color(1f, 0f, 0f, 1f);
+        sphereRenderer.material.SetColor("_Color", newSphereColor);
+    }
 }
