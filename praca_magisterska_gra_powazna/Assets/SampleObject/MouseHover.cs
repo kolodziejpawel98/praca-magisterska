@@ -6,12 +6,14 @@ public class MouseHover : MonoBehaviour
 {
     [SerializeField]
     private Color newSphereColor;
+    private Color newSphereColorHELP;
     [SerializeField]
     private GameObject sphere;
     private Renderer sphereRenderer;
 
     void Start()
     {
+        newSphereColorHELP = newSphereColor;
         sphereRenderer = sphere.GetComponent<Renderer>();
     }
 
@@ -29,13 +31,13 @@ public class MouseHover : MonoBehaviour
 
     private void ActivateColor()
     {
-        newSphereColor = new Color(0.2f, 0.2f, 0.2f, 1f);
+        newSphereColor = newSphereColorHELP;
         sphereRenderer.material.SetColor("_Color", newSphereColor);
     }
 
     private void DefaultColor()
     {
-        newSphereColor = new Color(1f, 0f, 0f, 1f);
+        newSphereColor = new Color(0.3f, 0.3f, 0.3f, 1f);
         sphereRenderer.material.SetColor("_Color", newSphereColor);
     }
 }
