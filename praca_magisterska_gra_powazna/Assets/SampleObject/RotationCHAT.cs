@@ -16,8 +16,6 @@ public class RotationCHAT : MonoBehaviour
         {
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
-            UnityEngine.Debug.Log("x = " + mouseX);
-            UnityEngine.Debug.Log("y = " + mouseY);
 
             centerOfRotation.transform.Rotate(Vector3.down, mouseX * rotationSpeed * Time.deltaTime, Space.World);
             centerOfRotation.transform.Rotate(Vector3.right, mouseY * rotationSpeed * Time.deltaTime, Space.World);
