@@ -19,13 +19,11 @@ public class MouseHover : MonoBehaviour
 
     private void OnMouseOver()
     {
-        UnityEngine.Debug.Log("OnMouseOver");
         ActivateColor();
     }
 
     private void OnMouseExit()
     {
-        UnityEngine.Debug.Log("OnMouseExit");
         DefaultColor();
     }
 
@@ -37,7 +35,7 @@ public class MouseHover : MonoBehaviour
 
     private void DefaultColor()
     {
-        newSphereColor = new Color(0.3f, 0.3f, 0.3f, 1f);
+        newSphereColor = new Color(0.6f, 0.6f, 0.6f, 1f);
         sphereRenderer.material.SetColor("_Color", newSphereColor);
     }
 }
