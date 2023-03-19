@@ -17,6 +17,20 @@ public class MoveAnimation : MonoBehaviour
     {
         //UnityEngine.Debug.Log("center = " + renderer.bounds.center);
 
+        changeTextVisibility(textOnOff);
+
+        if (isAnimationOn)
+        {
+            moveBrainLeft();
+        }
+        else
+        {
+            moveBrainToStartPosition();
+        }
+    }
+
+    void changeTextVisibility(bool textOnOff)
+    {
         if (textOnOff)
         {
             brainDescriptionText.textContainer.gameObject.SetActive(true);
@@ -25,25 +39,29 @@ public class MoveAnimation : MonoBehaviour
         {
             brainDescriptionText.textContainer.gameObject.SetActive(false);
         }
+    }
 
-        if (isAnimationOn)
+    void moveBrainLeft()
+    {
+        if (transform.position.x >= slowDownTrigger.x)
         {
-            if (transform.position.x >= slowDownTrigger.x)
-            {
-                transform.position += new Vector3(-0.05f, 0.0f, 0.0f);
-            }
-
-            if (transform.position.x >= textBrainPosition.x && transform.position.x < slowDownTrigger.x)
-            {
-                transform.position += new Vector3(-0.03f, 0.0f, 0.0f);
-            }
+            transform.position += new Vector3(-0.05f, 0.0f, 0.0f);
+        }
+        else if (transform.position.x >= textBrainPosition.x && transform.position.x < slowDownTrigger.x)
+        {
+            transform.position += new Vector3(-0.03f, 0.0f, 0.0f);
         }
         else
         {
-            if (transform.position.x <= startPoint.x)
-            {
-                transform.position += new Vector3(0.05f, 0.0f, 0.0f);
-            }
+            changeTextVisibility(true);
+        }
+    }
+
+    void moveBrainToStartPosition()
+    {
+        if (transform.position.x <= startPoint.x)
+        {
+            transform.position += new Vector3(0.05f, 0.0f, 0.0f);
         }
     }
 }
