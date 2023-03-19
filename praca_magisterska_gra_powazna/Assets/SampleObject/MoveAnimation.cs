@@ -9,9 +9,23 @@ public class MoveAnimation : MonoBehaviour
     private Vector3 slowDownTrigger = new Vector3(-3.0f, 0.0f, 0.0f);
     private Vector3 startPoint = new Vector3(-1.7f, 0.0f, 0.0f);
 
+    public BrainDescriptionText brainDescriptionText;
+    public bool textOnOff = true;
+
     // Update is called once per frame
     void Update()
     {
+        //UnityEngine.Debug.Log("center = " + renderer.bounds.center);
+
+        if (textOnOff)
+        {
+            brainDescriptionText.textContainer.gameObject.SetActive(true);
+        }
+        else
+        {
+            brainDescriptionText.textContainer.gameObject.SetActive(false);
+        }
+
         if (isAnimationOn)
         {
             if (transform.position.x >= slowDownTrigger.x)
@@ -23,8 +37,6 @@ public class MoveAnimation : MonoBehaviour
             {
                 transform.position += new Vector3(-0.03f, 0.0f, 0.0f);
             }
-
-            UnityEngine.Debug.Log("position = " + transform.position);
         }
         else
         {
