@@ -5,10 +5,10 @@ using System.Diagnostics;
 
 public class GrabRotation : MonoBehaviour
 {
-    public RotationCHAT rotationCHAT;
+    public BrainRotation brainRotation;
 
     void OnMouseDrag()
     {
-        rotationCHAT.isBrainRotating = true;
+        brainRotation.isBrainRotating = true;
     }
 }

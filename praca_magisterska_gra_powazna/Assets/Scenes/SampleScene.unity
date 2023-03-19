@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 847663576}
+  brainRotation: {fileID: 0}
 --- !u!114 &364932179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 0}
+  brainRotation: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.4631615
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -450,7 +450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582315473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 0.13, z: 473.6}
+  m_LocalPosition: {x: 0.03, y: 0.13, z: 473.6}
   m_LocalScale: {x: 0.6152992, y: 0.6152992, z: 0.6152992}
   m_Children: []
   m_Father: {fileID: 0}
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 2090060893}
+  brainRotation: {fileID: 2090060893}
 --- !u!135 &2061706256
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 2090060893}
+  brainRotation: {fileID: 2090060893}
 --- !u!135 &2061706268
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 2090060893}
+  brainRotation: {fileID: 2090060893}
 --- !u!114 &2061706276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 2090060893}
+  brainRotation: {fileID: 2090060893}
 --- !u!114 &2061706280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 2090060893}
+  brainRotation: {fileID: 2090060893}
 --- !u!114 &2061706284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92546c9b98a6974a9b53e9e4d98cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCHAT: {fileID: 2090060893}
+  brainRotation: {fileID: 2090060893}
 --- !u!1 &2090060891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}
@@ -1116,3 +1116,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331e818c3b6915f4f910f89ae41ee4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2090060895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090060891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAnimationOn: 0
