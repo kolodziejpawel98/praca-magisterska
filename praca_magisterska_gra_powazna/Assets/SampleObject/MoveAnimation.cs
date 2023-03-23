@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class MoveAnimation : MonoBehaviour
 {
-    //centerOfRotation.transform.position
     public bool isSideLeftAnimationOn = false;
-    private Vector3 sideLeftBrainPosition = new Vector3(-5.0f, 0.0f, 0.0f);
-    private Vector3 centralBrainPoint = new Vector3(0.17f, 0.13f, 1.95f);
-    private float movementSpeed = 1.2f;
-
-    private Vector3 cameraViewCentralPosition;
+    public Transform brainPositionForDisplayingText;
+    public Transform cameraCentralPoint;
+    private float movementSpeed = 6.5f;
 
     public BrainDescriptionText brainDescriptionText;
-    public bool isTextVisible = false;
-
 
     // Update is called once per frame
     void Update()
     {
-        changeTextVisibility(isTextVisible);
+        //TODO
+        // * change scale during movement to left
+        // * add click & press diff
+        // * add scaling part of brain during movement to left & enable color
+
+        setTextVisibility(false);
 
         if (isSideLeftAnimationOn)
         {
@@ -27,16 +27,11 @@ public class MoveAnimation : MonoBehaviour
         }
         else
         {
-            //TODO
-            // - brain rotation around same point in zoom mode
-            // - move from left position to start position
-            // - change left move method (after rotating brain moves to weird point)
-
-            //brainCentralizationMovement();
+            brainCentralizationMovement();
         }
     }
 
-    void changeTextVisibility(bool isTextVisible)
+    void setTextVisibility(bool isTextVisible)
     {
         if (isTextVisible)
         {
@@ -50,11 +45,21 @@ public class MoveAnimation : MonoBehaviour
 
     void moveBrainLeft()
     {
-        transform.position = Vector3.Lerp(transform.position, sideLeftBrainPosition, Time.deltaTime * movementSpeed);
+        transform.position = Vector3.Lerp(transform.position, brainPositionForDisplayingText.transform.position, Time.deltaTime * movementSpeed);
+        
+        if(brainPositionForDisplayingText.transform.position.x - transform.position.x < 0.3f)
+        {
+            setTextVisibility(true);
+        }
+        else
+        {
+            setTextVisibility(false);
+        }
     }
 
     void brainCentralizationMovement()
     {
-        transform.position = Vector3.Lerp(transform.position, centralBrainPoint, Time.deltaTime * movementSpeed);
+        transform.position = Vector3.Lerp(transform.position, cameraCentralPoint.transform.position, Time.deltaTime * movementSpeed);
+        setTextVisibility(false);
     }
 }

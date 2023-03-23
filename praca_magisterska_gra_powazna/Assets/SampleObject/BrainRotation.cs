@@ -17,7 +17,7 @@ public class BrainRotation : MonoBehaviour
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
 
-            transform.RotateAround(centerOfRotation.position, Vector3.up, mouseX * rotationSpeed * Time.deltaTime);
+            transform.RotateAround(centerOfRotation.position, Vector3.down, mouseX * rotationSpeed * Time.deltaTime);
             transform.RotateAround(centerOfRotation.position, Vector3.right, mouseY * rotationSpeed * Time.deltaTime);
         }
         isBrainRotating = false;
