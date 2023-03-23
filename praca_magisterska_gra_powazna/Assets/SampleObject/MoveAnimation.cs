@@ -4,34 +4,41 @@ using UnityEngine;
 
 public class MoveAnimation : MonoBehaviour
 {
-    public bool isAnimationOn = false;
-    private Vector3 textBrainPosition = new Vector3(-5.0f, 0.0f, 0.0f);
-    private Vector3 slowDownTrigger = new Vector3(-3.0f, 0.0f, 0.0f);
-    private Vector3 startPoint = new Vector3(-1.7f, 0.0f, 0.0f);
+    //centerOfRotation.transform.position
+    public bool isSideLeftAnimationOn = false;
+    private Vector3 sideLeftBrainPosition = new Vector3(-5.0f, 0.0f, 0.0f);
+    private Vector3 centralBrainPoint = new Vector3(0.17f, 0.13f, 1.95f);
+    private float movementSpeed = 1.2f;
+
+    private Vector3 cameraViewCentralPosition;
 
     public BrainDescriptionText brainDescriptionText;
-    public bool textOnOff = true;
+    public bool isTextVisible = false;
+
 
     // Update is called once per frame
     void Update()
     {
-        //UnityEngine.Debug.Log("center = " + renderer.bounds.center);
+        changeTextVisibility(isTextVisible);
 
-        changeTextVisibility(textOnOff);
-
-        if (isAnimationOn)
+        if (isSideLeftAnimationOn)
         {
             moveBrainLeft();
         }
         else
         {
-            moveBrainToStartPosition();
+            //TODO
+            // - brain rotation around same point in zoom mode
+            // - move from left position to start position
+            // - change left move method (after rotating brain moves to weird point)
+
+            //brainCentralizationMovement();
         }
     }
 
-    void changeTextVisibility(bool textOnOff)
+    void changeTextVisibility(bool isTextVisible)
     {
-        if (textOnOff)
+        if (isTextVisible)
         {
             brainDescriptionText.textContainer.gameObject.SetActive(true);
         }
@@ -43,25 +50,11 @@ public class MoveAnimation : MonoBehaviour
 
     void moveBrainLeft()
     {
-        if (transform.position.x >= slowDownTrigger.x)
-        {
-            transform.position += new Vector3(-0.05f, 0.0f, 0.0f);
-        }
-        else if (transform.position.x >= textBrainPosition.x && transform.position.x < slowDownTrigger.x)
-        {
-            transform.position += new Vector3(-0.03f, 0.0f, 0.0f);
-        }
-        else
-        {
-            changeTextVisibility(true);
-        }
+        transform.position = Vector3.Lerp(transform.position, sideLeftBrainPosition, Time.deltaTime * movementSpeed);
     }
 
-    void moveBrainToStartPosition()
+    void brainCentralizationMovement()
     {
-        if (transform.position.x <= startPoint.x)
-        {
-            transform.position += new Vector3(0.05f, 0.0f, 0.0f);
-        }
+        transform.position = Vector3.Lerp(transform.position, centralBrainPoint, Time.deltaTime * movementSpeed);
     }
 }
