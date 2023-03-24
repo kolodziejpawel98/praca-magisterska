@@ -9,6 +9,7 @@ public class MoveAnimation : MonoBehaviour
     public Transform cameraCentralPoint;
     private float movementSpeed = 6.5f;
 
+
     public BrainDescriptionText brainDescriptionText;
 
     // Update is called once per frame
