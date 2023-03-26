@@ -9,23 +9,34 @@ public class GrabRotation : MonoBehaviour
     public MoveAnimation moveAnimation;
     private int isDragCounter = 0;
     private const int dragTrigger = 15;
+    public bool leftSideInactiveMode = false;
+    public static bool enableddd = true;
 
     void OnMouseDrag()
     {
-        isDragCounter++;
-        if (isDragCounter > dragTrigger)
+        if (enableddd)
         {
-            brainRotation.isBrainRotating = true;
+            isDragCounter++;
+            if (isDragCounter > dragTrigger)
+            {
+                brainRotation.isBrainRotating = true;
+            }
         }
+        
     }
 
     private void OnMouseUp()
     {
-        if (isDragCounter <= dragTrigger)
+        if (enableddd)
         {
-            moveAnimation.helpFlag = true;
-            moveAnimation.isSideLeftAnimationOn = true;
+            if (isDragCounter <= dragTrigger)
+            {
+                //enableddd = false;
+                //leftSideInactiveMode = true;
+                moveAnimation.enableSideLeftAnimation();
+            }
+            isDragCounter = 0;
         }
-        isDragCounter = 0;
+     
     }
 }

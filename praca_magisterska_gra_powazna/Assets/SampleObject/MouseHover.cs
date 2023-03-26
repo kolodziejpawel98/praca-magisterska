@@ -10,6 +10,7 @@ public class MouseHover : MonoBehaviour
     [SerializeField]
     private GameObject sphere;
     private Renderer sphereRenderer;
+    public GrabRotation grabRotation;
 
     void Start()
     {
@@ -17,25 +18,42 @@ public class MouseHover : MonoBehaviour
         sphereRenderer = sphere.GetComponent<Renderer>();
     }
 
+    //private void Update()
+    //{
+    //    if (!GrabRotation.enableddd)
+    //    {
+    //        disabledColor();
+    //    }
+    //}
+
     private void OnMouseOver()
     {
-        ActivateColor();
+        //if (GrabRotation.enableddd)
+        //{
+            activateColor();
+        //}
     }
 
     private void OnMouseExit()
     {
-        DefaultColor();
+        defaultColor();
     }
 
-    private void ActivateColor()
+    public void activateColor()
     {
         newSphereColor = newSphereColorHELP;
         sphereRenderer.material.SetColor("_Color", newSphereColor);
     }
 
-    private void DefaultColor()
+    public void defaultColor()
     {
         newSphereColor = new Color(0.6f, 0.6f, 0.6f, 1f);
         sphereRenderer.material.SetColor("_Color", newSphereColor);
     }
+
+    //public void disabledColor()
+    //{
+    //    newSphereColor = new Color(0.0f, 0.0f, 0.0f, 1f);
+    //    sphereRenderer.material.SetColor("_Color", newSphereColor);
+    //}
 }

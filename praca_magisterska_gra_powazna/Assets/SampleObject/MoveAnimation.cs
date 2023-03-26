@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveAnimation : MonoBehaviour
 {
     public bool isSideLeftAnimationOn = false;
+    public bool isCentralizationAnimationOn = false;
     public Transform brainPositionForDisplayingText;
     public Transform cameraCentralPoint;
     public Transform brainContainer;
@@ -12,26 +13,23 @@ public class MoveAnimation : MonoBehaviour
     private Vector3 vectorCentreOfLobeToCentreOfBrain;
 
     public BrainDescriptionText brainDescriptionText;
-
-    public bool helpFlag = false;
+    public MouseHover mouseHover;
 
     // Update is called once per frame
     void Update()
     {
         vectorCentreOfLobeToCentreOfBrain = brainContainer.transform.position - transform.position;
-        setTextVisibility(false);
+        setTextVisibility(true);
 
-        if (helpFlag) //?????
+        if (isSideLeftAnimationOn)
         {
-            if (isSideLeftAnimationOn)
-            {
-                moveBrainLeft();
-            }
-            else
-            {
-                brainCentralizationMovement();
-            }
+            moveBrainLeft();
         }
+        if (isCentralizationAnimationOn)
+        {
+            brainCentralizationMovement();
+        }
+
     }
 
     void setTextVisibility(bool isTextVisible)
@@ -56,15 +54,18 @@ public class MoveAnimation : MonoBehaviour
         if ((brainPositionForDisplayingText.transform.position.x + vectorCentreOfLobeToCentreOfBrain.x) 
             - brainContainer.transform.position.x < 0.3f)
         {
+            mouseHover.activateColor();
+            UnityEngine.Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!1");
             setTextVisibility(true);
         }
         else
         {
+            mouseHover.defaultColor();
             setTextVisibility(false);
         }
     }
 
-    void brainCentralizationMovement()
+    public void brainCentralizationMovement()
     {
         brainContainer.transform.position = Vector3.Lerp(
             brainContainer.transform.position,
@@ -72,5 +73,17 @@ public class MoveAnimation : MonoBehaviour
             Time.deltaTime * movementSpeed);
 
         setTextVisibility(false);
+    }
+
+    public void enableBrainCentralization()
+    {
+        isCentralizationAnimationOn = true;
+        isSideLeftAnimationOn = false;
+    }
+
+    public void enableSideLeftAnimation()
+    {
+        isCentralizationAnimationOn = false;
+        isSideLeftAnimationOn = true;
     }
 }
