@@ -13,7 +13,7 @@ public class GrabRotation : MonoBehaviour
     void OnMouseDrag()
     {
         isDragCounter++;
-        if(isDragCounter > dragTrigger)
+        if (isDragCounter > dragTrigger)
         {
             brainRotation.isBrainRotating = true;
         }
@@ -21,8 +21,9 @@ public class GrabRotation : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if(isDragCounter <= dragTrigger)
+        if (isDragCounter <= dragTrigger)
         {
+            moveAnimation.helpFlag = true;
             moveAnimation.isSideLeftAnimationOn = true;
         }
         isDragCounter = 0;

@@ -10,23 +10,27 @@ public class MoveAnimation : MonoBehaviour
     public Transform brainContainer;
     private float movementSpeed = 6.5f;
     private Vector3 vectorCentreOfLobeToCentreOfBrain;
-    //public bool imChoosenLobe = false; //temporary
 
     public BrainDescriptionText brainDescriptionText;
 
+    public bool helpFlag = false;
 
     // Update is called once per frame
     void Update()
     {
         vectorCentreOfLobeToCentreOfBrain = brainContainer.transform.position - transform.position;
         setTextVisibility(false);
-        if (isSideLeftAnimationOn)
+
+        if (helpFlag) //?????
         {
-            moveBrainLeft();
-        }
-        else
-        {
-            brainCentralizationMovement();
+            if (isSideLeftAnimationOn)
+            {
+                moveBrainLeft();
+            }
+            else
+            {
+                brainCentralizationMovement();
+            }
         }
     }
 
@@ -49,7 +53,8 @@ public class MoveAnimation : MonoBehaviour
                 brainPositionForDisplayingText.transform.position + vectorCentreOfLobeToCentreOfBrain, 
                 Time.deltaTime * movementSpeed);
 
-        if (brainPositionForDisplayingText.transform.position.x - brainContainer.transform.position.x < 0.3f)
+        if ((brainPositionForDisplayingText.transform.position.x + vectorCentreOfLobeToCentreOfBrain.x) 
+            - brainContainer.transform.position.x < 0.3f)
         {
             setTextVisibility(true);
         }
