@@ -551,7 +551,6 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
-  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &519420028
 GameObject:
@@ -593,6 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 0}
+  moveAnimation: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -781,7 +781,6 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
-  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1227063176
 GameObject:
@@ -830,7 +829,6 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
-  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1435894317
 GameObject:
@@ -879,7 +877,6 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
-  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1667058826
 GameObject:
@@ -1063,7 +1060,6 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
-  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1825252925
 GameObject:
@@ -1112,7 +1108,6 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
-  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1827040021
 GameObject:
@@ -1123,7 +1118,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827040022}
-  - component: {fileID: 1827040023}
   - component: {fileID: 1827040024}
   m_Layer: 0
   m_Name: BrainCentreOfRotation
@@ -1147,24 +1141,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1827040023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827040021}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSideLeftAnimationOn: 0
-  brainPositionForDisplayingText: {fileID: 1910250830}
-  cameraCentralPoint: {fileID: 34930346}
-  brainContainer: {fileID: 0}
-  imChoosenLobe: 0
-  brainDescriptionText: {fileID: 315792883}
 --- !u!114 &1827040024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,6 +1465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 2090060893}
+  moveAnimation: {fileID: 0}
 --- !u!135 &2061706256
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1615,6 +1592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 2090060893}
+  moveAnimation: {fileID: 0}
 --- !u!135 &2061706268
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1646,6 +1624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 2090060893}
+  moveAnimation: {fileID: 0}
 --- !u!4 &2061706275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3542852092398272455, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}
@@ -1664,6 +1643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 2090060893}
+  moveAnimation: {fileID: 0}
 --- !u!4 &2061706279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4083501151425157549, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}
@@ -1682,6 +1662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 2090060893}
+  moveAnimation: {fileID: 0}
 --- !u!4 &2061706283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5477749408508380018, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}
@@ -1700,6 +1681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainRotation: {fileID: 2090060893}
+  moveAnimation: {fileID: 985593213}
 --- !u!1 &2066584661
 GameObject:
   m_ObjectHideFlags: 0

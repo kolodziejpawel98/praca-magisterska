@@ -10,7 +10,7 @@ public class MoveAnimation : MonoBehaviour
     public Transform brainContainer;
     private float movementSpeed = 6.5f;
     private Vector3 vectorCentreOfLobeToCentreOfBrain;
-    public bool imChoosenLobe = false;
+    //public bool imChoosenLobe = false; //temporary
 
     public BrainDescriptionText brainDescriptionText;
 
@@ -19,20 +19,14 @@ public class MoveAnimation : MonoBehaviour
     void Update()
     {
         vectorCentreOfLobeToCentreOfBrain = brainContainer.transform.position - transform.position;
-        //UnityEngine.Debug.Log("xd = " + vectorCentreOfLobeToCentreOfBrain);
         setTextVisibility(false);
-
         if (isSideLeftAnimationOn)
         {
             moveBrainLeft();
         }
         else
         {
-            if (imChoosenLobe)
-            {
-                brainCentralizationMovement();
-            }
-            
+            brainCentralizationMovement();
         }
     }
 
@@ -50,17 +44,6 @@ public class MoveAnimation : MonoBehaviour
 
     void moveBrainLeft()
     {
-        //transform.position = Vector3.Lerp(transform.position, brainPositionForDisplayingText.transform.position, Time.deltaTime * movementSpeed);
-
-        //if(brainPositionForDisplayingText.transform.position.x - transform.position.x < 0.3f)
-        //{
-        //    setTextVisibility(true);
-        //}
-        //else
-        //{
-        //    setTextVisibility(false);
-        //}
-
         brainContainer.transform.position = Vector3.Lerp(
                 brainContainer.transform.position, 
                 brainPositionForDisplayingText.transform.position + vectorCentreOfLobeToCentreOfBrain, 
@@ -78,8 +61,6 @@ public class MoveAnimation : MonoBehaviour
 
     void brainCentralizationMovement()
     {
-        //transform.position = Vector3.Lerp(transform.position, cameraCentralPoint.transform.position, Time.deltaTime * movementSpeed);
-        //setTextVisibility(false);
         brainContainer.transform.position = Vector3.Lerp(
             brainContainer.transform.position,
             cameraCentralPoint.transform.position,
