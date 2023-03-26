@@ -542,7 +542,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513611497}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -550,6 +550,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 1827040022}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &519420028
 GameObject:
@@ -770,7 +772,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985593211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -778,6 +780,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 1827040022}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1227063176
 GameObject:
@@ -817,7 +821,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227063176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -825,6 +829,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 1827040022}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1435894317
 GameObject:
@@ -864,7 +870,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435894317}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -872,6 +878,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 1827040022}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1667058826
 GameObject:
@@ -1046,7 +1054,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728957984}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -1054,6 +1062,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 1827040022}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1825252925
 GameObject:
@@ -1093,7 +1103,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825252925}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -1101,6 +1111,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 1827040022}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!1 &1827040021
 GameObject:
@@ -1142,7 +1154,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827040021}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfdd8292e1a22d343bcc3832dc6ae827, type: 3}
   m_Name: 
@@ -1150,6 +1162,8 @@ MonoBehaviour:
   isSideLeftAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
+  brainContainer: {fileID: 0}
+  imChoosenLobe: 0
   brainDescriptionText: {fileID: 315792883}
 --- !u!114 &1827040024
 MonoBehaviour:
