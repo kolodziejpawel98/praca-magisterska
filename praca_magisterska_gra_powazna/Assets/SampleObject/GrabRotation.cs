@@ -10,11 +10,11 @@ public class GrabRotation : MonoBehaviour
     private int isDragCounter = 0;
     private const int dragTrigger = 15;
     public bool leftSideInactiveMode = false;
-    public static bool enableddd = true;
+    public static bool isClickingTurnedOn = true;
 
     void OnMouseDrag()
     {
-        if (enableddd)
+        if (isClickingTurnedOn)
         {
             isDragCounter++;
             if (isDragCounter > dragTrigger)
@@ -27,12 +27,10 @@ public class GrabRotation : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (enableddd)
+        if (isClickingTurnedOn)
         {
             if (isDragCounter <= dragTrigger)
             {
-                //enableddd = false;
-                //leftSideInactiveMode = true;
                 moveAnimation.enableSideLeftAnimation();
             }
             isDragCounter = 0;

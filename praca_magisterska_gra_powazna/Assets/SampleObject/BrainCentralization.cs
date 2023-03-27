@@ -9,7 +9,6 @@ public class BrainCentralization : MonoBehaviour
     private float movementSpeed = 6.5f;
     private const float distanceBrainToCentreTriggeringFlag = 0.3f;
 
-    // Update is called once per frame
     void Update()
     {
         if (isCentralizationMoveOn)
@@ -25,14 +24,14 @@ public class BrainCentralization : MonoBehaviour
 
     public void tickCentralizationFLag()
     {
-        if (isCentralizationMoveOn)
-        {
-            isCentralizationMoveOn = false;
-        }
-        else
-        {
+        //if (isCentralizationMoveOn)
+        //{
+        //    isCentralizationMoveOn = false;
+        //}
+        //else
+        //{
             isCentralizationMoveOn = true;
-        }
+        //}
 
     }
 

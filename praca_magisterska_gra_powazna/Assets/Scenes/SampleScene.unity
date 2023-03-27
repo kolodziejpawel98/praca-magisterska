@@ -682,7 +682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSideLeftAnimationOn: 0
-  isCentralizationAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
@@ -1049,7 +1048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSideLeftAnimationOn: 0
-  isCentralizationAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
@@ -1099,7 +1097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSideLeftAnimationOn: 0
-  isCentralizationAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
@@ -1149,7 +1146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSideLeftAnimationOn: 0
-  isCentralizationAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
@@ -1334,7 +1330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSideLeftAnimationOn: 0
-  isCentralizationAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
@@ -1384,7 +1379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSideLeftAnimationOn: 0
-  isCentralizationAnimationOn: 0
   brainPositionForDisplayingText: {fileID: 1910250830}
   cameraCentralPoint: {fileID: 34930346}
   brainContainer: {fileID: 1827040022}
@@ -1907,8 +1901,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0055498085
-  m_Center: {x: 0.014121085, y: -0.0016193268, z: 0.0036275655}
+  m_Radius: 0.008746768
+  m_Center: {x: 0.014121082, y: -0.0032550024, z: 0.005188845}
 --- !u!4 &2061706271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1255605710908113952, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}

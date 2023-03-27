@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveAnimation : MonoBehaviour
 {
     public bool isSideLeftAnimationOn = false;
-    public bool isCentralizationAnimationOn = false;
+    //public bool isCentralizationAnimationOn = false;
     public Transform brainPositionForDisplayingText;
     public Transform cameraCentralPoint;
     public Transform brainContainer;
@@ -14,12 +14,14 @@ public class MoveAnimation : MonoBehaviour
 
     public BrainDescriptionText brainDescriptionText;
     public MouseHover mouseHover;
-    Vector3 brainScaleHelp;
+    Vector3 brainScaleSave;
 
     private void Start()
     {
+        brainScaleSave = brainContainer.transform.localScale;
         setTextVisibility(false);
     }
+
     void Update()
     {
         vectorCentreOfLobeToCentreOfBrain = brainContainer.transform.position - transform.position;
@@ -30,8 +32,8 @@ public class MoveAnimation : MonoBehaviour
         }
         if (BrainCentralization.isCentralizationMoveOn)
         {
-            disableSideLeftAnimation();
-            scaleDownBrain();
+            centralizationAdditionalActions();
+            GrabRotation.isClickingTurnedOn = true;
         }
     }
 
@@ -60,34 +62,12 @@ public class MoveAnimation : MonoBehaviour
             mouseHover.activateColor();
             setTextVisibility(true);
             scaleUpBrain();
+            GrabRotation.isClickingTurnedOn = false;
         }
-        else
-        {
-            mouseHover.defaultColor();
-            setTextVisibility(false);
-        }
-    }
-
-    //public void brainCentralizationMovement()
-    //{
-    //    print("centre");
-    //    brainContainer.transform.position = Vector3.Lerp(
-    //        brainContainer.transform.position,
-    //        cameraCentralPoint.transform.position,
-    //        Time.deltaTime * movementSpeed);
-
-    //    setTextVisibility(false);
-    //}
-
-    public void enableBrainCentralization()
-    {
-        isCentralizationAnimationOn = true;
-        isSideLeftAnimationOn = false;
     }
 
     public void enableSideLeftAnimation()
     {
-        //isCentralizationAnimationOn = false;
         isSideLeftAnimationOn = true;
     }
 
@@ -97,15 +77,21 @@ public class MoveAnimation : MonoBehaviour
         setTextVisibility(false);
     }
 
+    void centralizationAdditionalActions()
+    {
+        disableSideLeftAnimation();
+        scaleDownBrain();
+        mouseHover.defaultColor();
+    }
+
     void scaleUpBrain()
     {
-        brainScaleHelp = brainContainer.transform.localScale;
-        brainContainer.transform.localScale = Vector3.Lerp(brainContainer.transform.localScale, brainContainer.transform.localScale * 35.0f, 1.5f * Time.deltaTime);
+        brainContainer.transform.localScale = Vector3.Lerp(brainContainer.transform.localScale, brainContainer.transform.localScale * 235.0f, 0.02f * Time.deltaTime);
     }
 
     void scaleDownBrain()
     {
-        brainContainer.transform.localScale = brainScaleHelp;
+        brainContainer.transform.localScale = brainScaleSave;
     }
 
     void print(string text)

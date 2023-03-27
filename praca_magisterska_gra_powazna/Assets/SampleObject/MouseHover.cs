@@ -18,25 +18,20 @@ public class MouseHover : MonoBehaviour
         sphereRenderer = sphere.GetComponent<Renderer>();
     }
 
-    //private void Update()
-    //{
-    //    if (!GrabRotation.enableddd)
-    //    {
-    //        disabledColor();
-    //    }
-    //}
-
     private void OnMouseOver()
     {
-        //if (GrabRotation.enableddd)
-        //{
+        if (GrabRotation.isClickingTurnedOn)
+        {
             activateColor();
-        //}
+        }
     }
 
     private void OnMouseExit()
     {
-        defaultColor();
+        if (GrabRotation.isClickingTurnedOn)
+        {
+            defaultColor();
+        }
     }
 
     public void activateColor()
