@@ -14,6 +14,7 @@ public class MoveAnimation : MonoBehaviour
 
     public BrainDescriptionText brainDescriptionText;
     public MouseHover mouseHover;
+    Vector3 brainScaleHelp;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class MoveAnimation : MonoBehaviour
         if (BrainCentralization.isCentralizationMoveOn)
         {
             disableSideLeftAnimation();
+            scaleDownBrain();
         }
     }
 
@@ -47,7 +49,6 @@ public class MoveAnimation : MonoBehaviour
 
     void moveBrainLeft()
     {
-        print("left");
         brainContainer.transform.position = Vector3.Lerp(
                 brainContainer.transform.position, 
                 brainPositionForDisplayingText.transform.position + vectorCentreOfLobeToCentreOfBrain, 
@@ -58,6 +59,7 @@ public class MoveAnimation : MonoBehaviour
         {
             mouseHover.activateColor();
             setTextVisibility(true);
+            scaleUpBrain();
         }
         else
         {
@@ -93,6 +95,17 @@ public class MoveAnimation : MonoBehaviour
     {
         isSideLeftAnimationOn = false;
         setTextVisibility(false);
+    }
+
+    void scaleUpBrain()
+    {
+        brainScaleHelp = brainContainer.transform.localScale;
+        brainContainer.transform.localScale = Vector3.Lerp(brainContainer.transform.localScale, brainContainer.transform.localScale * 35.0f, 1.5f * Time.deltaTime);
+    }
+
+    void scaleDownBrain()
+    {
+        brainContainer.transform.localScale = brainScaleHelp;
     }
 
     void print(string text)
