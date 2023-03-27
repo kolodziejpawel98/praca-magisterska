@@ -14,6 +14,7 @@ public class MoveAnimation : MonoBehaviour
 
     public BrainDescriptionText brainDescriptionText;
     public MouseHover mouseHover;
+    public GameObject centralizeBrainButton; 
     Vector3 brainScaleSave;
 
     private void Start()
@@ -42,10 +43,12 @@ public class MoveAnimation : MonoBehaviour
         if (isTextVisible)
         {
             brainDescriptionText.textContainer.gameObject.SetActive(true);
+            centralizeBrainButton.gameObject.SetActive(true);
         }
         else
         {
             brainDescriptionText.textContainer.gameObject.SetActive(false);
+            centralizeBrainButton.gameObject.SetActive(false);
         }
     }
 
