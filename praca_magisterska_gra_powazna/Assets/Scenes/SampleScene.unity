@@ -329,69 +329,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 985593213}
-        m_TargetAssemblyTypeName: MoveAnimation, Assembly-CSharp
-        m_MethodName: enableBrainCentralization
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 513611499}
-        m_TargetAssemblyTypeName: MoveAnimation, Assembly-CSharp
-        m_MethodName: enableBrainCentralization
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1825252927}
-        m_TargetAssemblyTypeName: MoveAnimation, Assembly-CSharp
-        m_MethodName: enableBrainCentralization
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1227063178}
-        m_TargetAssemblyTypeName: MoveAnimation, Assembly-CSharp
-        m_MethodName: enableBrainCentralization
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1728957986}
-        m_TargetAssemblyTypeName: MoveAnimation, Assembly-CSharp
-        m_MethodName: enableBrainCentralization
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1435894319}
-        m_TargetAssemblyTypeName: MoveAnimation, Assembly-CSharp
-        m_MethodName: enableBrainCentralization
+      - m_Target: {fileID: 1827040023}
+        m_TargetAssemblyTypeName: BrainCentralization, Assembly-CSharp
+        m_MethodName: tickCentralizationFLag
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1460,6 +1400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1827040022}
   - component: {fileID: 1827040024}
+  - component: {fileID: 1827040023}
   m_Layer: 0
   m_Name: BrainCentreOfRotation
   m_TagString: Untagged
@@ -1482,6 +1423,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1827040023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827040021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703fe147d3c736b43b3758141a10b665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraCentralPoint: {fileID: 34930346}
 --- !u!114 &1827040024
 MonoBehaviour:
   m_ObjectHideFlags: 0

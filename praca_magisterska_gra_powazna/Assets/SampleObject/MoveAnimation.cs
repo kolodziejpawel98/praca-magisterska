@@ -15,24 +15,25 @@ public class MoveAnimation : MonoBehaviour
     public BrainDescriptionText brainDescriptionText;
     public MouseHover mouseHover;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        setTextVisibility(false);
+    }
     void Update()
     {
         vectorCentreOfLobeToCentreOfBrain = brainContainer.transform.position - transform.position;
-        setTextVisibility(true);
 
         if (isSideLeftAnimationOn)
         {
             moveBrainLeft();
         }
-        if (isCentralizationAnimationOn)
+        if (BrainCentralization.isCentralizationMoveOn)
         {
-            brainCentralizationMovement();
+            disableSideLeftAnimation();
         }
-
     }
 
-    void setTextVisibility(bool isTextVisible)
+    public void setTextVisibility(bool isTextVisible)
     {
         if (isTextVisible)
         {
@@ -46,6 +47,7 @@ public class MoveAnimation : MonoBehaviour
 
     void moveBrainLeft()
     {
+        print("left");
         brainContainer.transform.position = Vector3.Lerp(
                 brainContainer.transform.position, 
                 brainPositionForDisplayingText.transform.position + vectorCentreOfLobeToCentreOfBrain, 
@@ -55,7 +57,6 @@ public class MoveAnimation : MonoBehaviour
             - brainContainer.transform.position.x < 0.3f)
         {
             mouseHover.activateColor();
-            UnityEngine.Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!1");
             setTextVisibility(true);
         }
         else
@@ -65,15 +66,16 @@ public class MoveAnimation : MonoBehaviour
         }
     }
 
-    public void brainCentralizationMovement()
-    {
-        brainContainer.transform.position = Vector3.Lerp(
-            brainContainer.transform.position,
-            cameraCentralPoint.transform.position,
-            Time.deltaTime * movementSpeed);
+    //public void brainCentralizationMovement()
+    //{
+    //    print("centre");
+    //    brainContainer.transform.position = Vector3.Lerp(
+    //        brainContainer.transform.position,
+    //        cameraCentralPoint.transform.position,
+    //        Time.deltaTime * movementSpeed);
 
-        setTextVisibility(false);
-    }
+    //    setTextVisibility(false);
+    //}
 
     public void enableBrainCentralization()
     {
@@ -83,7 +85,19 @@ public class MoveAnimation : MonoBehaviour
 
     public void enableSideLeftAnimation()
     {
-        isCentralizationAnimationOn = false;
+        //isCentralizationAnimationOn = false;
         isSideLeftAnimationOn = true;
     }
+
+    public void disableSideLeftAnimation()
+    {
+        isSideLeftAnimationOn = false;
+        setTextVisibility(false);
+    }
+
+    void print(string text)
+    {
+        UnityEngine.Debug.Log(text);
+    }
+
 }
