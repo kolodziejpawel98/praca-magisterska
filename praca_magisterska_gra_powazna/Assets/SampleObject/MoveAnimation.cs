@@ -14,7 +14,8 @@ public class MoveAnimation : MonoBehaviour
 
     public BrainDescriptionText brainDescriptionText;
     public MouseHover mouseHover;
-    public GameObject centralizeBrainButton; 
+    public GameObject centralizeBrainButton;
+    public GameObject goInsideButton;
     Vector3 brainScaleSave;
 
     private void Start()
@@ -44,11 +45,13 @@ public class MoveAnimation : MonoBehaviour
         {
             brainDescriptionText.textContainer.gameObject.SetActive(true);
             centralizeBrainButton.gameObject.SetActive(true);
+            goInsideButton.gameObject.SetActive(true);
         }
         else
         {
             brainDescriptionText.textContainer.gameObject.SetActive(false);
             centralizeBrainButton.gameObject.SetActive(false);
+            goInsideButton.gameObject.SetActive(false);
         }
     }
 
