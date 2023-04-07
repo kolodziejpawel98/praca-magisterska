@@ -14,14 +14,12 @@ public class MouseHover : MonoBehaviour
 
     void Start()
     {
-        UnityEngine.Debug.Log("START!");
         newSphereColorHELP = newSphereColor;
         sphereRenderer = sphere.GetComponent<Renderer>();
     }
 
     private void OnMouseOver()
     {
-        UnityEngine.Debug.Log("MOUSE OVER!");
         if (GrabRotation.isClickingTurnedOn)
         {
             activateColor();
@@ -30,7 +28,6 @@ public class MouseHover : MonoBehaviour
 
     private void OnMouseExit()
     {
-        UnityEngine.Debug.Log("MOUSE EXIT!");
         if (GrabRotation.isClickingTurnedOn)
         {
             defaultColor();
