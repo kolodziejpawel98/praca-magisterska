@@ -1184,51 +1184,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.032850504
+      value: -0.17266122
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5134375
+      value: 1.2205744
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.82
+      value: 3.1059856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.0117874015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.012295758
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7214154
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.6922931
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -267.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 0.024002075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 181.976
       objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_Name
-      value: LewaPolkula
+      value: PrawaPolkula
       objectReference: {fileID: 0}
     - target: {fileID: -516098083770646512, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_Name
-      value: PrawaPolkula
+      value: LewaPolkula
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: db1f64cb1d89c994988fcd9d20ecbcb5, type: 3}
       propertyPath: m_Name
@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 705289225}
   - component: {fileID: 705289226}
   m_Layer: 0
-  m_Name: PointLewaPolkula
+  m_Name: PointPrawaPolkula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1417,7 +1417,7 @@ MonoBehaviour:
   brainPositionForDisplayingText: {fileID: 967307627}
   cameraCentralPoint: {fileID: 249782562}
   brainContainer: {fileID: 797071762}
-  brainDescriptionText: {fileID: 962945179}
+  brainDescriptionText: {fileID: 1611351381}
   mouseHover: {fileID: 446986129}
   centralizeBrainButton: {fileID: 870355204}
   goInsideButton: {fileID: 423626576}
@@ -1736,6 +1736,8 @@ GameObject:
   m_Component:
   - component: {fileID: 797071762}
   - component: {fileID: 797071763}
+  - component: {fileID: 797071764}
+  - component: {fileID: 797071765}
   m_Layer: 0
   m_Name: BrainPolkuleCentreOfRotation
   m_TagString: Untagged
@@ -1768,6 +1770,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 331e818c3b6915f4f910f89ae41ee4ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &797071764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797071761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703fe147d3c736b43b3758141a10b665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraCentralPoint: {fileID: 249782562}
+--- !u!114 &797071765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797071761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756ebd4a5ae2d0343bb39808cd56660b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &857104981
@@ -1987,7 +2014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1153721012}
+      - m_Target: {fileID: 797071764}
         m_TargetAssemblyTypeName: BrainCentralization, Assembly-CSharp
         m_MethodName: tickCentralizationFLag
         m_Mode: 1
@@ -2218,7 +2245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &962945178
 Transform:
   m_ObjectHideFlags: 0
@@ -3495,7 +3522,7 @@ GameObject:
   - component: {fileID: 1586394384}
   - component: {fileID: 1586394385}
   m_Layer: 0
-  m_Name: PointPrawaPolkula
+  m_Name: PointLewaPolkula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3532,7 +3559,7 @@ MonoBehaviour:
   cameraCentralPoint: {fileID: 249782562}
   brainContainer: {fileID: 797071762}
   brainDescriptionText: {fileID: 962945179}
-  mouseHover: {fileID: 446986129}
+  mouseHover: {fileID: 759879989}
   centralizeBrainButton: {fileID: 870355204}
   goInsideButton: {fileID: 423626576}
 --- !u!1 &1598530027
@@ -3813,7 +3840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1611351380
 Transform:
   m_ObjectHideFlags: 0
