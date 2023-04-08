@@ -37,4 +37,11 @@ public class GrabRotation : MonoBehaviour
         }
      
     }
+
+    public void resetVariables()
+    {
+        isDragCounter = 0;
+        leftSideInactiveMode = false;
+        isClickingTurnedOn = true;
+    }
 }

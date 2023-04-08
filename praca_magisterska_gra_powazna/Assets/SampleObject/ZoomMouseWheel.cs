@@ -24,4 +24,11 @@ public class ZoomMouseWheel : MonoBehaviour
             transform.localScale = new Vector3(maxZoomIn, maxZoomIn, maxZoomIn);
         }
     }
+
+    public void resetVariables()
+    {
+        zoomSpeed = 0.5f;
+        maxZoomOut = 0.5f;
+        maxZoomIn = 1.5f;
+    }
 }
