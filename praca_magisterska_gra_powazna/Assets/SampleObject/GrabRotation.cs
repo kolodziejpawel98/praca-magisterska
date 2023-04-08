@@ -12,6 +12,12 @@ public class GrabRotation : MonoBehaviour
     public bool leftSideInactiveMode = false;
     public static bool isClickingTurnedOn = true;
 
+    private void Start()
+    {
+        isClickingTurnedOn = true;
+        leftSideInactiveMode = false;
+    }
+
     void OnMouseDrag()
     {
         if (isClickingTurnedOn)
@@ -36,12 +42,5 @@ public class GrabRotation : MonoBehaviour
             isDragCounter = 0;
         }
      
-    }
-
-    public void resetVariables()
-    {
-        isDragCounter = 0;
-        leftSideInactiveMode = false;
-        isClickingTurnedOn = true;
     }
 }

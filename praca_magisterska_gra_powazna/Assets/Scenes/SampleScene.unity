@@ -3308,6 +3308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756ebd4a5ae2d0343bb39808cd56660b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoomMouseWheel: {fileID: 1827040024}
+  brainCentralization: {fileID: 1827040023}
+  brainRotation: {fileID: 2090060893}
+  grabRotation: {fileID: 2061706276}
+  moveAnimation: {fileID: 1825252927}
 --- !u!1 &1910250829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,7 +3580,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSphereColor: {r: 0.8207547, g: 0.44025695, b: 0.22841759, a: 0}
   sphere: {fileID: 2061706239}
-  grabRotation: {fileID: 0}
 --- !u!4 &2061706252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2577548232221058511, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}
@@ -3608,7 +3612,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSphereColor: {r: 0.81218004, g: 0, b: 1, a: 0}
   sphere: {fileID: 2061706240}
-  grabRotation: {fileID: 0}
 --- !u!114 &2061706255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3651,7 +3654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSphereColor: {r: 0.37761652, g: 1, b: 0, a: 0}
   sphere: {fileID: 2061706241}
-  grabRotation: {fileID: 0}
 --- !u!135 &2061706259
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3679,7 +3681,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSphereColor: {r: 1, g: 0.46264225, b: 0, a: 0}
   sphere: {fileID: 2061706242}
-  grabRotation: {fileID: 0}
 --- !u!135 &2061706262
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3707,7 +3708,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSphereColor: {r: 1, g: 0, b: 0.16016197, a: 0}
   sphere: {fileID: 2061706243}
-  grabRotation: {fileID: 0}
 --- !u!4 &2061706264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4865064391339405807, guid: 5d62798caa3d0974bbaa22d49861ac2f, type: 3}
@@ -3740,7 +3740,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSphereColor: {r: 1, g: 0.6878892, b: 0, a: 0}
   sphere: {fileID: 2061706244}
-  grabRotation: {fileID: 0}
 --- !u!114 &2061706267
 MonoBehaviour:
   m_ObjectHideFlags: 0

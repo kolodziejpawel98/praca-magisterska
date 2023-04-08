@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f00e2aa060f4e0f4fb75e7382a675a54
   - enabled: 1
+    path: Assets/Scenes/BrainPolkule.unity
+    guid: b4a31d32db380854699ec7bf0aefed7c
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

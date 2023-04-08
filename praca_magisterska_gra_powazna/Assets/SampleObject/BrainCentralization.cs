@@ -42,10 +42,4 @@ public class BrainCentralization : MonoBehaviour
             cameraCentralPoint.transform.position,
             Time.deltaTime * movementSpeed);
     }
-
-    public void resetVariables()
-    {
-        isCentralizationMoveOn = false;
-        movementSpeed = 6.5f;
-    }
 }

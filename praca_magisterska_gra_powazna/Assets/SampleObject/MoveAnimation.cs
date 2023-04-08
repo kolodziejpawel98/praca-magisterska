@@ -105,11 +105,4 @@ public class MoveAnimation : MonoBehaviour
         UnityEngine.Debug.Log(text);
     }
 
-    public void resetVariables()
-    {
-        movementSpeed = 6.5f;
-        brainScaleSave = brainContainer.transform.localScale;
-        setTextVisibility(false);
-    }
-
 }
