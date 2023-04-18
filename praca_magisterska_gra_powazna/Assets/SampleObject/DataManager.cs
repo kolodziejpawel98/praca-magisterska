@@ -27,7 +27,7 @@ public class DataManager : MonoBehaviour
     private void WriteToFile(string fileName, string json)
     {
         string path = GetFilePath(fileName);
-        FileStream fileStream = new FileStream(path, FileMode.Create);
+        FileStream fileStream = new FileStream(path, FileMode.Append, FileAccess.Write);
 
         using(StreamWriter writer = new StreamWriter(fileStream))
         {
@@ -43,6 +43,7 @@ public class DataManager : MonoBehaviour
             using(StreamReader reader = new StreamReader(path))
             {
                 string json = reader.ReadToEnd();
+                UnityEngine.Debug.Log("json = " + json);
                 return json;
             }
         }
@@ -58,10 +59,5 @@ public class DataManager : MonoBehaviour
     {
         //return Application.persistentDataPath + "/" + fileName;
         return fileName;
-    }
-
-    private void Update()
-    {
-        UnityEngine.Debug.Log(data.name);
     }
 }
