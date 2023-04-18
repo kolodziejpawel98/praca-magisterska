@@ -14,15 +14,20 @@ public class UiDataSave : MonoBehaviour
         dataManager.Load();
     }
 
+    public void LoadNewObject()
+    {
+        dataManager.Load();
+    }
+
     public void ClickCoin()
     {
-        dataManager.data.coins += 1;
-        coins.text = dataManager.data.coins.ToString();
+        //dataManager.data.coins += 1;
+        //coins.text = dataManager.data.coins.ToString();
     }
 
     public void ChangeName(string text)
     {
-        dataManager.data.name = text;
+        dataManager.data[dataManager.data.Count - 1].name = text;
     }
 
     public void ClickSave()
