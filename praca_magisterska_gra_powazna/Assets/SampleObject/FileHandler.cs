@@ -9,44 +9,30 @@ public static class FileHandler
 
     public static void SaveToJSON(List<Player> toSave, string filename)
     {
-        Debug.Log(GetPath(filename));
-        string content = ToJson(toSave.ToArray(), true);
-        WriteFile(GetPath(filename), content);
+        Debug.Log(filename);
+
+
+        Wrapper<Player> wrapper = new Wrapper<Player>();
+        wrapper.Items = toSave.ToArray();
+
+        string content = JsonUtility.ToJson(wrapper, true);
+        WriteFile(filename, content);
     }
 
     public static List<Player> ReadListFromJSON(string filename)
     {
-        string content = ReadFile(GetPath(filename));
+        string content = ReadFile(filename);
 
         if (string.IsNullOrEmpty(content) || content == "{}")
         {
             return new List<Player>();
         }
 
-        List<Player> res = FromJson(content).ToList();
+        Wrapper<Player> wrapper = JsonUtility.FromJson<Wrapper<Player>>(content);
+        List<Player> res = wrapper.Items.ToList();
 
         return res;
 
-    }
-
-    public static Player ReadFromJSON(string filename)
-    {
-        string content = ReadFile(GetPath(filename));
-
-        if (string.IsNullOrEmpty(content) || content == "{}")
-        {
-            return default(Player);
-        }
-
-        Player res = JsonUtility.FromJson<Player>(content);
-
-        return res;
-
-    }
-
-    private static string GetPath(string filename)
-    {
-        return filename;
     }
 
     private static void WriteFile(string path, string content)
@@ -70,26 +56,6 @@ public static class FileHandler
             }
         }
         return "";
-    }
-
-    public static Player[] FromJson(string json)
-    {
-        Wrapper<Player> wrapper = JsonUtility.FromJson<Wrapper<Player>>(json);
-        return wrapper.Items;
-    }
-
-    public static string ToJsonPlayer(Player[] array)
-    {
-        Wrapper<Player> wrapper = new Wrapper<Player>();
-        wrapper.Items = array;
-        return JsonUtility.ToJson(wrapper);
-    }
-
-    public static string ToJson(Player[] array, bool prettyPrint)
-    {
-        Wrapper<Player> wrapper = new Wrapper<Player>();
-        wrapper.Items = array;
-        return JsonUtility.ToJson(wrapper, prettyPrint);
     }
 
     [Serializable]
