@@ -12,18 +12,64 @@ using UnityEngine.UI;
 //}
 
 
-public class Question
-{
-    string questionText;
-    Dictionary<string, bool> answer = new Dictionary<string, bool>();
-}
+//public class Question
+//{
+//    string questionText;
+//    Dictionary<string, bool> answer = new Dictionary<string, bool>();
+
+//    public Question(string questionText,
+//                    string answer_A, bool isAnswerAcorrect,
+//                    string answer_B, bool isAnswerBcorrect,
+//                    string answer_C, bool isAnswerCcorrect,
+//                    string answer_D, bool isAnswerDcorrect
+//                    )
+//    {
+//        this.questionText = questionText;
+//        answer.Add(answer_A, isAnswerAcorrect);
+//        answer.Add(answer_B, isAnswerBcorrect);
+//        answer.Add(answer_C, isAnswerCcorrect);
+//        answer.Add(answer_D, isAnswerDcorrect);
+//    }
+
+//    public void print()
+//    {
+//        p.r(answer.Count.ToString());
+//    }
+//}
 
 public class TestBackend : MonoBehaviour
 {
 
     public Text scoreText;
     private int score = 0;
-    List<Question> pytania = new List<Question> ();
+    //List<Question> questions = new List<Question> ();
+
+
+    string question_1;
+    Dictionary<string, bool> question_1_answers = new Dictionary<string, bool>(){
+        { "Odpowiedz A", false },
+        { "Odpowiedz B", false },
+        { "Odpowiedz C", false }
+    };
+    string question_2;
+    Dictionary<string, bool> question_2_answers = new Dictionary<string, bool>(){
+        { "Klucz1", false },
+        { "Klucz2", false },
+        { "Klucz3", false }
+    };
+    string question_3;
+    Dictionary<string, bool> question_3_answers = new Dictionary<string, bool>(){
+        { "Klucz1", false },
+        { "Klucz2", false },
+        { "Klucz3", false }
+    };
+    string question_4;
+    Dictionary<string, bool> question_4_answers = new Dictionary<string, bool>(){
+        { "Klucz1", false },
+        { "Klucz2", false },
+        { "Klucz3", false }
+    };
+
 
     public Text textPrefab;
 
