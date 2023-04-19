@@ -17,12 +17,22 @@ public class InputHandler : MonoBehaviour
         players = ReadListFromJSON();
     }
 
+    public void printPlayerName(int index)
+    {
+        players = ReadListFromJSON();
+        p.r("!!!!!!!!!!!!!!!!!!!! = " + players[index].playerName);
+    }
+
     public void AddNameToList()
     {
-        players.Add(new Player(nameInput.text, 2));
-        nameInput.text = "";
+        if (!string.IsNullOrEmpty(nameInput.text))
+        {
+            p.r("wpisujê!");
+            players.Add(new Player(nameInput.text, 2));
+            nameInput.text = "";
 
-        SaveToJSON(players);
+            SaveToJSON(players);
+        }
     }
 
     public void SaveToJSON(List<Player> toSave)
