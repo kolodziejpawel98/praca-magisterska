@@ -223,7 +223,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "(C) odpowied\u017A"
+  m_Text: 
 --- !u!222 &321787907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "(A) odpowied\u017A"
+  m_Text: 
 --- !u!222 &581434156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 783052148}
   - component: {fileID: 783052147}
   m_Layer: 5
-  m_Name: answer_B
+  m_Name: answer_B_placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,16 +577,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783052145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 145.37288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1496457249}
-  m_Father: {fileID: 1130301815}
-  m_RootOrder: 1
+  m_Father: {fileID: 1260416906}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.74435, y: -131.3}
+  m_AnchoredPosition: {x: -593.7444, y: -93.00357}
   m_SizeDelta: {x: 30.5114, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &783052147
@@ -904,7 +904,6 @@ GameObject:
   - component: {fileID: 988453065}
   - component: {fileID: 988453064}
   - component: {fileID: 988453063}
-  - component: {fileID: 988453067}
   m_Layer: 5
   m_Name: TestCanvas
   m_TagString: Untagged
@@ -994,19 +993,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &988453067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988453062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4868b82fa7d9974da9701522b9bcb43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!1 &1130301814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1005,7 @@ GameObject:
   - component: {fileID: 1130301817}
   - component: {fileID: 1130301816}
   m_Layer: 5
-  m_Name: pytanie_1
+  m_Name: pytanie_placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,12 +1021,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 145.37288}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1397118917}
-  - {fileID: 783052146}
-  - {fileID: 1774053042}
-  - {fileID: 1723424205}
-  - {fileID: 1893658246}
+  m_Children: []
   m_Father: {fileID: 1260416906}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1082,7 +1063,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pytanie 1
+  m_Text: 
 --- !u!222 &1130301817
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1284,6 +1265,11 @@ Transform:
   - {fileID: 1598246723}
   - {fileID: 1191708056}
   - {fileID: 1130301815}
+  - {fileID: 1397118917}
+  - {fileID: 783052146}
+  - {fileID: 1774053042}
+  - {fileID: 1723424205}
+  - {fileID: 1893658246}
   m_Father: {fileID: 988453066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1299,7 +1285,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4868b82fa7d9974da9701522b9bcb43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1986789925}
+  currentQuestion: 1
+  question_1: {fileID: 1130301816}
+  question_1_answer_A: {fileID: 581434155}
+  question_1_answer_B: {fileID: 1496457250}
+  question_1_answer_C: {fileID: 321787906}
+  question_1_answer_D: {fileID: 1932203137}
 --- !u!1 &1389829975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1384,7 @@ GameObject:
   - component: {fileID: 1397118919}
   - component: {fileID: 1397118918}
   m_Layer: 5
-  m_Name: answer_A
+  m_Name: answer_A_placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1406,16 +1398,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397118916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 145.37288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 581434154}
-  m_Father: {fileID: 1130301815}
-  m_RootOrder: 0
+  m_Father: {fileID: 1260416906}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.74435, y: -91.61998}
+  m_AnchoredPosition: {x: -593.7444, y: -53.323593}
   m_SizeDelta: {x: 30.5114, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397118918
@@ -1570,7 +1562,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "(B) odpowied\u017A"
+  m_Text: 
 --- !u!222 &1496457251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1764,7 +1756,7 @@ GameObject:
   - component: {fileID: 1723424207}
   - component: {fileID: 1723424206}
   m_Layer: 5
-  m_Name: answer_D
+  m_Name: answer_D_placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1778,16 +1770,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723424204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 145.37288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1932203136}
-  m_Father: {fileID: 1130301815}
-  m_RootOrder: 3
+  m_Father: {fileID: 1260416906}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.74435, y: -207}
+  m_AnchoredPosition: {x: -593.7444, y: -168.70358}
   m_SizeDelta: {x: 30.5114, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723424206
@@ -1885,7 +1877,7 @@ GameObject:
   - component: {fileID: 1774053044}
   - component: {fileID: 1774053043}
   m_Layer: 5
-  m_Name: answer_C
+  m_Name: answer_C_placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1899,16 +1891,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774053041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 145.37288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 321787905}
-  m_Father: {fileID: 1130301815}
-  m_RootOrder: 2
+  m_Father: {fileID: 1260416906}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.74435, y: -169.50002}
+  m_AnchoredPosition: {x: -593.7444, y: -131.2036}
   m_SizeDelta: {x: 30.5114, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1774053043
@@ -2011,7 +2003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1893658246
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2020,16 +2012,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893658245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 145.37288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 566323136}
-  m_Father: {fileID: 1130301815}
-  m_RootOrder: 4
+  m_Father: {fileID: 1260416906}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.260498, y: -268}
+  m_AnchoredPosition: {x: -427.2605, y: -229.70358}
   m_SizeDelta: {x: 363.479, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893658247
@@ -2076,9 +2068,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 988453067}
+      - m_Target: {fileID: 1260416907}
         m_TargetAssemblyTypeName: TestBackend, Assembly-CSharp
-        m_MethodName: increaseScore
+        m_MethodName: ChangeScoreValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2196,7 +2188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "(D) odpowied\u017A"
+  m_Text: 
 --- !u!222 &1932203138
 CanvasRenderer:
   m_ObjectHideFlags: 0

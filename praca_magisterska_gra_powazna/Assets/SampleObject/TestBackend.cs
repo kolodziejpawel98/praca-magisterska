@@ -42,56 +42,81 @@ public class TestBackend : MonoBehaviour
 
     public Text scoreText;
     private int score = 0;
+    public int currentQuestion = 1;
     //List<Question> questions = new List<Question> ();
 
 
-    string question_1;
-    Dictionary<string, bool> question_1_answers = new Dictionary<string, bool>(){
-        { "Odpowiedz A", false },
-        { "Odpowiedz B", false },
-        { "Odpowiedz C", false }
-    };
-    string question_2;
-    Dictionary<string, bool> question_2_answers = new Dictionary<string, bool>(){
-        { "Klucz1", false },
-        { "Klucz2", false },
-        { "Klucz3", false }
-    };
-    string question_3;
-    Dictionary<string, bool> question_3_answers = new Dictionary<string, bool>(){
-        { "Klucz1", false },
-        { "Klucz2", false },
-        { "Klucz3", false }
-    };
-    string question_4;
-    Dictionary<string, bool> question_4_answers = new Dictionary<string, bool>(){
-        { "Klucz1", false },
-        { "Klucz2", false },
-        { "Klucz3", false }
-    };
+    //string question_1;
+    //Dictionary<string, bool> question_1_answers = new Dictionary<string, bool>(){
+    //    { "Odpowiedz A", false },
+    //    { "Odpowiedz B", false },
+    //    { "Odpowiedz C", false }
+    //};
+    //string question_2;
+    //Dictionary<string, bool> question_2_answers = new Dictionary<string, bool>(){
+    //    { "Klucz1", false },
+    //    { "Klucz2", false },
+    //    { "Klucz3", false }
+    //};
+    //string question_3;
+    //Dictionary<string, bool> question_3_answers = new Dictionary<string, bool>(){
+    //    { "Klucz1", false },
+    //    { "Klucz2", false },
+    //    { "Klucz3", false }
+    //};
+    //string question_4;
+    //Dictionary<string, bool> question_4_answers = new Dictionary<string, bool>(){
+    //    { "Klucz1", false },
+    //    { "Klucz2", false },
+    //    { "Klucz3", false }
+    //};
 
 
-    public Text textPrefab;
+    public Text question_1;
+    public Text question_1_answer_A;
+    public Text question_1_answer_B;
+    public Text question_1_answer_C;
+    public Text question_1_answer_D;
+    //public Text question_2;
 
-    void Start()
-    {
-        Text newText = Instantiate(textPrefab, transform);
-        newText.text = "Przyk³adowy tekst!!!!!!!!!!!!!";
-        newText.color = Color.white;
-        newText.fontSize = 47;
-        RectTransform rectTransform = newText.GetComponent<RectTransform>();
-        rectTransform.anchoredPosition = new Vector2(-426, 39);
-        //rectTransform.sizeDelta = new Vector2(200, 100); // Rozmiar tekstu na panelu UI
-    }
+    //void Start()
+    //{
 
-
-
-
+    //}
 
     private void Update()
     {
         scoreText.text = score.ToString();
+        switch (currentQuestion)
+        {
+            case 1:
+                printTextElementOnScreen(question_1, "Question 1:");
+                printTextElementOnScreen(question_1_answer_A, "Answer A", -426, 39 + 5);
+                printTextElementOnScreen(question_1_answer_B, "Answer B", - 426, 39 + 10);
+                printTextElementOnScreen(question_1_answer_C, "Answer C", - 426, 39 + 15);
+                printTextElementOnScreen(question_1_answer_D, "Answer D", - 426, 39 + 20);
+                break;
+                
+            //case 2:
+            //    printTextElementOnScreen(question_2, "!!!!!!!!!");
+            //    break;
+                
+        }
     }
+
+
+    public void printTextElementOnScreen(Text textPrefab, string text, int x = -426, int y = 39, int fontSize = 47)
+    {
+        Text newText = Instantiate(textPrefab, transform); //to tworzy nowe obiekty w update!!!!!!!!
+        newText.text = text;
+        newText.color = Color.white;
+        newText.fontSize = fontSize;
+        RectTransform rectTransform = newText.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = new Vector2(x, y);
+    }
+
+
+
 
 
 
