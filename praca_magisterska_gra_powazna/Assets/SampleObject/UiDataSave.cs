@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class UiDataSave : MonoBehaviour
 {
-    public InputField playerName;
+    public InputField playerNameInputField;
     public Text coins;
     public DataManager dataManager;
 
     private void Start()
     {
         dataManager.Load();
+        UnityEngine.Debug.Log("Koniec startu. Players size = " + dataManager.players.Count + ". Player[0] name = " + dataManager.players[dataManager.players.Count - 1].name);
     }
 
     public void LoadNewObject()
@@ -25,9 +26,16 @@ public class UiDataSave : MonoBehaviour
         //coins.text = dataManager.data.coins.ToString();
     }
 
-    public void ChangeName(string text)
+    //public void ChangeName(string playerNameInputField)
+    //{
+    //    //UnityEngine.Debug.Log("SIZE PRZED zmiana imiennia w inpucie = " + dataManager.players.Count);
+    //    //dataManager.players[dataManager.players.Count - 1].name = playerNameInputField;
+    //    dataManager.addNewPlayer(playerNameInputField);
+    //}
+
+    public void enterName()
     {
-        dataManager.data[dataManager.data.Count - 1].name = text;
+        dataManager.addNewPlayer(playerNameInputField.text);
     }
 
     public void ClickSave()

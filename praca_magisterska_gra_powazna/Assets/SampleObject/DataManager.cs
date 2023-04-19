@@ -6,34 +6,41 @@ using System.IO;
 public class DataManager : MonoBehaviour
 {
     //public PlayerData data;
-    public List<PlayerData> data= new List<PlayerData>();
+    public List<PlayerData> players = new List<PlayerData>();
 
     private string file = "C:/Users/Pawe³/Desktop/praca-magisterska/praca_magisterska_gra_powazna/player.txt";
 
     public void Save()
     {
-        string json = JsonUtility.ToJson(data[data.Count - 1]);
-        UnityEngine.Debug.Log("SIZE = " + data.Count);
+        UnityEngine.Debug.Log("SIZE PRZED = " + players.Count);
+        string json = JsonUtility.ToJson(players[players.Count - 1]);
+        print("JSON!!!!!!!!! = " + json);
+        //UnityEngine.Debug.Log("SIZE = " + players.Count);
         WriteToFile(file, json);
     }
 
     public void Load()
     {
-        //data = new PlayerData();
-        PlayerData emptyPlayerData = new PlayerData();
-        data.Add(emptyPlayerData);
-
-        string json = ReadFromFile(file);
-        JsonUtility.FromJsonOverwrite(json, data[data.Count - 1]);
+        addNewPlayerPlaceholder();
+        string fileContentInJson = ReadFromFile(file);
+        JsonUtility.FromJsonOverwrite(fileContentInJson, players[players.Count - 1]);
     }
 
+    public void addNewPlayer(string playerName)
+    {
+        //print("addNewPLayer method. playerName = " + playerName);
+        //print("before add new player: players.size = " + players.Count + ". Last element = " + players[players.Count - 1].name);
+        addNewPlayerPlaceholder();
+        players[players.Count - 1].name = playerName;
+        //print("after add new player: players.size = " + players.Count + ". Last element = " + players[players.Count - 1].name);
+    }
 
     private void WriteToFile(string fileName, string json)
     {
         string path = GetFilePath(fileName);
         FileStream fileStream = new FileStream(path, FileMode.Create);
 
-        using(StreamWriter writer = new StreamWriter(fileStream))
+        using (StreamWriter writer = new StreamWriter(fileStream))
         {
             writer.Write(json);
         }
@@ -44,11 +51,11 @@ public class DataManager : MonoBehaviour
         string path = GetFilePath(fileName);
         if (File.Exists(path))
         {
-            using(StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path))
             {
-                string json = reader.ReadToEnd();
-                UnityEngine.Debug.Log("json = " + json);
-                return json;
+                string fileContent = reader.ReadToEnd();
+                UnityEngine.Debug.Log("File content = " + fileContent);
+                return fileContent;
             }
         }
         else
@@ -56,7 +63,6 @@ public class DataManager : MonoBehaviour
             UnityEngine.Debug.Log("File not found!");
         }
         return "";
-
     }
 
     private string GetFilePath(string fileName)
@@ -65,45 +71,14 @@ public class DataManager : MonoBehaviour
         return fileName;
     }
 
-    //public void humanizeJsonData(string json)
-    //{
-    //    PlayerData[] players = JsonUtility.FromJson<PlayerData>("[" + json + "]");
+    public void addNewPlayerPlaceholder()
+    {
+        PlayerData emptyPlayerData = new PlayerData();
+        players.Add(emptyPlayerData);
+    }
 
-    //    // Wyci¹gniêcie wartoœci "name" z ka¿dego obiektu
-    //    foreach (PlayerData player in players)
-    //    {
-    //        Debug.Log("Name: " + player.name);
-    //    }
-    //}
-
+    public void print(string text)
+    {
+        UnityEngine.Debug.Log(text);
+    }
 }
-
-
-
-
-
-//using UnityEngine;
-
-//[System.Serializable]
-//public class PlayerData
-//{
-//    public string name;
-//    public int coins;
-//}
-
-//public class JSONReadExample : MonoBehaviour
-//{
-//    private string jsonString = "{\"name\":\"jessie pinkman\",\"coins\":0}{\"name\":\"gfdhjkl\",\"coins\":0}{\"name\":\"dsdsdsds\",\"coins\":0}{\"name\":\"dsdsdsds\",\"coins\":0}{\"name\":\"hank schraider\",\"coins\":0}";
-
-//    void Start()
-//    {
-//        // Odczytanie danych z JSON
-//        PlayerData[] players = JsonUtility.FromJson<PlayerData>("[" + jsonString + "]");
-
-//        // Wyci¹gniêcie wartoœci "name" z ka¿dego obiektu
-//        foreach (PlayerData player in players)
-//        {
-//            Debug.Log("Name: " + player.name);
-//        }
-//    }
-//}
