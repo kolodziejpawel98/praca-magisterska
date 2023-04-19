@@ -1,24 +1,32 @@
 {
-    "Items": [
+    "items": [
         {
-            "playerName": "aaa",
-            "points": 63
+            "playerName": "a",
+            "points": 2
         },
         {
-            "playerName": "aaa",
-            "points": 18
+            "playerName": "s",
+            "points": 2
         },
         {
-            "playerName": "bbb",
-            "points": 0
+            "playerName": "ddd",
+            "points": 2
         },
         {
-            "playerName": "ffff",
-            "points": 80
+            "playerName": "xd",
+            "points": 2
         },
         {
-            "playerName": "a1",
-            "points": 58
+            "playerName": "ddd",
+            "points": 2
+        },
+        {
+            "playerName": "xxxxxxxx",
+            "points": 2
+        },
+        {
+            "playerName": "aa",
+            "points": 2
         }
     ]
 }
