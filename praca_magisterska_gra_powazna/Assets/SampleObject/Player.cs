@@ -1,12 +1,12 @@
 using System;
 
 [Serializable]
-public class InputEntry
+public class Player
 {
     public string playerName;
     public int points;
 
-    public InputEntry(string name, int points)
+    public Player(string name, int points)
     {
         playerName = name;
         this.points = points;

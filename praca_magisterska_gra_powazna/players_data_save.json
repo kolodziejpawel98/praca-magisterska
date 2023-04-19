@@ -1,16 +1,12 @@
 {
     "Items": [
         {
-            "playerName": "xcvjhk",
-            "points": 89
+            "playerName": "walter",
+            "points": 45
         },
         {
-            "playerName": "walter white",
-            "points": 41
-        },
-        {
-            "playerName": "jessie pinkman",
-            "points": 26
+            "playerName": "jessie",
+            "points": 33
         }
     ]
 }

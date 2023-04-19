@@ -7,44 +7,38 @@ using UnityEngine;
 public static class FileHandler
 {
 
-    public static void SaveToJSON<T>(List<T> toSave, string filename)
+    public static void SaveToJSON(List<Player> toSave, string filename)
     {
         Debug.Log(GetPath(filename));
-        string content = JsonHelper.ToJson<T>(toSave.ToArray());
+        string content = ToJson(toSave.ToArray(), true);
         WriteFile(GetPath(filename), content);
     }
 
-    public static void SaveToJSON<T>(T toSave, string filename)
-    {
-        string content = JsonUtility.ToJson(toSave);
-        WriteFile(GetPath(filename), content);
-    }
-
-    public static List<T> ReadListFromJSON<T>(string filename)
+    public static List<Player> ReadListFromJSON(string filename)
     {
         string content = ReadFile(GetPath(filename));
 
         if (string.IsNullOrEmpty(content) || content == "{}")
         {
-            return new List<T>();
+            return new List<Player>();
         }
 
-        List<T> res = JsonHelper.FromJson<T>(content).ToList();
+        List<Player> res = FromJson(content).ToList();
 
         return res;
 
     }
 
-    public static T ReadFromJSON<T>(string filename)
+    public static Player ReadFromJSON(string filename)
     {
         string content = ReadFile(GetPath(filename));
 
         if (string.IsNullOrEmpty(content) || content == "{}")
         {
-            return default(T);
+            return default(Player);
         }
 
-        T res = JsonUtility.FromJson<T>(content);
+        Player res = JsonUtility.FromJson<Player>(content);
 
         return res;
 
@@ -52,7 +46,6 @@ public static class FileHandler
 
     private static string GetPath(string filename)
     {
-        //return Application.persistentDataPath + "/" + filename;
         return filename;
     }
 
@@ -78,33 +71,31 @@ public static class FileHandler
         }
         return "";
     }
-}
 
-public static class JsonHelper
-{
-    public static T[] FromJson<T>(string json)
+    public static Player[] FromJson(string json)
     {
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
+        Wrapper<Player> wrapper = JsonUtility.FromJson<Wrapper<Player>>(json);
         return wrapper.Items;
     }
 
-    public static string ToJson<T>(T[] array)
+    public static string ToJsonPlayer(Player[] array)
     {
-        Wrapper<T> wrapper = new Wrapper<T>();
+        Wrapper<Player> wrapper = new Wrapper<Player>();
         wrapper.Items = array;
         return JsonUtility.ToJson(wrapper);
     }
 
-    public static string ToJson<T>(T[] array, bool prettyPrint)
+    public static string ToJson(Player[] array, bool prettyPrint)
     {
-        Wrapper<T> wrapper = new Wrapper<T>();
+        Wrapper<Player> wrapper = new Wrapper<Player>();
         wrapper.Items = array;
         return JsonUtility.ToJson(wrapper, prettyPrint);
     }
 
     [Serializable]
-    private class Wrapper<T>
+    private class Wrapper<Player>
     {
-        public T[] Items;
+        public Player[] Items;
     }
+
 }
