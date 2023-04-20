@@ -20,7 +20,6 @@ public class Answer
 
     public void answerCorectnessHandler()
     {
-        p.r("HANDLER!!!");
         if (isAnswerCorrect)
         {
             answerButton.onClick.AddListener(correctAnswerHandler);
@@ -62,8 +61,7 @@ public class TestBackend : MonoBehaviour
         printTextElementOnScreen(answer_A_button);
         printTextElementOnScreen(answer_B_button);
         printTextElementOnScreen(answer_C_button);
-        printTextElementOnScreen(answer_D_button);
-        
+        printTextElementOnScreen(answer_D_button); 
     }
 
     private void Update()
@@ -74,30 +72,28 @@ public class TestBackend : MonoBehaviour
             case 1:
                 if (!enterOnceInUpdate)
                 {
+                    updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?");
+
                     answers.Add(new Answer(answer_A_button, "czo³owy", false));
                     answers.Add(new Answer(answer_B_button, "polityczny", true));
                     answers.Add(new Answer(answer_C_button, "skroniowy", false));
                     answers.Add(new Answer(answer_D_button, "ciemieniowy", false));
-
-                    updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?");
                     updateTextElementOnScreen(answers);
-                    foreach (var answer in answers)
-                    {
-                        answer.answerCorectnessHandler();
-                    }
+
                     enterOnceInUpdate = true;
                 }
-                
                 break;
-
             case 2:
                 if (!enterOnceInUpdate)
                 {
                     updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:");
-                    updateTextElementOnScreen(new Answer(answer_A_button, "logikê", false));
-                    updateTextElementOnScreen(new Answer(answer_B_button, "kreatywnoœæ", false));
-                    updateTextElementOnScreen(new Answer(answer_C_button, "-", false, false));
-                    updateTextElementOnScreen(new Answer(answer_D_button, "-", false, false));
+
+                    answers.Add(new Answer(answer_A_button, "logikê", true));
+                    answers.Add(new Answer(answer_B_button, "kreatywnoœæ", false));
+                    answers.Add(new Answer(answer_C_button, "-", false, false));
+                    answers.Add(new Answer(answer_D_button, "-", false, false));
+                    updateTextElementOnScreen(answers);
+
                     enterOnceInUpdate = true;
                 }
                 break;
@@ -105,14 +101,16 @@ public class TestBackend : MonoBehaviour
                 if (!enterOnceInUpdate)
                 {
                     updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a (?) p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 20);
-                    updateTextElementOnScreen(new Answer(answer_A_button, "wzrok", false));
-                    updateTextElementOnScreen(new Answer(answer_B_button, "s³uch", false));
-                    updateTextElementOnScreen(new Answer(answer_C_button, "mowa", false));
-                    updateTextElementOnScreen(new Answer(answer_D_button, "wêch", false));
+
+                    answers.Add(new Answer(answer_A_button, "wzrok", true));
+                    answers.Add(new Answer(answer_B_button, "s³uch", false));
+                    answers.Add(new Answer(answer_C_button, "mowa", false));
+                    answers.Add(new Answer(answer_D_button, "wêch", false));
+                    updateTextElementOnScreen(answers);
+
                     enterOnceInUpdate = true;
                 }
                 break;
-
         }
     }
 
@@ -137,20 +135,6 @@ public class TestBackend : MonoBehaviour
         rectTransform.anchoredPosition = new Vector2(x, y);
     }
 
-    public void updateTextElementOnScreen(Answer answer)
-    {
-        if (answer.isButtonActive)
-        {
-            answer.answerButton.interactable = true;
-        }
-        else
-        {
-            answer.answerButton.interactable = false;
-        }
-
-        answer.answerButton.GetComponentInChildren<Text>().text = answer.answerText;
-    }
-
     public void updateTextElementOnScreen(List<Answer> answers)
     {
         foreach (var answer in answers)
@@ -163,7 +147,7 @@ public class TestBackend : MonoBehaviour
             {
                 answer.answerButton.interactable = false;
             }
-
+            answer.answerCorectnessHandler();
             answer.answerButton.GetComponentInChildren<Text>().text = answer.answerText;
         } 
     }
@@ -183,6 +167,8 @@ public class TestBackend : MonoBehaviour
     public void nextQuestion()
     {
         currentQuestionNumber++;
+        enterOnceInUpdate = false;
+        answers.RemoveRange(0, 4);
     }
 
 }
