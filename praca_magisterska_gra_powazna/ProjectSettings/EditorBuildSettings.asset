@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestWiedzy.unity
     guid: af6a906c91665224a843cace35248a6b
+  - enabled: 1
+    path: Assets/Scenes/ScoreTable.unity
+    guid: 73b78c230be31c74a9a46b1d6c529025
   m_configObjects: {}

@@ -6,6 +6,7 @@ public class Timer : MonoBehaviour
 
     public static void StartTimer()
     {
+        ResetTimer();
         startTimeMs = System.DateTime.Now.Ticks / System.TimeSpan.TicksPerMillisecond;
     }
 
