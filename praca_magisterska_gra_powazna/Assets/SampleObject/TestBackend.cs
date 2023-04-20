@@ -81,11 +81,11 @@ public class TestBackend : MonoBehaviour
 
     void Start()
     {
-        printTextElementOnScreen(question, "");
-        printTextElementOnScreen(answer_A.GetComponentInChildren<Text>(), "");
-        printTextElementOnScreen(answer_B.GetComponentInChildren<Text>(), "");
-        printTextElementOnScreen(answer_C.GetComponentInChildren<Text>(), "");
-        printTextElementOnScreen(answer_D.GetComponentInChildren<Text>(), "");
+        printTextElementOnScreen(question);
+        printTextElementOnScreen(answer_A);
+        printTextElementOnScreen(answer_B);
+        printTextElementOnScreen(answer_C);
+        printTextElementOnScreen(answer_D);
     }
 
     private void Update()
@@ -108,21 +108,32 @@ public class TestBackend : MonoBehaviour
                 updateTextElementOnScreen(answer_C, "-", false);
                 updateTextElementOnScreen(answer_D, "-", false);
                 break;
-                //case 3:
-                //    updateTextElementOnScreen(question, "Question 3");
-                //    updateTextElementOnScreen(answer_A, "q 3 a A");
-                //    updateTextElementOnScreen(answer_B, "q 3 a B");
-                //    updateTextElementOnScreen(answer_C, "q 3 a C");
-                //    updateTextElementOnScreen(answer_D, "q 3 a D");
-                //    break;
+            case 3:
+                updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a (?) p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 20);
+                updateTextElementOnScreen(answer_A, "wzrok");
+                updateTextElementOnScreen(answer_B, "s³uch");
+                updateTextElementOnScreen(answer_C, "mowa");
+                updateTextElementOnScreen(answer_D, "wêch");
+                break;
 
         }
     }
 
 
-    public void printTextElementOnScreen(Text textPrefab, string text, int x = -426, int y = 39, int fontSize = 47)
+    public void printTextElementOnScreen(Button answer, string text = "", int x = -426, int y = 39, int fontSize = 47)
     {
+        Text textPrefab = answer.GetComponentInChildren<Text>();
         Text newText = Instantiate(textPrefab, transform);
+        newText.text = text;
+        newText.color = Color.white;
+        newText.fontSize = fontSize;
+        RectTransform rectTransform = newText.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = new Vector2(x, y);
+    }
+
+    public void printTextElementOnScreen(Text answer, string text = "", int x = -426, int y = 39, int fontSize = 47)
+    {
+        Text newText = Instantiate(answer, transform);
         newText.text = text;
         newText.color = Color.white;
         newText.fontSize = fontSize;
@@ -139,13 +150,15 @@ public class TestBackend : MonoBehaviour
         }
         else
         {
+            answer.GetComponentInChildren<Text>().text = text;
             answer.interactable = false;
         }
         
     }
-    public void updateTextElementOnScreen(Text answer, string text, bool isButtonActive = true)
+    public void updateTextElementOnScreen(Text answer, string text, int fontSize = 47, bool isButtonActive = true)
     {
             answer.GetComponentInChildren<Text>().text = text;
+        answer.GetComponentInChildren<Text>().fontSize = fontSize;
     }
 
 
