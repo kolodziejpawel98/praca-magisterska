@@ -72,17 +72,20 @@ public class TestBackend : MonoBehaviour
     //};
 
 
-    public Text question_1;
-    public Text question_1_answer_A;
-    public Text question_1_answer_B;
-    public Text question_1_answer_C;
-    public Text question_1_answer_D;
-    //public Text question_2;
+    public Text question;
+    public Text answer_A;
+    public Text answer_B;
+    public Text answer_C;
+    public Text answer_D;
 
-    //void Start()
-    //{
-
-    //}
+    void Start()
+    {
+        printTextElementOnScreen(question, "");
+        printTextElementOnScreen(answer_A, "");
+        printTextElementOnScreen(answer_B, "");
+        printTextElementOnScreen(answer_C, "");
+        printTextElementOnScreen(answer_D, "");
+    }
 
     private void Update()
     {
@@ -90,24 +93,35 @@ public class TestBackend : MonoBehaviour
         switch (currentQuestion)
         {
             case 1:
-                printTextElementOnScreen(question_1, "Question 1:");
-                printTextElementOnScreen(question_1_answer_A, "Answer A", -426, 39 + 5);
-                printTextElementOnScreen(question_1_answer_B, "Answer B", - 426, 39 + 10);
-                printTextElementOnScreen(question_1_answer_C, "Answer C", - 426, 39 + 15);
-                printTextElementOnScreen(question_1_answer_D, "Answer D", - 426, 39 + 20);
+                updateTextElementOnScreen(question, "Question 1");
+                updateTextElementOnScreen(answer_A, "q 1 a A");
+                updateTextElementOnScreen(answer_B, "q 1 a B");
+                updateTextElementOnScreen(answer_C, "q 1 a C");
+                updateTextElementOnScreen(answer_D, "q 1 a D");
                 break;
-                
-            //case 2:
-            //    printTextElementOnScreen(question_2, "!!!!!!!!!");
-            //    break;
-                
+
+            case 2:
+                updateTextElementOnScreen(question, "Question 2");
+                updateTextElementOnScreen(answer_A, "q 2 a A");
+                updateTextElementOnScreen(answer_B, "q 2 a B");
+                updateTextElementOnScreen(answer_C, "q 2 a C");
+                updateTextElementOnScreen(answer_D, "q 2 a D");
+                break;
+            case 3:
+                updateTextElementOnScreen(question, "Question 3");
+                updateTextElementOnScreen(answer_A, "q 3 a A");
+                updateTextElementOnScreen(answer_B, "q 3 a B");
+                updateTextElementOnScreen(answer_C, "q 3 a C");
+                updateTextElementOnScreen(answer_D, "q 3 a D");
+                break;
+
         }
     }
 
 
     public void printTextElementOnScreen(Text textPrefab, string text, int x = -426, int y = 39, int fontSize = 47)
     {
-        Text newText = Instantiate(textPrefab, transform); //to tworzy nowe obiekty w update!!!!!!!!
+        Text newText = Instantiate(textPrefab, transform);
         newText.text = text;
         newText.color = Color.white;
         newText.fontSize = fontSize;
@@ -115,10 +129,10 @@ public class TestBackend : MonoBehaviour
         rectTransform.anchoredPosition = new Vector2(x, y);
     }
 
-
-
-
-
+    public void updateTextElementOnScreen(Text textPrefab, string text)
+    {
+        textPrefab.text = text;
+    }
 
     public void ChangeScoreValue()
     {
