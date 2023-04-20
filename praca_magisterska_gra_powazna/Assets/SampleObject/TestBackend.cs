@@ -17,20 +17,44 @@ public class Answer
         this.isAnswerCorrect = isAnswerCorrect;
         this.isButtonActive = isButtonActive;
     }
+
+    public void answerCorectnessHandler()
+    {
+        p.r("HANDLER!!!");
+        if (isAnswerCorrect)
+        {
+            answerButton.onClick.AddListener(correctAnswerHandler);
+        }
+        else
+        {
+            answerButton.onClick.AddListener(wrongAnswerHandler);
+        }
+    }
+
+    public void correctAnswerHandler()
+    {
+        p.r("Correct answer! :)");
+    }
+    public  void wrongAnswerHandler()
+    {
+        p.r("Wrong answer! :(");
+    }
 }
 
 public class TestBackend : MonoBehaviour
 {
-
     public Text scoreText;
     private int score = 0;
-    public int currentQuestion = 1;
+    public int currentQuestionNumber = 1;
+    public bool enterOnceInUpdate = false;
 
     public Text question;
     public Button answer_A_button;
     public Button answer_B_button;
     public Button answer_C_button;
     public Button answer_D_button;
+    List<Answer> answers = new List<Answer>();
+
 
     void Start()
     {
@@ -39,34 +63,54 @@ public class TestBackend : MonoBehaviour
         printTextElementOnScreen(answer_B_button);
         printTextElementOnScreen(answer_C_button);
         printTextElementOnScreen(answer_D_button);
+        
     }
 
     private void Update()
     {
         scoreText.text = score.ToString();
-        switch (currentQuestion)
+        switch (currentQuestionNumber)
         {
             case 1:
-                updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?");
-                updateTextElementOnScreen(new Answer(answer_A_button, "czo³owy", false));
-                updateTextElementOnScreen(new Answer(answer_B_button, "polityczny", false));
-                updateTextElementOnScreen(new Answer(answer_C_button, "skroniowy", false));
-                updateTextElementOnScreen(new Answer(answer_D_button, "ciemieniowy", false));
+                if (!enterOnceInUpdate)
+                {
+                    answers.Add(new Answer(answer_A_button, "czo³owy", false));
+                    answers.Add(new Answer(answer_B_button, "polityczny", true));
+                    answers.Add(new Answer(answer_C_button, "skroniowy", false));
+                    answers.Add(new Answer(answer_D_button, "ciemieniowy", false));
+
+                    updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?");
+                    updateTextElementOnScreen(answers);
+                    foreach (var answer in answers)
+                    {
+                        answer.answerCorectnessHandler();
+                    }
+                    enterOnceInUpdate = true;
+                }
+                
                 break;
 
             case 2:
-                updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:");
-                updateTextElementOnScreen(new Answer(answer_A_button, "logikê", false));
-                updateTextElementOnScreen(new Answer(answer_B_button, "kreatywnoœæ", false));
-                updateTextElementOnScreen(new Answer(answer_C_button, "-", false, false));
-                updateTextElementOnScreen(new Answer(answer_D_button, "-", false, false));
+                if (!enterOnceInUpdate)
+                {
+                    updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:");
+                    updateTextElementOnScreen(new Answer(answer_A_button, "logikê", false));
+                    updateTextElementOnScreen(new Answer(answer_B_button, "kreatywnoœæ", false));
+                    updateTextElementOnScreen(new Answer(answer_C_button, "-", false, false));
+                    updateTextElementOnScreen(new Answer(answer_D_button, "-", false, false));
+                    enterOnceInUpdate = true;
+                }
                 break;
             case 3:
-                updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a (?) p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 20);
-                updateTextElementOnScreen(new Answer(answer_A_button, "wzrok", false));
-                updateTextElementOnScreen(new Answer(answer_B_button, "s³uch", false));
-                updateTextElementOnScreen(new Answer(answer_C_button, "mowa", false));
-                updateTextElementOnScreen(new Answer(answer_D_button, "wêch", false));
+                if (!enterOnceInUpdate)
+                {
+                    updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a (?) p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 20);
+                    updateTextElementOnScreen(new Answer(answer_A_button, "wzrok", false));
+                    updateTextElementOnScreen(new Answer(answer_B_button, "s³uch", false));
+                    updateTextElementOnScreen(new Answer(answer_C_button, "mowa", false));
+                    updateTextElementOnScreen(new Answer(answer_D_button, "wêch", false));
+                    enterOnceInUpdate = true;
+                }
                 break;
 
         }
@@ -107,23 +151,26 @@ public class TestBackend : MonoBehaviour
         answer.answerButton.GetComponentInChildren<Text>().text = answer.answerText;
     }
 
-    public void updateTextElementOnScreen(Button answer, string text, bool isButtonActive = true)
+    public void updateTextElementOnScreen(List<Answer> answers)
     {
-        if (isButtonActive)
+        foreach (var answer in answers)
         {
-            answer.interactable = true;
-            answer.GetComponentInChildren<Text>().text = text;
-        }
-        else
-        {
-            answer.GetComponentInChildren<Text>().text = text;
-            answer.interactable = false;
-        }
-        
+            if (answer.isButtonActive)
+            {
+                answer.answerButton.interactable = true;
+            }
+            else
+            {
+                answer.answerButton.interactable = false;
+            }
+
+            answer.answerButton.GetComponentInChildren<Text>().text = answer.answerText;
+        } 
     }
+
     public void updateTextElementOnScreen(Text answer, string text, int fontSize = 47, bool isButtonActive = true)
     {
-            answer.GetComponentInChildren<Text>().text = text;
+        answer.GetComponentInChildren<Text>().text = text;
         answer.GetComponentInChildren<Text>().fontSize = fontSize;
     }
 
@@ -135,7 +182,7 @@ public class TestBackend : MonoBehaviour
 
     public void nextQuestion()
     {
-        currentQuestion++;
+        currentQuestionNumber++;
     }
 
 }
