@@ -38,17 +38,32 @@ public class Answer
     public void correctAnswerHandler()
     {
         p.r("Correct answer! :)");
+        Timer.StopTimer();
+        p.r("time in miliseconds = " + Timer.GetElapsedTimeInSeconds());
+        TestBackend.timeScore += Timer.GetElapsedTimeInSeconds();
+        TestBackend.score++;
+        answerButton.image.color = Color.green;
     }
     public  void wrongAnswerHandler()
     {
-        p.r("Wrong answer! :(");
+        p.r("Wrong answer!");
+        answerButton.image.color = Color.red;
+    }
+
+    public void resetEverything()
+    {
+        removeButtonListener();
+        answerButton.image.color = Color.white;
     }
 }
 
 public class TestBackend : MonoBehaviour
 {
     public Text scoreText;
-    private int score = 0;
+    public static int score = 0;
+    public Text timeScoreText;
+    public static float timeScore = 0.0f;
+
     public int currentQuestionNumber = 1;
     public bool enterOnceInUpdate = false;
 
@@ -58,7 +73,6 @@ public class TestBackend : MonoBehaviour
     public Button answer_C_button;
     public Button answer_D_button;
     List<Answer> answers = new List<Answer>();
-
 
     void Start()
     {
@@ -72,11 +86,14 @@ public class TestBackend : MonoBehaviour
     private void Update()
     {
         scoreText.text = score.ToString();
+        timeScoreText.text = timeScore.ToString();
         switch (currentQuestionNumber)
         {
             case 1:
                 if (!enterOnceInUpdate)
                 {
+                    Timer.ResetTimer();
+                    Timer.StartTimer();
                     updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?");
 
                     answers.Add(new Answer(answer_A_button, "czo³owy", false));
@@ -91,6 +108,8 @@ public class TestBackend : MonoBehaviour
             case 2:
                 if (!enterOnceInUpdate)
                 {
+                    Timer.ResetTimer();
+                    Timer.StartTimer();
                     updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:");
 
                     answers.Add(new Answer(answer_A_button, "logikê", true));
@@ -105,6 +124,8 @@ public class TestBackend : MonoBehaviour
             case 3:
                 if (!enterOnceInUpdate)
                 {
+                    Timer.ResetTimer();
+                    Timer.StartTimer();
                     updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a (?) p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 20);
 
                     answers.Add(new Answer(answer_A_button, "wzrok", true));
@@ -163,11 +184,6 @@ public class TestBackend : MonoBehaviour
         answer.GetComponentInChildren<Text>().fontSize = fontSize;
     }
 
-    public void ChangeScoreValue()
-    {
-        score++;
-    }
-
     public void nextQuestion()
     {
         currentQuestionNumber++;
@@ -175,7 +191,7 @@ public class TestBackend : MonoBehaviour
 
         foreach (var answer in answers)
         {
-            answer.removeButtonListener();
+            answer.resetEverything();
         }
         answers.RemoveRange(0, 4);
     }
