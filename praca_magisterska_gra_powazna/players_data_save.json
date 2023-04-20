@@ -3,6 +3,14 @@
         {
             "playerName": "walter white",
             "points": 2
+        },
+        {
+            "playerName": "pawel",
+            "points": 2
+        },
+        {
+            "playerName": "jessie pinkman",
+            "points": 2
         }
     ]
 }

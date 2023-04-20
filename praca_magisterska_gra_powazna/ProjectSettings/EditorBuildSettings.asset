@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f00e2aa060f4e0f4fb75e7382a675a54
   - enabled: 1
+    path: Assets/Scenes/CreatePlayer.unity
+    guid: b7a2ed6c87ba5684597fdc35e1d6e68c
+  - enabled: 1
     path: Assets/Scenes/BrainPolkule.unity
     guid: b4a31d32db380854699ec7bf0aefed7c
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Inside.unity
-    guid: 798946cd55b450f4087f7d15bef5e101
+    path: Assets/Scenes/BrainPrzekrojMozgowia.unity
+    guid: 5b182396a8d302a49bac74b94475768a
+  - enabled: 1
+    path: Assets/Scenes/TestWiedzy.unity
+    guid: af6a906c91665224a843cace35248a6b
   m_configObjects: {}
