@@ -30,6 +30,11 @@ public class Answer
         }
     }
 
+    public void removeButtonListener()
+    {
+        answerButton.onClick.RemoveAllListeners();
+    }
+
     public void correctAnswerHandler()
     {
         p.r("Correct answer! :)");
@@ -158,7 +163,6 @@ public class TestBackend : MonoBehaviour
         answer.GetComponentInChildren<Text>().fontSize = fontSize;
     }
 
-
     public void ChangeScoreValue()
     {
         score++;
@@ -168,6 +172,11 @@ public class TestBackend : MonoBehaviour
     {
         currentQuestionNumber++;
         enterOnceInUpdate = false;
+
+        foreach (var answer in answers)
+        {
+            answer.removeButtonListener();
+        }
         answers.RemoveRange(0, 4);
     }
 
