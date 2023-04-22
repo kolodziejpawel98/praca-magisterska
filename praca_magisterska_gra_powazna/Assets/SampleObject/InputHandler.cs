@@ -10,7 +10,7 @@ public class InputHandler : MonoBehaviour
     [SerializeField] InputField nameInput;
     string filename = "players_data_save.json";
 
-    List<Player> players = new List<Player>();
+    public List<Player> players = new List<Player>();
 
     private void Start()
     {
