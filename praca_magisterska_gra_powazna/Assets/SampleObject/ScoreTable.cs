@@ -8,7 +8,8 @@ public class ScoreTable : MonoBehaviour
     public InputHandler inputHandler;
 
 
-    public GameObject prefabTekstu; // Prefab obiektu Text do utworzenia
+    public GameObject prefabPlayerName;
+    public GameObject prefabPlayerScore;
 
     void Start()
     {
@@ -17,25 +18,16 @@ public class ScoreTable : MonoBehaviour
 
     public void printPlayerScore()
     {
-        for (int i = 0; i < inputHandler.players.Count; i++)
+        int scoreCounter = 0;
+        foreach (var player in inputHandler.players)
         {
-            GameObject nowyTekst = Instantiate(prefabTekstu, transform);
-            nowyTekst.transform.position = new Vector3(250, i * 100, 0);
-            nowyTekst.GetComponent<Text>().text = inputHandler.players[i].playerName;
+            GameObject playerNameText = Instantiate(prefabPlayerName, transform);
+            GameObject playerNameScore = Instantiate(prefabPlayerScore, transform);
+            playerNameText.transform.position = new Vector3(250, scoreCounter * 100, 0);
+            playerNameText.GetComponent<Text>().text = player.playerName;
+            playerNameScore.transform.position = new Vector3(550, scoreCounter * 100, 0);
+            playerNameScore.GetComponent<Text>().text = player.points.ToString();
+            scoreCounter++;
         }
     }
-
-
-
-    //public void printTextElementOnScreen(Text answer, string text = "", int x = -426, int y = 39, int fontSize = 47)
-    //{
-    //    //Text textPrefab = answer.GetComponentInChildren<Text>();
-    //    Text textPrefab = answer;
-    //    Text newText = Instantiate(textPrefab, transform);
-    //    newText.text = text;
-    //    newText.color = Color.white;
-    //    newText.fontSize = fontSize;
-    //    RectTransform rectTransform = newText.GetComponent<RectTransform>();
-    //    rectTransform.anchoredPosition = new Vector2(x, y);
-    //}
 }
