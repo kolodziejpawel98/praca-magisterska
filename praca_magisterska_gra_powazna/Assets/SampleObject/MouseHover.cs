@@ -42,7 +42,7 @@ public class MouseHover : MonoBehaviour
 
     public void defaultColor()
     {
-        newSphereColor = new Color(0.6f, 0.6f, 0.6f, 1f);
+        newSphereColor = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         sphereRenderer.material.SetColor("_Color", newSphereColor);
     }
 

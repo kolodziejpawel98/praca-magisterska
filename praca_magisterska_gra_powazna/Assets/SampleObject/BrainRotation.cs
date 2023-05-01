@@ -25,7 +25,7 @@ public class BrainRotation : MonoBehaviour
 
     public void resetVariables()
     {
-        rotationSpeed = 1000f;
+        rotationSpeed = 10f;
         isBrainRotating = false;
     }
 }
