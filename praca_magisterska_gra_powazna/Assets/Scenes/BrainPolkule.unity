@@ -967,7 +967,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2005770138}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: nextScreen
         m_Mode: 1
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2005770137}
         m_TargetAssemblyTypeName: BrainCentralization, Assembly-CSharp
         m_MethodName: tickCentralizationFLag
         m_Mode: 1
@@ -3728,6 +3728,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2005770136}
+  - component: {fileID: 2005770138}
+  - component: {fileID: 2005770137}
+  - component: {fileID: 2005770135}
   m_Layer: 0
   m_Name: BrainPolkuleCentreOfRotation
   m_TagString: Untagged
@@ -3735,6 +3738,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2005770135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005770134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331e818c3b6915f4f910f89ae41ee4ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2005770136
 Transform:
   m_ObjectHideFlags: 0
@@ -3750,6 +3765,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2005770137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005770134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703fe147d3c736b43b3758141a10b665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraCentralPoint: {fileID: 249782562}
+--- !u!114 &2005770138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005770134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756ebd4a5ae2d0343bb39808cd56660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2050091292
 GameObject:
   m_ObjectHideFlags: 0
