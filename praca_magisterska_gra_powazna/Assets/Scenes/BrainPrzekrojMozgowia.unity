@@ -1359,15 +1359,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7283112
+      value: -0.7682276
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6852465
+      value: -0.64017683
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1379,7 +1379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -86.51
+      value: -280.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1388,6 +1388,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
       propertyPath: m_Name
       value: brain_mozgowie_przekrojvol5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 700ee331eac5cd04db2c8fe5a969d850, type: 3}
