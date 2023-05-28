@@ -20,18 +20,41 @@ public class InputHandler : MonoBehaviour
     public void printPlayerName(int index)
     {
         players = ReadListFromJSON();
-        p.r("!!!!!!!!!!!!!!!!!!!! = " + players[index].playerName);
+        //p.r("!!!!!!!!!!!!!!!!!!!! = " + players[index].playerName);
     }
 
     public void AddNameToList()
     {
         if (!string.IsNullOrEmpty(nameInput.text))
         {
-            p.r("wpisujê!");
-            players.Add(new Player(nameInput.text, 2));
+            setPlayersAsNotCurrentPlayer();
+            players.Add(new Player(nameInput.text, UnityEngine.Random.Range(0, 100), true));
             nameInput.text = "";
-
+            sortPlayers();
             SaveToJSON(players);
+        }
+    }
+
+    public void sortPlayers()
+    {
+        players.Sort(comparePlayersScore);
+    }
+
+    private int comparePlayersScore(Player player_1, Player player_2)
+    {
+        if (player_1.points < player_2.points)
+            return -1;
+        else if (player_1.points > player_2.points)
+            return 1;
+        else
+            return 0;
+    }
+
+    public void setPlayersAsNotCurrentPlayer()
+    {
+        foreach (var player in players)
+        {
+            player.isCurrentPlayer = false;
         }
     }
 

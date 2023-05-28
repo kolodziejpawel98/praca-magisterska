@@ -1,32 +1,49 @@
 {
     "items": [
         {
-            "playerName": "walter white",
-            "points": 2
+            "playerName": "jessie pinkman",
+            "points": 2,
+            "isCurrentPlayer": false
         },
         {
-            "playerName": "jessie pinkman",
-            "points": 2
+            "playerName": "walter white",
+            "points": 3,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "random",
+            "points": 6,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "walter yyyyyee junior",
+            "points": 10,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gustavo",
+            "points": 20,
+            "isCurrentPlayer": false
         },
         {
             "playerName": "pawel k",
-            "points": 2
+            "points": 25,
+            "isCurrentPlayer": false
         },
         {
-            "playerName": "janusz",
-            "points": 2
+            "playerName": "gus guy with gun",
+            "points": 36,
+            "isCurrentPlayer": false
         },
         {
-            "playerName": "asds",
-            "points": 2
+            "playerName": "hhhh",
+            "points": 70,
+            "isCurrentPlayer": true
         },
         {
-            "playerName": "pawelk",
-            "points": 2
-        },
-        {
-            "playerName": "kkkkk",
-            "points": 2
+            "playerName": "hank shrader",
+            "points": 80,
+            "isCurrentPlayer": false
         }
     ]
 }
