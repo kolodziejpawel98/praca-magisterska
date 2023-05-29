@@ -6,6 +6,8 @@ public class SpriteBackend : MonoBehaviour
 {
     public static bool isMoveDownAnimationTriggered = false;
     public static GameObject selectedNeuronElement; //!!!!!!
+    public static bool isgoBackToViewModeButtonActive = false;
+    public static bool isBackToViewModeAnimationTriggered = false;
     //public GameObject spriteTextModePosition;
 
     //private void Update()
@@ -16,6 +18,12 @@ public class SpriteBackend : MonoBehaviour
     //        isMoveDownAnimationTriggered = false;
     //    }
     //}
+
+    public void goBackToViewSpriteMode()
+    {
+        isgoBackToViewModeButtonActive = false;
+        isBackToViewModeAnimationTriggered = true;
+    }
 
 
 

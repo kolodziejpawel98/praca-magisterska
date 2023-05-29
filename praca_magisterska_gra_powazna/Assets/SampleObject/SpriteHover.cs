@@ -5,6 +5,7 @@ public class SpriteHover : MonoBehaviour
     private Color originalSpriteElementColor;
     public GameObject spriteContainer;
     public GameObject spriteTextModePosition;
+    public GameObject spriteViewModePosition;
     private bool spriteElementSelected = false; //zmienna dzieki ktorej klikniety element jako jedyny sie nie zaswieci na czerwono po kliknieciu
     public GameObject goBackToViewModeButton;
 
@@ -25,6 +26,21 @@ public class SpriteHover : MonoBehaviour
         if (SpriteBackend.isMoveDownAnimationTriggered && !spriteElementSelected)
         {
             setTextModeColor(); //ustawienie wszystkim (poza kliknietym) elementom ciemnego koloru
+        }
+
+        if (SpriteBackend.isgoBackToViewModeButtonActive)
+        {
+            goBackToViewModeButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            goBackToViewModeButton.gameObject.SetActive(false);
+        }
+
+        if (SpriteBackend.isBackToViewModeAnimationTriggered)
+        {
+            moveSpriteToViewPosition();
+            SpriteBackend.isBackToViewModeAnimationTriggered = false;
         }
     }
 
@@ -50,18 +66,28 @@ public class SpriteHover : MonoBehaviour
         {
             SpriteBackend.selectedNeuronElement = gameObject;
             SpriteBackend.isMoveDownAnimationTriggered = true;
-            moveSpriteDown();
+            moveSpriteToTextPosition();
             setDefaultColor(); //dzieki temu klikniety element sie nie bedzie swiecil, a w update() zasiweca sie wszystkie inne
             spriteElementSelected = true;
-            goBackToViewModeButton.gameObject.SetActive(true);
+            SpriteBackend.isgoBackToViewModeButtonActive = true;
         }
     }
 
-    public void moveSpriteDown()
+    public void moveSpriteToTextPosition()
     {
         spriteContainer.transform.position = Vector2.Lerp(
                         spriteContainer.transform.position,
                         spriteTextModePosition.transform.position,
+                        100.2f * Time.deltaTime
+                    );
+
+    }
+
+    public void moveSpriteToViewPosition()
+    {
+        spriteContainer.transform.position = Vector2.Lerp(
+                        spriteContainer.transform.position,
+                        spriteViewModePosition.transform.position,
                         100.2f * Time.deltaTime
                     );
 
@@ -82,10 +108,5 @@ public class SpriteHover : MonoBehaviour
     public void setDefaultColor()
     {
         GetComponent<SpriteRenderer>().color = originalSpriteElementColor;
-    }
-
-    public void goBackToViewMode()
-    {
-        goBackToViewModeButton.gameObject.SetActive(false);
     }
 }
