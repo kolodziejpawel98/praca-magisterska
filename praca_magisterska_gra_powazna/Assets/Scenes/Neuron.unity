@@ -447,19 +447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!60 &59876322
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1177,19 +1164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &209317445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,19 +1785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &447381659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,19 +2060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &559868857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,19 +2632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &781004117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,19 +2840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 0}
-  spriteTextModePosition: {fileID: 0}
-  neuron_akson: {fileID: 0}
-  neuron_cialo_komorki: {fileID: 0}
-  neuron_dendryty: {fileID: 0}
-  neuron_drzewko_koncowe: {fileID: 0}
-  neuron_jadro: {fileID: 0}
-  neuron_kolbki_synaptyczne: {fileID: 0}
-  neuron_odgalezienie_boczne: {fileID: 0}
-  neuron_odgalezienie_koncowe: {fileID: 0}
-  neuron_oslonka_mielinowa: {fileID: 0}
-  neuron_oslonka_schwanna: {fileID: 0}
-  neuron_wezly_ranviera: {fileID: 0}
 --- !u!212 &860519272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3421,19 +3343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 0}
-  neuron_cialo_komorki: {fileID: 0}
-  neuron_dendryty: {fileID: 0}
-  neuron_drzewko_koncowe: {fileID: 0}
-  neuron_jadro: {fileID: 0}
-  neuron_kolbki_synaptyczne: {fileID: 0}
-  neuron_odgalezienie_boczne: {fileID: 0}
-  neuron_odgalezienie_koncowe: {fileID: 0}
-  neuron_oslonka_mielinowa: {fileID: 0}
-  neuron_oslonka_schwanna: {fileID: 0}
-  neuron_wezly_ranviera: {fileID: 0}
 --- !u!1 &1085849221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,6 +3352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1085849222}
+  - component: {fileID: 1085849223}
   m_Layer: 0
   m_Name: neuron_ilustracja
   m_TagString: Untagged
@@ -3477,6 +3387,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085849223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085849221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb02b60151c52d4cbc053cdf685750a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
+  neuronElements: []
 --- !u!1 &1119438352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,19 +3576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 0}
-  spriteTextModePosition: {fileID: 0}
-  neuron_akson: {fileID: 0}
-  neuron_cialo_komorki: {fileID: 0}
-  neuron_dendryty: {fileID: 0}
-  neuron_drzewko_koncowe: {fileID: 0}
-  neuron_jadro: {fileID: 0}
-  neuron_kolbki_synaptyczne: {fileID: 0}
-  neuron_odgalezienie_boczne: {fileID: 0}
-  neuron_odgalezienie_koncowe: {fileID: 0}
-  neuron_oslonka_mielinowa: {fileID: 0}
-  neuron_oslonka_schwanna: {fileID: 0}
-  neuron_wezly_ranviera: {fileID: 0}
 --- !u!212 &1128888470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4282,19 +4203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1208268719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,19 +4759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1358599031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,19 +5178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1423534715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,19 +5326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1439796591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,19 +5531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1525489095
 GameObject:
   m_ObjectHideFlags: 0
@@ -7205,19 +7061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  neuron_akson: {fileID: 757821335}
-  neuron_cialo_komorki: {fileID: 442787502}
-  neuron_dendryty: {fileID: 2098566434}
-  neuron_drzewko_koncowe: {fileID: 1273241687}
-  neuron_jadro: {fileID: 185038052}
-  neuron_kolbki_synaptyczne: {fileID: 1410479225}
-  neuron_odgalezienie_boczne: {fileID: 1423534715}
-  neuron_odgalezienie_koncowe: {fileID: 547410756}
-  neuron_oslonka_mielinowa: {fileID: 1202284528}
-  neuron_oslonka_schwanna: {fileID: 59876318}
-  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &2109170628
 GameObject:
   m_ObjectHideFlags: 0
