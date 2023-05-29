@@ -6,9 +6,12 @@ public class SpriteHover : MonoBehaviour
     public GameObject spriteContainer;
     public GameObject spriteTextModePosition;
     private bool spriteElementSelected = false; //zmienna dzieki ktorej klikniety element jako jedyny sie nie zaswieci na czerwono po kliknieciu
+    public GameObject goBackToViewModeButton;
 
     private void Start()
     {
+        goBackToViewModeButton.gameObject.SetActive(false);
+
         originalSpriteElementColor = new Color(
                 GetComponent<SpriteRenderer>().color.r,
                 GetComponent<SpriteRenderer>().color.g,
@@ -21,7 +24,7 @@ public class SpriteHover : MonoBehaviour
     {
         if (SpriteBackend.isMoveDownAnimationTriggered && !spriteElementSelected)
         {
-            setTriggeredElementColor(); //ustawienie wszystkim elementom triggered color
+            setTextModeColor(); //ustawienie wszystkim (poza kliknietym) elementom ciemnego koloru
         }
     }
 
@@ -43,11 +46,15 @@ public class SpriteHover : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SpriteBackend.selectedNeuronElement = gameObject;
-        SpriteBackend.isMoveDownAnimationTriggered = true;
-        moveSpriteDown();
-        setDefaultColor(); //dzieki temu klikniety element sie nie bedzie swiecil, a w update() zasiweca sie wszystkie inne
-        spriteElementSelected = true;
+        if (!SpriteBackend.isMoveDownAnimationTriggered)
+        {
+            SpriteBackend.selectedNeuronElement = gameObject;
+            SpriteBackend.isMoveDownAnimationTriggered = true;
+            moveSpriteDown();
+            setDefaultColor(); //dzieki temu klikniety element sie nie bedzie swiecil, a w update() zasiweca sie wszystkie inne
+            spriteElementSelected = true;
+            goBackToViewModeButton.gameObject.SetActive(true);
+        }
     }
 
     public void moveSpriteDown()
@@ -65,9 +72,20 @@ public class SpriteHover : MonoBehaviour
         GetComponent<SpriteRenderer>().color = new Color(5.0f, 0.0f, 0.0f, 0.9f);
     }
 
+    public void setTextModeColor()
+    {
+        Color helpColorSave = originalSpriteElementColor;
+        helpColorSave.a = 0.2f;
+        GetComponent<SpriteRenderer>().color = helpColorSave;
+    }
+
     public void setDefaultColor()
     {
         GetComponent<SpriteRenderer>().color = originalSpriteElementColor;
     }
 
+    public void goBackToViewMode()
+    {
+        goBackToViewModeButton.gameObject.SetActive(false);
+    }
 }
