@@ -378,11 +378,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59876318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -1.24, z: 52.08271}
+  m_LocalPosition: {x: 1.02, y: -1.24, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &59876320
 SpriteRenderer:
@@ -448,7 +448,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!60 &59876322
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1052,11 +1063,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185038052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -1.22, z: 52.08271}
+  m_LocalPosition: {x: 1.02, y: -1.22, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &185038054
 SpriteRenderer:
@@ -1167,7 +1178,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &209317445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,12 +1213,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209317445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -3.6, z: -1166.5175}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.13, y: -7.58, z: -0.642712}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1085849222}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268169941
 GameObject:
@@ -1619,11 +1641,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442787502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -1.23, z: 52.08271}
+  m_LocalPosition: {x: 1.02, y: -1.23, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &442787504
 SpriteRenderer:
@@ -1790,7 +1812,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &447381659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,11 +1985,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547410756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0462492, y: -1.244204, z: 52.08271}
+  m_LocalPosition: {x: 1.0462492, y: -1.244204, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &547410758
 SpriteRenderer:
@@ -2067,7 +2100,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &559868857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,11 +2533,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757821335}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: -1.24, z: 52.08271}
+  m_LocalPosition: {x: 1.01, y: -1.24, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &757821337
 SpriteRenderer:
@@ -2641,7 +2685,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &781004117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,6 +2907,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 0}
   spriteTextModePosition: {fileID: 0}
+  neuron_akson: {fileID: 0}
+  neuron_cialo_komorki: {fileID: 0}
+  neuron_dendryty: {fileID: 0}
+  neuron_drzewko_koncowe: {fileID: 0}
+  neuron_jadro: {fileID: 0}
+  neuron_kolbki_synaptyczne: {fileID: 0}
+  neuron_odgalezienie_boczne: {fileID: 0}
+  neuron_odgalezienie_koncowe: {fileID: 0}
+  neuron_oslonka_mielinowa: {fileID: 0}
+  neuron_oslonka_schwanna: {fileID: 0}
+  neuron_wezly_ranviera: {fileID: 0}
 --- !u!212 &860519272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3286,11 +3352,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947448533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.14, y: -1.26, z: 52.572712}
+  m_LocalPosition: {x: 1.14, y: -1.26, z: -0.5799984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &947448535
 SpriteRenderer:
@@ -3356,7 +3422,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 0}
+  neuron_cialo_komorki: {fileID: 0}
+  neuron_dendryty: {fileID: 0}
+  neuron_drzewko_koncowe: {fileID: 0}
+  neuron_jadro: {fileID: 0}
+  neuron_kolbki_synaptyczne: {fileID: 0}
+  neuron_odgalezienie_boczne: {fileID: 0}
+  neuron_odgalezienie_koncowe: {fileID: 0}
+  neuron_oslonka_mielinowa: {fileID: 0}
+  neuron_oslonka_schwanna: {fileID: 0}
+  neuron_wezly_ranviera: {fileID: 0}
 --- !u!1 &1085849221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,9 +3458,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085849221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03, y: 1.19, z: -52.08271}
+  m_LocalPosition: {x: -1.03, y: 1.19, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 209317446}
   - {fileID: 757821336}
   - {fileID: 442787503}
   - {fileID: 2098566435}
@@ -3566,6 +3644,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 0}
   spriteTextModePosition: {fileID: 0}
+  neuron_akson: {fileID: 0}
+  neuron_cialo_komorki: {fileID: 0}
+  neuron_dendryty: {fileID: 0}
+  neuron_drzewko_koncowe: {fileID: 0}
+  neuron_jadro: {fileID: 0}
+  neuron_kolbki_synaptyczne: {fileID: 0}
+  neuron_odgalezienie_boczne: {fileID: 0}
+  neuron_odgalezienie_koncowe: {fileID: 0}
+  neuron_oslonka_mielinowa: {fileID: 0}
+  neuron_oslonka_schwanna: {fileID: 0}
+  neuron_wezly_ranviera: {fileID: 0}
 --- !u!212 &1128888470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3910,11 +3999,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202284528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: -1.24, z: 52.08271}
+  m_LocalPosition: {x: 1.01, y: -1.24, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1202284530
 SpriteRenderer:
@@ -4194,7 +4283,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1208268719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,11 +4656,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273241687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0462492, y: -1.2242041, z: 52.08271}
+  m_LocalPosition: {x: 1.0462492, y: -1.2242041, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1273241689
 SpriteRenderer:
@@ -4752,7 +4852,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1358599031
 GameObject:
   m_ObjectHideFlags: 0
@@ -4914,11 +5025,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410479225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.04, y: -1.23, z: 52.08271}
+  m_LocalPosition: {x: 1.04, y: -1.23, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1410479227
 SpriteRenderer:
@@ -5173,7 +5284,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1423534715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,11 +5323,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423534715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0562491, y: -1.2242041, z: 52.08271}
+  m_LocalPosition: {x: 1.0562491, y: -1.2242041, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1423534717
 SpriteRenderer:
@@ -5323,7 +5445,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1439796591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,11 +5535,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472618084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: -1.24, z: 52.08271}
+  m_LocalPosition: {x: 1.01, y: -1.24, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1472618086
 SpriteRenderer:
@@ -5530,7 +5663,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &1525489095
 GameObject:
   m_ObjectHideFlags: 0
@@ -6663,11 +6807,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098566434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -1.23, z: 52.08271}
+  m_LocalPosition: {x: 1.02, y: -1.23, z: -1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085849222}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2098566436
 SpriteRenderer:
@@ -7062,7 +7206,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 0}
+  spriteTextModePosition: {fileID: 209317445}
+  neuron_akson: {fileID: 757821335}
+  neuron_cialo_komorki: {fileID: 442787502}
+  neuron_dendryty: {fileID: 2098566434}
+  neuron_drzewko_koncowe: {fileID: 1273241687}
+  neuron_jadro: {fileID: 185038052}
+  neuron_kolbki_synaptyczne: {fileID: 1410479225}
+  neuron_odgalezienie_boczne: {fileID: 1423534715}
+  neuron_odgalezienie_koncowe: {fileID: 547410756}
+  neuron_oslonka_mielinowa: {fileID: 1202284528}
+  neuron_oslonka_schwanna: {fileID: 59876318}
+  neuron_wezly_ranviera: {fileID: 1472618084}
 --- !u!1 &2109170628
 GameObject:
   m_ObjectHideFlags: 0
