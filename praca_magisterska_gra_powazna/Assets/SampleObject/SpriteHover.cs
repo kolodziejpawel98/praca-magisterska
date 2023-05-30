@@ -8,6 +8,7 @@ public class SpriteHover : MonoBehaviour
     public GameObject spriteViewModePosition;
     private bool spriteElementSelected = false; //zmienna dzieki ktorej klikniety element jako jedyny sie nie zaswieci na czerwono po kliknieciu
     public GameObject goBackToViewModeButton;
+    private bool isSpriteBackToViewMode = false;
 
     private void Start()
     {
@@ -31,16 +32,23 @@ public class SpriteHover : MonoBehaviour
         if (SpriteBackend.isgoBackToViewModeButtonActive)
         {
             goBackToViewModeButton.gameObject.SetActive(true);
+            isSpriteBackToViewMode = true;
         }
         else
         {
             goBackToViewModeButton.gameObject.SetActive(false);
+            if (isSpriteBackToViewMode)
+            {
+                setDefaultColor();
+                isSpriteBackToViewMode = false;
+            }
         }
 
         if (SpriteBackend.isBackToViewModeAnimationTriggered)
         {
             moveSpriteToViewPosition();
             SpriteBackend.isBackToViewModeAnimationTriggered = false;
+            SpriteBackend.isMoveDownAnimationTriggered = false;  
         }
     }
 
