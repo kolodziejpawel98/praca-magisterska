@@ -9,6 +9,7 @@ public class SpriteHover : MonoBehaviour
     private bool spriteElementSelected = false; //zmienna dzieki ktorej klikniety element jako jedyny sie nie zaswieci na czerwono po kliknieciu
     public GameObject goBackToViewModeButton;
     private bool isSpriteBackToViewMode = false;
+    public GameObject neuronElementTextContainer;
 
     private void Start()
     {
@@ -37,10 +38,12 @@ public class SpriteHover : MonoBehaviour
         else
         {
             goBackToViewModeButton.gameObject.SetActive(false);
-            if (isSpriteBackToViewMode)
+            neuronElementTextContainer.SetActive(false);
+            if (isSpriteBackToViewMode) //dzieki temu flaga ustawi siê gdy sprite jest na dole, a to uruchomi za gdy sprite worci na gore
             {
                 setDefaultColor();
                 isSpriteBackToViewMode = false;
+                spriteElementSelected = false;
             }
         }
 
@@ -78,6 +81,7 @@ public class SpriteHover : MonoBehaviour
             setDefaultColor(); //dzieki temu klikniety element sie nie bedzie swiecil, a w update() zasiweca sie wszystkie inne
             spriteElementSelected = true;
             SpriteBackend.isgoBackToViewModeButtonActive = true;
+            neuronElementTextContainer.SetActive(true);
         }
     }
 
