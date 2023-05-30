@@ -38,12 +38,17 @@
         {
             "playerName": "hhhh",
             "points": 70,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "hank shrader",
             "points": 80,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "idk",
+            "points": 98,
+            "isCurrentPlayer": true
         }
     ]
 }
