@@ -1837,7 +1837,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2005770138}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: goBackFromNeuron
+        m_MethodName: goToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

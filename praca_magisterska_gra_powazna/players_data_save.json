@@ -1,6 +1,11 @@
 {
     "items": [
         {
+            "playerName": "fdghj",
+            "points": 98.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "jessie pinkman",
             "points": 97.0,
             "isCurrentPlayer": false
@@ -13,7 +18,7 @@
         {
             "playerName": "gotye",
             "points": 26.99100112915039,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "cesarz franciszek",
@@ -23,6 +28,11 @@
         {
             "playerName": "skyler",
             "points": 26.562999725341798,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "yyyyyyy",
+            "points": 26.0,
             "isCurrentPlayer": false
         },
         {
@@ -44,6 +54,11 @@
             "playerName": "gustav klimt",
             "points": 19.11199951171875,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "mijkal jaksno",
+            "points": 18.58099937438965,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "rammstein",
@@ -68,6 +83,16 @@
         {
             "playerName": "hank",
             "points": 3.857999801635742,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "tyler the ruiner",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "pawel",
+            "points": 0.0,
             "isCurrentPlayer": false
         }
     ]

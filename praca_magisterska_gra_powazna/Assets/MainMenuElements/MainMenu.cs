@@ -17,11 +17,21 @@ public class MainMenu : MonoBehaviour
 
     public void goToNeuron()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
 
-    public void goBackFromNeuron()
+    public void goToMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+    }
+
+    public void goToBrain()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void goToTest()
+    {
+        SceneManager.LoadScene(6);
     }
 }

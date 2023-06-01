@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: f00e2aa060f4e0f4fb75e7382a675a54
-  - enabled: 1
     path: Assets/Scenes/CreatePlayer.unity
     guid: b7a2ed6c87ba5684597fdc35e1d6e68c
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f00e2aa060f4e0f4fb75e7382a675a54
   - enabled: 1
     path: Assets/Scenes/BrainPolkule.unity
     guid: b4a31d32db380854699ec7bf0aefed7c
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BrainPrzekrojMozgowia.unity
     guid: 5b182396a8d302a49bac74b94475768a
+  - enabled: 1
+    path: Assets/Scenes/ChooseTestOrLearn.unity
+    guid: f485bd425186240409b46e12b7fc455c
   - enabled: 1
     path: Assets/Scenes/TestWiedzy.unity
     guid: af6a906c91665224a843cace35248a6b
