@@ -46,9 +46,14 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "ezekiel",
+            "points": 84,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "idk",
             "points": 98,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         }
     ]
 }
