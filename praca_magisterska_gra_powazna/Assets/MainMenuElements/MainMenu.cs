@@ -10,8 +10,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void previousScreen()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
     public void goToNeuron()
     {
         SceneManager.LoadScene(7);
+    }
+
+    public void goBackFromNeuron()
+    {
+        SceneManager.LoadScene(0);
     }
 }

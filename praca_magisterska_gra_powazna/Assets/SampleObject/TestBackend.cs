@@ -37,15 +37,13 @@ public class Answer
 
     public void correctAnswerHandler()
     {
-        p.r("Correct answer! :)");
         Timer.StopTimer();
-        TestBackend.timeScore += Timer.GetElapsedTimeInSeconds();
-        TestBackend.score++;
+        TestBackend.timeScore = Timer.GetElapsedTimeInSeconds();
+        TestBackend.score += Timer.calculateTimeToPoints();
         answerButton.image.color = Color.green;
     }
     public  void wrongAnswerHandler()
     {
-        p.r("Wrong answer!");
         answerButton.image.color = Color.red;
     }
 
@@ -59,7 +57,7 @@ public class Answer
 public class TestBackend : MonoBehaviour
 {
     public Text scoreText;
-    public static int score = 0;
+    public static float score = 0.0f;
     public Text timeScoreText;
     public static float timeScore = 0.0f;
 

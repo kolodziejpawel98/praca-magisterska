@@ -92,7 +92,7 @@ public class MoveAnimation : MonoBehaviour
 
     void scaleUpBrain()
     {
-        brainContainer.transform.localScale = Vector3.Lerp(brainContainer.transform.localScale, brainContainer.transform.localScale * 2.0f, 0.2f * Time.deltaTime);
+        brainContainer.transform.localScale = Vector3.Lerp(brainContainer.transform.localScale, brainContainer.transform.localScale * 5.0f, 0.2f * Time.deltaTime);
     }
 
     void scaleDownBrain()

@@ -2,57 +2,72 @@
     "items": [
         {
             "playerName": "jessie pinkman",
-            "points": 2,
+            "points": 97.0,
             "isCurrentPlayer": false
         },
         {
             "playerName": "walter white",
-            "points": 3,
+            "points": 87.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "random",
-            "points": 6,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "walter yyyyyee junior",
-            "points": 10,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "gustavo",
-            "points": 20,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "pawel k",
-            "points": 25,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "gus guy with gun",
-            "points": 36,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "hhhh",
-            "points": 70,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "hank shrader",
-            "points": 80,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "ezekiel",
-            "points": 84,
+            "playerName": "gotye",
+            "points": 26.99100112915039,
             "isCurrentPlayer": true
         },
         {
-            "playerName": "idk",
-            "points": 98,
+            "playerName": "cesarz franciszek",
+            "points": 26.749000549316408,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "skyler",
+            "points": 26.562999725341798,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "wwwwwwww",
+            "points": 24.500999450683595,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "d-.-b",
+            "points": 22.535999298095704,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "lklklk",
+            "points": 21.75899887084961,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gustav klimt",
+            "points": 19.11199951171875,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "rammstein",
+            "points": 18.198999404907228,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "bbbbbbb",
+            "points": 17.211999893188478,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "xddd",
+            "points": 10.699999809265137,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "polonia magna",
+            "points": 4.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "hank",
+            "points": 3.857999801635742,
             "isCurrentPlayer": false
         }
     ]

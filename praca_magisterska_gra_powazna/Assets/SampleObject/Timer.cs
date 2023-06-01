@@ -23,6 +23,21 @@ public class Timer : MonoBehaviour
         return elapsedTimeSeconds;
     }
 
+    public static float calculateTimeToPoints()
+    {
+        float timeLeft = 10.0f;
+        timeLeft -= GetElapsedTimeInSeconds();
+        if(timeLeft > 1.0f)
+        {
+            return timeLeft;
+        }
+        else
+        {
+            return 1.0f;
+        }
+        
+    }
+
     public static void ResetTimer()
     {
         startTimeMs = System.DateTime.Now.Ticks / System.TimeSpan.TicksPerMillisecond;

@@ -2007,7 +2007,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Czas odpowiedzu
+  m_Text: Czas
 --- !u!222 &1444849449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3069,6 +3069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameInput: {fileID: 948344137}
+  players: []
 --- !u!4 &1992338400
 Transform:
   m_ObjectHideFlags: 0

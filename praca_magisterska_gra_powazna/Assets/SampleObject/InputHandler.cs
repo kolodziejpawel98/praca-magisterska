@@ -42,9 +42,9 @@ public class InputHandler : MonoBehaviour
 
     private int comparePlayersScore(Player player_1, Player player_2)
     {
-        if (player_1.points < player_2.points)
+        if (player_1.points > player_2.points)
             return -1;
-        else if (player_1.points > player_2.points)
+        else if (player_1.points < player_2.points)
             return 1;
         else
             return 0;

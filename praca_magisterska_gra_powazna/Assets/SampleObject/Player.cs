@@ -4,7 +4,7 @@ using System;
 public class Player
 {
     public string playerName;
-    public int points;
+    public float points;
     public bool isCurrentPlayer;
 
     public Player(string name, int points, bool isCurrentPlayer)
