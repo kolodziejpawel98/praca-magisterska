@@ -26,6 +26,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "k",
+            "points": 26.60900115966797,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "skyler",
             "points": 26.562999725341798,
             "isCurrentPlayer": false
@@ -58,7 +63,7 @@
         {
             "playerName": "mijkal jaksno",
             "points": 18.58099937438965,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "rammstein",

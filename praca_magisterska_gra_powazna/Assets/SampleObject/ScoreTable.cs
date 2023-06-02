@@ -46,10 +46,10 @@ public class ScoreTable : MonoBehaviour
                 break;
             }
         }
-        //inputHandler.sortPlayers()
-        foreach (var player in inputHandler.players)
-        {
-            p.r("player = " + player.playerName + " , score = " + player.points);    
-        }
+        inputHandler.sortPlayers();
+        //foreach (var player in inputHandler.players)
+        //{
+        //    p.r("player = " + player.playerName + " , score = " + player.points);    
+        //}
     }
 }
