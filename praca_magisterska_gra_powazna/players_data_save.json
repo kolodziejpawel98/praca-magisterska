@@ -16,6 +16,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "annasz",
+            "points": 27.43199920654297,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "gotye",
             "points": 26.99100112915039,
             "isCurrentPlayer": false
@@ -28,7 +33,7 @@
         {
             "playerName": "k",
             "points": 26.60900115966797,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "skyler",
@@ -61,14 +66,49 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "!!k!!!!",
+            "points": 18.694000244140626,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "Ven",
+            "points": 18.617000579833986,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "mijkal jaksno",
             "points": 18.58099937438965,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "PANIE JANUSZU NIEEE",
+            "points": 18.53499984741211,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "pep guard i ola",
+            "points": 18.445999145507814,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "sssss",
+            "points": 18.44099998474121,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "mmmmmmm ._.",
+            "points": 18.284000396728517,
             "isCurrentPlayer": false
         },
         {
             "playerName": "rammstein",
             "points": 18.198999404907228,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "dont stop me now",
+            "points": 17.894001007080079,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "bbbbbbb",
@@ -91,12 +131,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "tyler the ruiner",
+            "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "pawel",
+            "playerName": "tyler the ruiner",
             "points": 0.0,
             "isCurrentPlayer": false
         }
