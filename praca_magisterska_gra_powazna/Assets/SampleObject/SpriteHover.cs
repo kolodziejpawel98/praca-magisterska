@@ -16,15 +16,7 @@ public class SpriteHover : MonoBehaviour
     private void Start()
     {
         spriteBackend = GetComponentInParent<SpriteBackend>();
-
-        //originalSpriteElementColor = new Color(
-        //        GetComponent<SpriteRenderer>().color.r,
-        //        GetComponent<SpriteRenderer>().color.g,
-        //        GetComponent<SpriteRenderer>().color.b,
-        //        1.0f
-        //    );
-
-        //spriteBackend.sendElementOriginalColor(gameObject, originalSpriteElementColor);
+        spriteBackend.addNeuronElementToList(gameObject);
     }
 
     private void OnMouseDown()

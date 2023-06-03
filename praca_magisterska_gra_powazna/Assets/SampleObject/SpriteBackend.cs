@@ -24,28 +24,40 @@ public class SpriteBackend : MonoBehaviour
     public GameObject spriteCenralPoint;
 
     private Color originalSpriteElementColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+    private bool isNeuronInTextMode = false;
 
-    //public void sendElementOriginalColor(GameObject gameObject, Color color)
-    //{
-    //    p.r("COLOR: " + color.ToString() + " game object = " + gameObject);
-    //}
+    List<GameObject> neuronSpriteChildren = new List<GameObject>();
+
+    public void addNeuronElementToList(GameObject child)
+    {
+        neuronSpriteChildren.Add(child);
+    }
 
     public void neuronElementMouseDown(GameObject child)
     {
         neuronElementEventHandler?.Invoke(child);
         moveNeuronDown();
+        setTextModeColor();
+        isNeuronInTextMode = true;
+        setDefaultColor(child);
     }
 
     public void neuronElementMouseEnter(GameObject child)
     {
-        neuronElementEventHandler?.Invoke(child);
-        setTriggeredElementColor(child);
+        if (!isNeuronInTextMode)
+        {
+            neuronElementEventHandler?.Invoke(child);
+            setTriggeredElementColor(child);
+        }
     }
 
     public void neuronElementMouseExit(GameObject child)
     {
-        neuronElementEventHandler?.Invoke(child);
-        setDefaultColor(child);
+        if (!isNeuronInTextMode)
+        {
+            neuronElementEventHandler?.Invoke(child);
+            setDefaultColor(child);
+        }
     }
 
     public void moveNeuronDown()
@@ -58,12 +70,16 @@ public class SpriteBackend : MonoBehaviour
         child.GetComponent<SpriteRenderer>().color = new Color(5.0f, 0.0f, 0.0f, 0.9f);
     }
 
-    //public void setTextModeColor()
-    //{
-    //    Color helpColorSave = originalSpriteElementColor;
-    //    helpColorSave.a = 0.2f;
-    //    GetComponent<SpriteRenderer>().color = helpColorSave;
-    //}
+    public void setTextModeColor()
+    {
+        Color helpColorSave = originalSpriteElementColor;
+        helpColorSave.a = 0.2f;
+
+        foreach (GameObject child in neuronSpriteChildren)
+        {
+            child.GetComponent<SpriteRenderer>().color = helpColorSave;
+        }
+    }
 
     public void setDefaultColor(GameObject child)
     {
