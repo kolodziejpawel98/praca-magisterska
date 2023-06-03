@@ -1251,6 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameInput: {fileID: 1110290757}
+  players: []
 --- !u!4 &2071078969
 Transform:
   m_ObjectHideFlags: 0

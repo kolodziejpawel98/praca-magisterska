@@ -36,6 +36,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "roar",
+            "points": 26.571001052856447,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "skyler",
             "points": 26.562999725341798,
             "isCurrentPlayer": false
@@ -108,7 +113,7 @@
         {
             "playerName": "dont stop me now",
             "points": 17.894001007080079,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "bbbbbbb",
@@ -131,12 +136,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "pawel",
+            "playerName": "tyler the ruiner",
             "points": 0.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "tyler the ruiner",
+            "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
         }
