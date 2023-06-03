@@ -3901,6 +3901,7 @@ MonoBehaviour:
   spriteViewModePosition: {fileID: 293051031}
   spriteTextModePosition: {fileID: 209317445}
   spriteCenralPoint: {fileID: 1640245}
+  buttonBackToViewMode: {fileID: 2044591396}
 --- !u!114 &1085849224
 MonoBehaviour:
   m_ObjectHideFlags: 0
