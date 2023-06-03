@@ -106,11 +106,6 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "d",
-            "points": 18.291000366210939,
-            "isCurrentPlayer": true
-        },
-        {
             "playerName": "mmmmmmm ._.",
             "points": 18.284000396728517,
             "isCurrentPlayer": false
@@ -124,6 +119,11 @@
             "playerName": "dont stop me now",
             "points": 17.894001007080079,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "d",
+            "points": 17.812999725341798,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "bbbbbbb",
