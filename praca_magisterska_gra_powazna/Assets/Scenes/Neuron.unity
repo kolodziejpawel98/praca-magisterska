@@ -478,10 +478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 2146090080}
 --- !u!60 &59876322
 PolygonCollider2D:
@@ -1200,10 +1196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 1188358957}
 --- !u!1 &209317445
 GameObject:
@@ -1856,10 +1848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 2081964879}
 --- !u!1 &447381659
 GameObject:
@@ -2270,10 +2258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 627456618}
 --- !u!1 &559868857
 GameObject:
@@ -2985,10 +2969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 2003262834}
 --- !u!1 &777468299
 GameObject:
@@ -3902,6 +3882,8 @@ MonoBehaviour:
   spriteTextModePosition: {fileID: 209317445}
   spriteCenralPoint: {fileID: 1640245}
   buttonBackToViewMode: {fileID: 2044591396}
+  currentChild: {fileID: 0}
+  currentChildTextContainer: {fileID: 0}
 --- !u!114 &1085849224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4404,10 +4386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 1825908078}
 --- !u!1 &1208268719
 GameObject:
@@ -4965,10 +4943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 1554183437}
 --- !u!1 &1358599031
 GameObject:
@@ -5389,10 +5363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 863777856}
 --- !u!1 &1423534715
 GameObject:
@@ -5542,10 +5512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 787402115}
 --- !u!1 &1430536881
 GameObject:
@@ -5886,10 +5852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 1557037358}
 --- !u!1 &1510059718
 GameObject:
@@ -7395,7 +7357,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1085849223}
         m_TargetAssemblyTypeName: SpriteBackend, Assembly-CSharp
-        m_MethodName: goBackToViewSpriteMode
+        m_MethodName: moveNeuronUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7914,10 +7876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2de2136f18bfad4d8c1631b5b3816bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteContainer: {fileID: 1085849221}
-  spriteTextModePosition: {fileID: 209317445}
-  spriteViewModePosition: {fileID: 293051031}
-  goBackToViewModeButton: {fileID: 2044591396}
   neuronElementTextContainer: {fileID: 395081211}
 --- !u!1 &2109170628
 GameObject:

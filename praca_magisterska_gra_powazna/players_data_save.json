@@ -16,6 +16,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": ":o",
+            "points": 40.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "annasz",
             "points": 27.43199920654297,
             "isCurrentPlayer": false
@@ -38,7 +43,7 @@
         {
             "playerName": "roar",
             "points": 26.571001052856447,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "skyler",
@@ -101,6 +106,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "d",
+            "points": 18.291000366210939,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "mmmmmmm ._.",
             "points": 18.284000396728517,
             "isCurrentPlayer": false
@@ -141,7 +151,17 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "fghfgfghfgh",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "pawel",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "TEST OSTATECZNY",
             "points": 0.0,
             "isCurrentPlayer": false
         }

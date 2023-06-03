@@ -59,9 +59,9 @@ public class ScoreTable : MonoBehaviour
         playerNameScore.GetComponent<Text>().color = Color.yellow;
 
         playerNameText.transform.position = new Vector3(980, 400, 0);
-        playerNameText.GetComponent<Text>().text = inputHandler.players[getCurrentPlayerIndex()].playerName;
+        playerNameText.GetComponent<Text>().text = "Niestety, Twój wynik nie kwalifikuje siê do najlepszej 10tki\n" + inputHandler.players[getCurrentPlayerIndex()].playerName;
         playerNameScore.transform.position = new Vector3(1280, 400, 0);
-        playerNameScore.GetComponent<Text>().text = inputHandler.players[getCurrentPlayerIndex()].points.ToString();
+        playerNameScore.GetComponent<Text>().text = "\n\n" + inputHandler.players[getCurrentPlayerIndex()].points.ToString();
     }
 
     public void printTopTenPlayersWithCurrentPlayer()
