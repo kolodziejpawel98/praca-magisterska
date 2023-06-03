@@ -15,18 +15,32 @@ public class SpriteHover : MonoBehaviour
 
     private void Start()
     {
-        // Przechwycenie referencji do obiektu SpriteBackend
         spriteBackend = GetComponentInParent<SpriteBackend>();
+
+        //originalSpriteElementColor = new Color(
+        //        GetComponent<SpriteRenderer>().color.r,
+        //        GetComponent<SpriteRenderer>().color.g,
+        //        GetComponent<SpriteRenderer>().color.b,
+        //        1.0f
+        //    );
+
+        //spriteBackend.sendElementOriginalColor(gameObject, originalSpriteElementColor);
     }
 
     private void OnMouseDown()
     {
-        // Wywo³anie metody ChildEntered w obiekcie SpriteBackend
-        spriteBackend.ChildEntered(gameObject);
+        spriteBackend.neuronElementMouseDown(gameObject);
     }
 
+    private void OnMouseEnter()
+    {
+        spriteBackend.neuronElementMouseEnter(gameObject);
+    }
 
-
+    private void OnMouseExit()
+    {
+        spriteBackend.neuronElementMouseExit(gameObject);
+    }
 
 
 

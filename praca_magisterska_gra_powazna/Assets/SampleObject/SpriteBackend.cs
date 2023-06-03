@@ -5,25 +5,116 @@ using System;
 
 public class SpriteBackend : MonoBehaviour
 {
-    public static bool isMoveDownAnimationTriggered = false;
-    public static GameObject selectedNeuronElement;
-    public static bool isgoBackToViewModeButtonActive = false;
-    public static bool isBackToViewModeAnimationTriggered = false;
+    public GameObject neuronAkson;
+    public GameObject neuronCialoKomorki;
+    public GameObject neuronDendryty;
+    public GameObject neuronDrzewkoKoncowe;
+    public GameObject neuronJadro;
+    public GameObject neuronKolbkiSynaptyczne;
+    public GameObject neuronOdgalezienieBoczne;
+    public GameObject neuronOdgalezienieKoncowe;
+    public GameObject neuronOslonkaMielinowa;
+    public GameObject neuronOslonkaSchwanna;
+    public GameObject neuronWezlyRanviera;
 
-    public GameObject jadro_neuronu;
+    public event Action<GameObject> neuronElementEventHandler;
 
-    public event Action<GameObject> OnChildClicked;
+    public GameObject spriteViewModePosition;
+    public GameObject spriteTextModePosition;
+    public GameObject spriteCenralPoint;
 
-    public void ChildEntered(GameObject child)
+    private Color originalSpriteElementColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+
+    //public void sendElementOriginalColor(GameObject gameObject, Color color)
+    //{
+    //    p.r("COLOR: " + color.ToString() + " game object = " + gameObject);
+    //}
+
+    public void neuronElementMouseDown(GameObject child)
     {
-        // Wywo³anie zdarzenia OnChildClicked
-        OnChildClicked?.Invoke(child);
+        neuronElementEventHandler?.Invoke(child);
+        moveNeuronDown();
+    }
 
+    public void neuronElementMouseEnter(GameObject child)
+    {
+        neuronElementEventHandler?.Invoke(child);
+        setTriggeredElementColor(child);
+    }
 
-        if (child == jadro_neuronu)
+    public void neuronElementMouseExit(GameObject child)
+    {
+        neuronElementEventHandler?.Invoke(child);
+        setDefaultColor(child);
+    }
+
+    public void moveNeuronDown()
+    {
+        spriteCenralPoint.transform.position = spriteTextModePosition.transform.position;
+    }
+
+    public void setTriggeredElementColor(GameObject child)
+    {
+        child.GetComponent<SpriteRenderer>().color = new Color(5.0f, 0.0f, 0.0f, 0.9f);
+    }
+
+    //public void setTextModeColor()
+    //{
+    //    Color helpColorSave = originalSpriteElementColor;
+    //    helpColorSave.a = 0.2f;
+    //    GetComponent<SpriteRenderer>().color = helpColorSave;
+    //}
+
+    public void setDefaultColor(GameObject child)
+    {
+        child.GetComponent<SpriteRenderer>().color = originalSpriteElementColor;
+    }
+
+    public GameObject getNeuronElement(GameObject element)
+    {
+        if(element == neuronAkson)
         {
-            p.r("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! JADRO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            return neuronAkson;
         }
-
+        else if (element == neuronCialoKomorki)
+        {
+            return neuronCialoKomorki;
+        }
+        else if (element == neuronDendryty)
+        {
+            return neuronDendryty;
+        }
+        else if (element == neuronDrzewkoKoncowe)
+        {
+            return neuronDrzewkoKoncowe;
+        }
+        else if (element == neuronJadro)
+        {
+            return neuronJadro;
+        }
+        else if (element == neuronKolbkiSynaptyczne)
+        {
+            return neuronKolbkiSynaptyczne;
+        }
+        else if (element == neuronOdgalezienieBoczne)
+        {
+            return neuronOdgalezienieBoczne;
+        }
+        else if (element == neuronOdgalezienieKoncowe)
+        {
+            return neuronOdgalezienieKoncowe;
+        }
+        else if (element == neuronOslonkaMielinowa)
+        {
+            return neuronOslonkaMielinowa;
+        }
+        else if (element == neuronOslonkaSchwanna)
+        {
+            return neuronOslonkaSchwanna;
+        }
+        else
+        {
+            return neuronWezlyRanviera;
+        }
     }
 }
