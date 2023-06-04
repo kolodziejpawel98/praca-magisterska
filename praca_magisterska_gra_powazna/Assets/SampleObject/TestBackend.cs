@@ -132,7 +132,7 @@ public class TestBackend : MonoBehaviour
 
         foreach (var answer2 in answers)
         {
-            if (!answer.isAnswerCorrect)
+            if (!answer2.isAnswerCorrect)
             {
                 answer2.answerButton.interactable = false;
             }
@@ -144,10 +144,16 @@ public class TestBackend : MonoBehaviour
         }
     }
 
-    public void wrongAnswerHandler(Answer answer, bool isLastQuestion)
+    public void wrongAnswerHandler(Answer wrongAnswer, bool isLastQuestion)
     {
-        answer.answerButton.image.color = Color.red;
-        
+        foreach (var answer in answers)
+        {
+            answer.answerButton.interactable = false;
+        }
+
+        wrongAnswer.answerButton.image.color = Color.red;
+        wrongAnswer.answerButton.interactable = true;
+
         if (isLastQuestion)
         {
             buttonGoToResume.SetActive(true);
