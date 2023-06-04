@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveAnimation : MonoBehaviour
 {
     public bool isSideLeftAnimationOn = false;
-    //public bool isCentralizationAnimationOn = false;
     public Transform brainPositionForDisplayingText;
     public Transform cameraCentralPoint;
     public Transform brainContainer;
