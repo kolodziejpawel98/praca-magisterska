@@ -9,7 +9,6 @@ public class BrainRotation : MonoBehaviour
     public bool isBrainRotating = false;
     public Transform centerOfRotation;
 
-    // Update is called once per frame
     void Update()
     {
         if (isBrainRotating)

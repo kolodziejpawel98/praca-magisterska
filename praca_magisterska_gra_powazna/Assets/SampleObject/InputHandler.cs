@@ -20,7 +20,6 @@ public class InputHandler : MonoBehaviour
     public void printPlayerName(int index)
     {
         players = ReadListFromJSON();
-        //p.r("!!!!!!!!!!!!!!!!!!!! = " + players[index].playerName);
     }
 
     public void AddNameToList()

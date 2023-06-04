@@ -36,6 +36,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "wq",
+            "points": 33.319000244140628,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "fgh",
             "points": 29.0,
             "isCurrentPlayer": false
@@ -43,7 +48,7 @@
         {
             "playerName": "pk",
             "points": 28.08100128173828,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "annasz",
