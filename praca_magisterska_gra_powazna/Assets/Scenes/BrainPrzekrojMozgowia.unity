@@ -315,9 +315,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Odpowiedzialny za:\n- kontrol\u0119 oddychania,\n- kontrola uk\u0142\u0105du
-    sercowo-naczyniowego,\n- po\u0142ykanie i odruchy wymiotne,\n- r\xF3wowag\u0119
-    i koordynacj\u0119,\n\nUszkodzenie prowadzi do:\n- trudno\u015Bci z oddychaniem,\n-
-    zaburze\u0144 pracy serca,\n- problem\xF3w z r\xF3wnowag\u0105,"
+    sercowo-naczyniowego,\n- r\xF3wowag\u0119 i koordynacj\u0119,\n\nUszkodzenie
+    prowadzi do:\n- trudno\u015Bci z oddychaniem,\n- zaburze\u0144 pracy serca,\n-
+    problem\xF3w z r\xF3wnowag\u0105,\n\nCiekawostka:\nW rdzeniu przed\u0142u\u017Conym
+    jest zagnie\u017Cd\u017Cony o\u015Brodek odpowiedzialny za wymiotowanie. Jest
+    wra\u017Cliwy na bod\u017Ace, dzi\u0119ki czemu jest w stanie poruszy\u0107 \u0142a\u0144cuch
+    reakcji pocz\u0105wszy od skurczu brzucha, przepony, prze\u0142yku, a\u017C do
+    usuni\u0119cia tre\u015Bci \u017Co\u0142\u0105dka z organizmu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3699,7 +3703,8 @@ MonoBehaviour:
     trawienie, praca serca),\n\nUszkodzenie prowadzi do:\n- zaburzenia w wyrdzielaniu
     hormon\xF3w wzrostu, kortyzolu, prolaktyny itd,\n- zaburzenia termoregulacyjne,\n-
     problem\xF3w z przetwarzaniem zmys\u0142\xF3w,\n- trudno\u015Bci w ddychaniu,
-    zaburzenia trawienia,"
+    zaburzenia trawienia,\n\nCiekawostka:\nW mi\u0119dzym\xF3zgowiu znajduje si\u0119
+    szyszynka, odpowiedzialna za regulacj\u0119 rytmu dobowego i produkcj\u0119 melatoniny."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4470,7 +4475,9 @@ MonoBehaviour:
     pami\u0119\u0107 kr\xF3tko i d\u0142ugotrwa\u0142a,\n- kontrola ruch\xF3w cia\u0142a,\n-
     emocje,\n\nUszkodzenie prowadzi do:\n- zaburzenia poznawcze,\n- amnezja, problemy
     w zapami\u0119tywaniu,\n- os\u0142abienie mi\u0119\u015Bni, koordynacji ruchowej,
-    r\xF3wnowagi,\n- zmiany nastroju, niekontrolowane zachowania,"
+    r\xF3wnowagi,\n- zmiany nastroju, niekontrolowane zachowania,\n\nCiekawostka:\nW
+    kresom\xF3zgowiu znajduje si\u0119 hipokamp, odpoweidzialny za pami\u0119\u0107.
+    Jego uszkodzenie prowadzi do choroby Alzheimera."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5976,7 +5983,10 @@ MonoBehaviour:
     motorycznych (chodzenie, pisanie),\n utrzymanie r\xF3wnowagi,\n- koordynuje prac\u0119
     i ruch r\xF3znych cz\u0119sci cia\u0142a,\n\nUszkodzenie prowadzi do:\n- zaburzenie
     r\xF3nowagi,\n- trudno\u015B\u0107 w poruszaniu si\u0119 i ruchu,\n- zaburzenia
-    mowy zwi\u0105zane z narz\u0105dami artykulacyjnymi,"
+    mowy zwi\u0105zane z narz\u0105dami artykulacyjnymi,\n\nCiekawostka:\nM\xF3\u017Cd\u017Cek
+    jest jednym z obszar\xF3w m\xF3zgu, kt\xF3ry posiada najg\u0119stsz\u0105 siatk\u0119
+    kom\xF3rek nerwowych, dzi\u0119ki czemu przyczynia si\u0119 do przetwarzania
+    skomplikowanych informacji."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6294,7 +6304,9 @@ MonoBehaviour:
     sensorycznych mi\u0119dzy obszarami m\xF3zgu,\n- zarz\u0105dzanie cyklami snu,\n-
     uk\u0142\u0105d nagrody,\n\nUszkodzenie prowadzi do:\n- dr\u017Cenie, problemy
     z koordynacj\u0105, sztywnienie mi\u0119\u015Bni,\n- problemy ze wzrokiem i s\u0142uchem,\n-
-    zaburzenia nastroju, problemy z odczuwaniem emocji,"
+    zaburzenia nastroju, problemy z odczuwaniem emocji,\n\nCiekawostka:\n\u015Ar\xF3dm\xF3zgowie
+    posiada tak\u0105 strutur\u0119 jak istota czarna. Zniszczenie kom\xF3rek tej
+    struktury, prowadzi do wyst\u0119powania choroby Parkinsona."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

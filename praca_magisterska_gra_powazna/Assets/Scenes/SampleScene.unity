@@ -1030,10 +1030,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Odpowiedzialny za:\n- s\u0142uch i przetwarzanie d\u017Awi\u0119ku,\n-
-    funkcje pami\u0119ciowe,\n- wizualne rozpoznawanie obiekt\xF3, twarzu, kszta\u0142t\xF3w,\n-
+    funkcje pami\u0119ciowe,\n- wizualne rozpoznawanie obiekt\xF3w, kszta\u0142t\xF3w,\n-
     regulacj\u0119 emocji,\n\nUszkodzenie prowadzi do:\n- trudno\u015Bci w rozumieniu
-    mowy,\n- problem\xF3w z pami\u0119ci\u0105,\n- trudno\u015Bci w rozpoznawaniu
-    twarzy,"
+    mowy,\n- problem\xF3w z pami\u0119ci\u0105,\n\nCiekawostka:\nW p\u0142acie skroniowym
+    znajduje si\u0119 o\u015Brodek rozpoznawania twarzy."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1745,7 +1745,10 @@ MonoBehaviour:
     motorycznych (chodzenie, pisanie),\n utrzymanie r\xF3wnowagi,\n- koordynuje prac\u0119
     i ruch r\xF3znych cz\u0119sci cia\u0142a,\n\nUszkodzenie prowadzi do:\n- zaburzenie
     r\xF3nowagi,\n- trudno\u015B\u0107 w poruszaniu si\u0119 i ruchu,\n- zaburzenia
-    mowy zwi\u0105zane z narz\u0105dami artykulacyjnymi,"
+    mowy zwi\u0105zane z narz\u0105dami artykulacyjnymi,\n\nCiekawostka:\nM\xF3\u017Cd\u017Cek
+    jest jednym z obszar\xF3w m\xF3zgu, kt\xF3ry posiada najg\u0119stsz\u0105 siatk\u0119
+    kom\xF3rek nerwowych, dzi\u0119ki czemu przyczynia si\u0119 do przetwarzania
+    skomplikowanych informacji."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2656,7 +2659,9 @@ MonoBehaviour:
     uwag\u0119 i koncentracj\u0119,\n- pami\u0119\u0107 robocza, planowanie, my\u015Blenie
     abstrakcyjne,\n- kontrolowanie emocji,\n\nUszkodzenie prowadzi do:\n- zaburzenie
     w podejmowaniu decyzji, \n- k\u0142opot\xF3w z kontrolowaniem gniewu, agresji,\n-
-    trudno\u015Bci w planowaniu,"
+    trudno\u015Bci w planowaniu,\n\nCiekawostka:\nP\u0142at czo\u0142owy finalnie
+    kszta\u0142tuje w m\xF3zgu jako ostatni, a podczas procesu dojrzewania znika
+    z niego oko\u0142o 80% wszystkich po\u0142\u0105cze\u0144."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3377,10 +3382,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Odpowiedzialny za:\n- g\u0142\xF3wny o\u015Bodek przetwarzania informacji
-    wzrokowych,\n- percepcja kszta\u0142t\xF3, barw, g\u0142bi obrazu,\n- widzenie
+    wzrokowych,\n- percepcja kszta\u0142t\xF3w, barw, g\u0142bi obrazu,\n- widzenie
     w centrum kadru (widzenie centralne) oraz na obrze\u017Cach pola widzenia (widzenie
     obwodowe),\n- wyobra\u017Ania wizualna, \n\nUszkodzenie prowadzi do:\n- utraty
-    widzenia,\n- zaburzenie percepcji kolor\xF3,\n- zaburzenia w rozpoznawaniu obraz\xF3w,"
+    widzenia,\n- zaburzenie percepcji kolor\xF3,\n- zaburzenia w rozpoznawaniu obraz\xF3w,\n\nCiekawostka:\nP\u0142at
+    potyliczny jest jednym z najm\u0142odszych obszar\xF3w m\xF3zgu, pod wzgl\u0119dem
+    ukszta\u0142towania przez ewolucj\u0119."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3817,7 +3824,9 @@ MonoBehaviour:
   m_text: "Odpowiedzialny za:\n- odczuwanie dotyku, temperatury i b\xF3lu,\n- postrzeganie
     przestrzeni,\n- koordynacja ruchowa,\n- zdolno\u015B\u0107 postrzegania przestrzeni,\n\nUszkodzenie
     prowadzi do:\n- trudno\u015B\u0107 w reagowaniu na bod\u017Ace,\n- problem z
-    koordynacj\u0105 ruchow\u0105,\n- problem z orientowaniem si\u0119 w przesrzeni,"
+    koordynacj\u0105 ruchow\u0105,\n- problem z orientowaniem si\u0119 w przesrzeni,\n\nCiekawostka:\nP\u0142at
+    ciemieniowy Alberta Einsteina by\u0142 o 15% wi\u0119kszy, ni\u017C u przeci\u0119tnego
+    cz\u0142owieka."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3955,7 +3964,9 @@ MonoBehaviour:
     a reszt\u0105 cia\u0142a,\n- regulacja snu,\n- kontrola oddychania,\n- kontrola
     uk\u0142\u0105du sercowego,\n\nUszkodzenie prowadzi do:\n- k\u0142opot\xF3w z
     oddychaniem,\n- zaburze\u0144 \u015Bwiadomo\u015B\u0107i i utrat przytomno\u015B\u0107i,\n-
-    problem z uk\u0142\u0105dem krwiono\u015Bnym,"
+    problem z uk\u0142\u0105dem krwiono\u015Bnym,\n\nCiekawostka:\nPie\u0144 m\xF3\u017Cgu
+    dzia\u0142a jak \u0142\u0105cze komunikacyjne mi\u0119dzy m\xF3\u017Cgowiem a
+    reszt\u0105 cia\u0142a."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

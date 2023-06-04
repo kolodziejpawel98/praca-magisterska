@@ -11,6 +11,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "drf",
+            "points": 88.0,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "walter white",
             "points": 87.0,
             "isCurrentPlayer": false
@@ -133,7 +138,7 @@
         {
             "playerName": "d",
             "points": 9.123000144958496,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "polonia magna",
@@ -143,6 +148,11 @@
         {
             "playerName": "hank",
             "points": 3.857999801635742,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "TEST OSTATECZNY",
+            "points": 0.0,
             "isCurrentPlayer": false
         },
         {
@@ -157,11 +167,6 @@
         },
         {
             "playerName": "pawel",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "TEST OSTATECZNY",
             "points": 0.0,
             "isCurrentPlayer": false
         }
