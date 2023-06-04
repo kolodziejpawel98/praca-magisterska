@@ -1906,7 +1906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AKSON
+  m_text: "KOM\xD3RKA SCHWANNA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2714,7 +2714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "W\u0118Z\u0141Y RANVIERA"
+  m_text: AKSON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 757821338}
   - component: {fileID: 757821339}
   m_Layer: 0
-  m_Name: neuron_akson
+  m_Name: neuron_komorka_schwanna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3384,7 +3384,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy aksonu."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3734,7 +3734,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy os\u0142onki schwanna."
+  m_text: "Zadaniem tej os\u0142onki jest ochrona i odizolowanie aksonu. S\u0105
+    zdolne do regeneracji nerw\xF3w i oczyszczania uszkodzonych obszar\xF3w. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3867,23 +3868,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb02b60151c52d4cbc053cdf685750a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neuronAkson: {fileID: 757821335}
-  neuronCialoKomorki: {fileID: 442787502}
-  neuronDendryty: {fileID: 2098566434}
-  neuronDrzewkoKoncowe: {fileID: 1273241687}
-  neuronJadro: {fileID: 185038052}
-  neuronKolbkiSynaptyczne: {fileID: 1410479225}
-  neuronOdgalezienieBoczne: {fileID: 1423534715}
-  neuronOdgalezienieKoncowe: {fileID: 547410756}
-  neuronOslonkaMielinowa: {fileID: 1202284528}
-  neuronOslonkaSchwanna: {fileID: 59876318}
-  neuronWezlyRanviera: {fileID: 1472618084}
   spriteViewModePosition: {fileID: 293051031}
   spriteTextModePosition: {fileID: 209317445}
   spriteCenralPoint: {fileID: 1640245}
   buttonBackToViewMode: {fileID: 2044591396}
-  currentChild: {fileID: 0}
-  currentChildTextContainer: {fileID: 0}
 --- !u!114 &1085849224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5711,7 +5699,7 @@ GameObject:
   - component: {fileID: 1472618087}
   - component: {fileID: 1472618088}
   m_Layer: 0
-  m_Name: neuron_wezly_ranviera
+  m_Name: neuron_akson
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6177,7 +6165,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy w\u0119z\u0142\xF3w ranviera."
+  m_text: "Odpowiedzialny za przekazywanie sygna\u0142\xF3w mi\u0119dzy neuronami
+    i obszarami m\xF3zgu (nie wsyztskie neurony je posiadaj\u0105). Przep\u0142yw
+    sygna\u0142\xF3w wzd\u0142u\u017C aksony jest mo\u017Cliwy dzi\u0119ki zmianie
+    napi\u0119cia elektrycznego. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6311,7 +6302,7 @@ GameObject:
   - component: {fileID: 1557037360}
   - component: {fileID: 1557037359}
   m_Layer: 0
-  m_Name: NeuronWezlyRanvieraTekstContainer
+  m_Name: NeuronAksonContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7237,7 +7228,7 @@ GameObject:
   - component: {fileID: 2003262835}
   - component: {fileID: 2003262836}
   m_Layer: 0
-  m_Name: NeuronAksonTekstContainer
+  m_Name: NeuronKomorkaSchwanna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
