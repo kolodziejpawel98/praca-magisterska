@@ -6,6 +6,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "pk",
+            "points": 98.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "jessie pinkman",
             "points": 97.0,
             "isCurrentPlayer": false
@@ -13,7 +18,7 @@
         {
             "playerName": "drf",
             "points": 88.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "walter white",
@@ -21,9 +26,24 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "pawel kolodziej",
+            "points": 50.04600524902344,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": ":o",
             "points": 40.0,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "fgh",
+            "points": 29.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "pk",
+            "points": 28.08100128173828,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "annasz",
@@ -151,7 +171,7 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "TEST OSTATECZNY",
+            "playerName": "fghfgfghfgh",
             "points": 0.0,
             "isCurrentPlayer": false
         },
@@ -161,12 +181,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "fghfgfghfgh",
+            "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "pawel",
+            "playerName": "TEST OSTATECZNY",
             "points": 0.0,
             "isCurrentPlayer": false
         }

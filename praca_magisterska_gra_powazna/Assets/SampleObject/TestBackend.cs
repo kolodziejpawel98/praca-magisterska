@@ -43,6 +43,7 @@ public class TestBackend : MonoBehaviour
     {
         //goToResumeButton.interactable = false;
         buttonGoToResume.SetActive(false);
+        buttonNextQuestion.SetActive(false);
         printTextElementOnScreen(question);
         printTextElementOnScreen(answer_A_button);
         printTextElementOnScreen(answer_B_button);
@@ -59,8 +60,9 @@ public class TestBackend : MonoBehaviour
             case 1:
                 if (!enterOnceInUpdate)
                 {
+                    buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?");
+                    updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?", 30);
                     answers.Add(new Answer(answer_A_button, "czo³owy", false));
                     answers.Add(new Answer(answer_B_button, "polityczny", true));
                     answers.Add(new Answer(answer_C_button, "skroniowy", false));
@@ -73,8 +75,9 @@ public class TestBackend : MonoBehaviour
             case 2:
                 if (!enterOnceInUpdate)
                 {
+                    buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:");
+                    updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:", 30);
 
                     answers.Add(new Answer(answer_A_button, "logikê", true));
                     answers.Add(new Answer(answer_B_button, "kreatywnoœæ", false));
@@ -88,8 +91,153 @@ public class TestBackend : MonoBehaviour
             case 3:
                 if (!enterOnceInUpdate)
                 {
+                    buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a (?) p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 20);
+                    updateTextElementOnScreen(question, "Ukszta³towany ewolucyjnie jako jeden z ostatnich:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "mó¿d¿ek", false));
+                    answers.Add(new Answer(answer_B_button, "most", false));
+                    answers.Add(new Answer(answer_C_button, "p³at czo³owy", true));
+                    answers.Add(new Answer(answer_D_button, "p³at skroniowy", false));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 4:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Pomijaj¹c wiele innych problemów, gdybyœ straci³/a nagle ten p³at, nie bêdziesz w stanie rozpoznaæ twarzy:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "potyliczny", false));
+                    answers.Add(new Answer(answer_B_button, "skroniowy", true));
+                    answers.Add(new Answer(answer_C_button, "czo³owy", false));
+                    answers.Add(new Answer(answer_D_button, "ciemieniowy", false));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 5:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Jesteœ w obcym miejscu. Za zorientowanie siê w przestrzeni bêdzie odpowiada³/o:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "p³at wzrokowy", false));
+                    answers.Add(new Answer(answer_B_button, "kresomózgowie", false));
+                    answers.Add(new Answer(answer_C_button, "mó¿d¿ek", false));
+                    answers.Add(new Answer(answer_D_button, "p³at ciemieniowy", true));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 6:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Posiada bardzo gêsty zbiór komórek nerwowych:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "mó¿d¿ek", true));
+                    answers.Add(new Answer(answer_B_button, "most", false));
+                    answers.Add(new Answer(answer_C_button, "pieñ", false));
+                    answers.Add(new Answer(answer_D_button, "hipokamp", false));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 7:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Pe³ni funkcjê poœrednika miêdzy ma³ym palcem stopy a neuronami w mózgu:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "istota szara", false));
+                    answers.Add(new Answer(answer_B_button, "pas skroniowy", false));
+                    answers.Add(new Answer(answer_C_button, "neuron przewodnikowy", false));
+                    answers.Add(new Answer(answer_D_button, "pieñ", true));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 8:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Hipokamp jest odpowiedzialny za:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "snucie hipotez", false));
+                    answers.Add(new Answer(answer_B_button, "pamiêæ", true));
+                    answers.Add(new Answer(answer_C_button, "wzrok", false));
+                    answers.Add(new Answer(answer_D_button, "sen", false));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 9:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Odpowiada za sen: ___, i znajduje siê w: ___", 30);
+
+                    answers.Add(new Answer(answer_A_button, "Istota szara, mó¿d¿ek", false));
+                    answers.Add(new Answer(answer_B_button, "Istota szara, rdzeñ przed³u¿ony", false));
+                    answers.Add(new Answer(answer_C_button, "Szyszynka, œródmózgowie", false));
+                    answers.Add(new Answer(answer_D_button, "Szyszynka, miêdzymózgowie", true));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 10:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Odpowiada za pamiêæ: ___, i znajduje siê w: ___", 30);
+
+                    answers.Add(new Answer(answer_A_button, "Istota czarna, œródmó¿gowie", true));
+                    answers.Add(new Answer(answer_B_button, "Istota czarna, rdzeñ przed³u¿ony", false));
+                    answers.Add(new Answer(answer_C_button, "Istota szara, œródmózgowie", false));
+                    answers.Add(new Answer(answer_D_button, "Istota szara, miêdzymózgowie", false));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 11:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Odpowiedzialny za wywo³anie wymiotów", 30);
+
+                    answers.Add(new Answer(answer_A_button, "Oœrodek wymiotowania w rdzeniu przed³u¿onym", true));
+                    answers.Add(new Answer(answer_B_button, "Oœrodek wymiotowania w mó¿d¿ku", false));
+                    answers.Add(new Answer(answer_C_button, "Oœrodek wymiotowania w p³acie potyliczym", false));
+                    answers.Add(new Answer(answer_D_button, "Oœrodek wymiotowania w rdzeniu ¿o³¹dkowym", false));
+                    updateTextElementOnScreen();
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 12:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 30);
 
                     answers.Add(new Answer(answer_A_button, "wzrok", true));
                     answers.Add(new Answer(answer_B_button, "s³uch", false));
@@ -98,8 +246,6 @@ public class TestBackend : MonoBehaviour
                     updateTextElementOnScreen(true);
 
                     enterOnceInUpdate = true;
-                    //goToResumeButton.interactable = true;
-                    buttonNextQuestion.SetActive(false);
                 }
                 break;
         }
@@ -142,6 +288,11 @@ public class TestBackend : MonoBehaviour
         {
             buttonGoToResume.SetActive(true);
         }
+        else
+        {
+            buttonNextQuestion.SetActive(true);
+        }
+
     }
 
     public void wrongAnswerHandler(Answer wrongAnswer, bool isLastQuestion)
@@ -157,6 +308,10 @@ public class TestBackend : MonoBehaviour
         if (isLastQuestion)
         {
             buttonGoToResume.SetActive(true);
+        }
+        else
+        {
+            buttonNextQuestion.SetActive(true);
         }
     }
 
