@@ -1589,7 +1589,8 @@ MonoBehaviour:
   answer_B_button: {fileID: 783052147}
   answer_C_button: {fileID: 1774053043}
   answer_D_button: {fileID: 1723424206}
-  goToResumeButton: {fileID: 1337256566}
+  buttonGoToResume: {fileID: 1337256564}
+  buttonNextQuestion: {fileID: 754828049}
 --- !u!114 &1260416908
 MonoBehaviour:
   m_ObjectHideFlags: 0
