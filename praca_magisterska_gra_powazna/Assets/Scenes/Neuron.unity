@@ -3027,7 +3027,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy os\u0142onki mielinowej."
+  m_text: "Jest to forma izolacji aksonu, s\u0142u\u017Cy do tego \u017Ceby sygna\u0142
+    elektryczny by\u0142 przekazywany szybciej i bezstratnie."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6165,10 +6166,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Odpowiedzialny za przekazywanie sygna\u0142\xF3w mi\u0119dzy neuronami
-    i obszarami m\xF3zgu (nie wsyztskie neurony je posiadaj\u0105). Przep\u0142yw
-    sygna\u0142\xF3w wzd\u0142u\u017C aksony jest mo\u017Cliwy dzi\u0119ki zmianie
-    napi\u0119cia elektrycznego. "
+  m_text: "Odpowiedzialny za przekazywanie sygna\u0142\xF3w do kolejnych neuron\xF3w.
+    Przep\u0142yw sygna\u0142\xF3w wzd\u0142u\u017C aksonu jest mo\u017Cliwy dzi\u0119ki
+    zmianie napi\u0119cia elektrycznego. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6394,7 +6394,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy dendryt\xF3w."
+  m_text: "Odpowiedzialne s\u0105 za otrzymywanie informacji z innych neuron\xF3w
+    w postaci impulsu elektrycznego. Pe\u0142ni\u0105 funkcj\u0119 anteny zbieraj\u0105cej
+    sygna\u0142 z innych miejsc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
