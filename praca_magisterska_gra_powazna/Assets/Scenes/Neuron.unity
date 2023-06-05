@@ -3027,7 +3027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jest to forma izolacji aksonu, s\u0142u\u017Cy do tego \u017Ceby sygna\u0142
+  m_text: "Jest to forma izolacji aksonu. S\u0142u\u017Cy do tego \u017Ceby sygna\u0142
     elektryczny by\u0142 przekazywany szybciej i bezstratnie."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
