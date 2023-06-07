@@ -33,7 +33,7 @@
         {
             "playerName": "test1",
             "points": 46.134002685546878,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": ":o",
@@ -161,6 +161,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "test3",
+            "points": 13.732000350952149,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "xddd",
             "points": 10.699999809265137,
             "isCurrentPlayer": false
@@ -168,6 +173,11 @@
         {
             "playerName": "d",
             "points": 9.123000144958496,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "test2",
+            "points": 6.0,
             "isCurrentPlayer": false
         },
         {
@@ -191,12 +201,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "tyler the ruiner",
+            "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "pawel",
+            "playerName": "tyler the ruiner",
             "points": 0.0,
             "isCurrentPlayer": false
         }

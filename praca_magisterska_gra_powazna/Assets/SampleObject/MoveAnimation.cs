@@ -56,6 +56,7 @@ public class MoveAnimation : MonoBehaviour
 
     void moveBrainLeft()
     {
+        p.r("brainPositionForDisplayingText.transform.position = " + brainPositionForDisplayingText.transform.position);
         brainContainer.transform.position = Vector3.Lerp(
                 brainContainer.transform.position, 
                 brainPositionForDisplayingText.transform.position + vectorCentreOfLobeToCentreOfBrain, 

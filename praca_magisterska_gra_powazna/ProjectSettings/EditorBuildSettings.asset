@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Neuron.unity
     guid: 7524a10da54f14d4b8aa86195c77c82d
+  - enabled: 1
+    path: Assets/Scenes/PompaSodowoPotasowa.unity
+    guid: c12543d67edb9a346a909841076be86c
   m_configObjects: {}
