@@ -34,4 +34,55 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+
+    public void goToSceneMainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void goToSceneBrainPolkole()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void goToSceneBrainPlaty()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void goToSceneBrainPrzekroj()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void goToSceneMenuTestLearn()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void goToSceneTestTutorial()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void goToSceneTest()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void goToSceneScoreTable()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void goToSceneNeuron()
+    {
+        SceneManager.LoadScene(9);
+    }
+
+    public void goToScenePompa()
+    {
+        SceneManager.LoadScene(10);
+    }
+
 }
