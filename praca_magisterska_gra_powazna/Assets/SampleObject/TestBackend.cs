@@ -39,6 +39,7 @@ public class TestBackend : MonoBehaviour
     public GameObject buttonGoToResume;
     public GameObject buttonNextQuestion;
 
+
     void Start()
     {
         //goToResumeButton.interactable = false;
@@ -62,7 +63,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Który p³at mózgowy nie istnieje?", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Który p³at mózgowy nie istnieje?", 30);
                     answers.Add(new Answer(answer_A_button, "czo³owy", false));
                     answers.Add(new Answer(answer_B_button, "polityczny", true));
                     answers.Add(new Answer(answer_C_button, "skroniowy", false));
@@ -77,12 +78,12 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Lewa pó³kula odpowiada za:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Lewa pó³kula odpowiada za:", 30);
 
                     answers.Add(new Answer(answer_A_button, "logikê", true));
                     answers.Add(new Answer(answer_B_button, "kreatywnoœæ", false));
-                    answers.Add(new Answer(answer_C_button, "-", false, false));
-                    answers.Add(new Answer(answer_D_button, "-", false, false));
+                    answers.Add(new Answer(answer_C_button, "trawienie", false));
+                    answers.Add(new Answer(answer_D_button, "funkcjonowanie lewej strony cia³a", false));
                     updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
@@ -93,7 +94,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Ukszta³towany ewolucyjnie jako jeden z ostatnich:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Ukszta³towany ewolucyjnie jako jeden z ostatnich:", 30);
 
                     answers.Add(new Answer(answer_A_button, "mó¿d¿ek", false));
                     answers.Add(new Answer(answer_B_button, "most", false));
@@ -109,7 +110,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Pomijaj¹c wiele innych problemów, gdybyœ straci³/a nagle ten p³at, nie bêdziesz w stanie rozpoznaæ twarzy:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pomijaj¹c wiele innych problemów, gdybyœ straci³/a nagle ten p³at, nie bêdziesz w stanie rozpoznaæ twarzy:", 30);
 
                     answers.Add(new Answer(answer_A_button, "potyliczny", false));
                     answers.Add(new Answer(answer_B_button, "skroniowy", true));
@@ -125,7 +126,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Jesteœ w obcym miejscu. Za zorientowanie siê w przestrzeni bêdzie odpowiada³/o:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Jesteœ w obcym miejscu. Za zorientowanie siê w przestrzeni bêdzie odpowiada³/o:", 30);
 
                     answers.Add(new Answer(answer_A_button, "p³at wzrokowy", false));
                     answers.Add(new Answer(answer_B_button, "kresomózgowie", false));
@@ -141,7 +142,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Posiada bardzo gêsty zbiór komórek nerwowych:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Posiada bardzo gêsty zbiór komórek nerwowych:", 30);
 
                     answers.Add(new Answer(answer_A_button, "mó¿d¿ek", true));
                     answers.Add(new Answer(answer_B_button, "most", false));
@@ -157,7 +158,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Pe³ni funkcjê poœrednika miêdzy ma³ym palcem stopy a neuronami w mózgu:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni funkcjê poœrednika miêdzy ma³ym palcem stopy a neuronami w mózgu:", 30);
 
                     answers.Add(new Answer(answer_A_button, "istota szara", false));
                     answers.Add(new Answer(answer_B_button, "pas skroniowy", false));
@@ -173,7 +174,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Hipokamp jest odpowiedzialny za:", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Hipokamp jest odpowiedzialny za:", 30);
 
                     answers.Add(new Answer(answer_A_button, "snucie hipotez", false));
                     answers.Add(new Answer(answer_B_button, "pamiêæ", true));
@@ -189,7 +190,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Odpowiada za sen: ___, i znajduje siê w: ___", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Odpowiada za sen: ___, i znajduje siê w: ___", 30);
 
                     answers.Add(new Answer(answer_A_button, "Istota szara, mó¿d¿ek", false));
                     answers.Add(new Answer(answer_B_button, "Istota szara, rdzeñ przed³u¿ony", false));
@@ -205,7 +206,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Odpowiada za pamiêæ: ___, i znajduje siê w: ___", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Odpowiada za pamiêæ: ___, i znajduje siê w: ___", 30);
 
                     answers.Add(new Answer(answer_A_button, "Istota czarna, œródmó¿gowie", true));
                     answers.Add(new Answer(answer_B_button, "Istota czarna, rdzeñ przed³u¿ony", false));
@@ -221,7 +222,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Odpowiedzialny za wywo³anie wymiotów", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Odpowiedzialny za wywo³anie wymiotów", 30);
 
                     answers.Add(new Answer(answer_A_button, "Oœrodek wymiotowania w rdzeniu przed³u¿onym", true));
                     answers.Add(new Answer(answer_B_button, "Oœrodek wymiotowania w mó¿d¿ku", false));
@@ -237,7 +238,7 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, "Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 30);
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Osoba uderzy³a siê mocno w ty³ g³owy, i uszkodzi³a p³at potyliczny. Jaki zmys³ móg³ ucierpieæ?", 30);
 
                     answers.Add(new Answer(answer_A_button, "wzrok", true));
                     answers.Add(new Answer(answer_B_button, "s³uch", false));

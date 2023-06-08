@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ChooseTestOrLearn.unity
     guid: f485bd425186240409b46e12b7fc455c
   - enabled: 1
+    path: Assets/Scenes/TestTutorial.unity
+    guid: 3816cc5b04e14ac40b1d7f35ee98d3fd
+  - enabled: 1
     path: Assets/Scenes/TestWiedzy.unity
     guid: af6a906c91665224a843cace35248a6b
   - enabled: 1
