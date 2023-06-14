@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
 
     public void goToNeuron()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
     }
 
     public void goToMainMenu()

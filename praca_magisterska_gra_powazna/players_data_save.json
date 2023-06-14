@@ -108,7 +108,7 @@
         {
             "playerName": "test3",
             "points": 19.812000274658204,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "gustav klimt",
@@ -191,6 +191,16 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "TEST OSTATECZNY",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "ekk",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "fghfgfghfgh",
             "points": 0.0,
             "isCurrentPlayer": false
@@ -201,9 +211,9 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "TEST OSTATECZNY",
+            "playerName": "dsds",
             "points": 0.0,
-            "isCurrentPlayer": false
+            "isCurrentPlayer": true
         },
         {
             "playerName": "tyler the ruiner",

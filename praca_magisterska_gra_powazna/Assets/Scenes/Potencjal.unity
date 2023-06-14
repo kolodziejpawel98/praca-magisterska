@@ -3477,16 +3477,17 @@ MonoBehaviour:
     spoczynku, czyli dla -70mV. Gdy potencja\u0142 wewn\u0105trz kom\xF3rki staje
     si\u0119 odrobin\u0119 bardziej dodatni (-50 mV) to generowany jest potencja\u0142
     czynno\u015Bciowy i te kana\u0142y bramkowane napi\u0119ciem otwieraj\u0105 si\u0119.
-    Im wi\u0119cej kana\u0142\xF3w si\u0119 otwiera tym wi\u0119cej jon\xF3w sodu
-    wp\u0142ywa do \u015Brodka. Gdy potencja\u0142 dojdzie do 40 mV to te kana\u0142y
-    si\u0119 zatykaj\u0105. DLa jon\xF3 potasu r\xF3wnie\u017C istniej\u0105 kana\u0142y
-    bramkowane napi\u0119ciem, ale one re\u0105guj\u0105 na zmian\u0119 napiecia
-    w kom\xF3ce z opoznieniem. Dzi\u0119ki nim jony potasu przedostaj\u0105 si\u0119
-    na zewn\u0105trz i prowadzi to do spadku potencja\u0142u w kom\xF3ce, a\u017C
-    do hiperpolaryzacji zyli spadku poni\u017C\u0119j standardowego -70mV, w tym
-    stanie neuron jest niepobudliwy. Po wytworzeniu potencja\u0142u czynno\u015Bciowego
-    neuron wraca do stanu spoczynku, czyli do -70mV i jest wtedy gotowy do wygenerowania
-    kolejnego potencja\u0142u czynno\u015Bciowego.\n\n\n\n\n\n"
+    W momencie przekroczenia progu -50mV nie ma ju\u017C odwrotu i impuls musi zosta\u0107
+    wygenerowany. Im wi\u0119cej kana\u0142\xF3w si\u0119 otwiera tym wi\u0119cej
+    jon\xF3w sodu wp\u0142ywa do \u015Brodka. Gdy potencja\u0142 dojdzie do 40 mV
+    to te kana\u0142y si\u0119 zatykaj\u0105. DLa jon\xF3 potasu r\xF3wnie\u017C
+    istniej\u0105 kana\u0142y bramkowane napi\u0119ciem, ale one re\u0105guj\u0105
+    na zmian\u0119 napiecia w kom\xF3ce z opoznieniem. Dzi\u0119ki nim jony potasu
+    przedostaj\u0105 si\u0119 na zewn\u0105trz i prowadzi to do spadku potencja\u0142u
+    w kom\xF3ce, a\u017C do hiperpolaryzacji zyli spadku poni\u017C\u0119j standardowego
+    -70mV, w tym stanie neuron jest niepobudliwy. Po wytworzeniu potencja\u0142u
+    czynno\u015Bciowego neuron wraca do stanu spoczynku, czyli do -70mV i jest wtedy
+    gotowy do wygenerowania kolejnego potencja\u0142u czynno\u015Bciowego.\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3549,7 +3550,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -5.7226562, y: 0, z: 728.6887, w: -185.03357}
+  m_margin: {x: -5.7226562, y: 0, z: 193.1687, w: -341.72272}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
