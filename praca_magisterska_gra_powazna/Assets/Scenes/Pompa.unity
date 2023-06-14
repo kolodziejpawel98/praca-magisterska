@@ -498,7 +498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179518140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -175, z: -33.932953}
+  m_LocalPosition: {x: -142, y: -175, z: -33.932953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 119109830}
@@ -519,6 +519,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 179518142}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &197431450
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201713590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -175, z: -33.932953}
+  m_LocalPosition: {x: -142, y: -175, z: -33.932953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1141005393}
@@ -699,6 +702,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 201713592}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &287743441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,7 +1926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906560399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -175, z: -33.932953}
+  m_LocalPosition: {x: -142, y: -175, z: -33.932953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 859355190}
@@ -1941,6 +1947,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 906560401}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &968632339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,7 +2862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455220609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -175, z: -33.932953}
+  m_LocalPosition: {x: -142, y: -175, z: -33.932953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1595986284}
@@ -2874,6 +2883,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1455220611}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &1473913721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3523,9 +3535,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SpriteBackend, Assembly-CSharp
-        m_MethodName: moveNeuronUp
+      - m_Target: {fileID: 1955760855}
+        m_TargetAssemblyTypeName: BrainDescriptionText, Assembly-CSharp
+        m_MethodName: previousSlide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3779,6 +3791,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1955760855}
+  slideImages:
+  - {fileID: 610031719}
+  - {fileID: 1970330047}
+  - {fileID: 1245680118}
+  - {fileID: 1792786614}
+  - {fileID: 315062831}
+  - {fileID: 1367465044}
+  slideTexts:
+  - {fileID: 179518140}
+  - {fileID: 2114769918}
+  - {fileID: 2061780265}
+  - {fileID: 201713590}
+  - {fileID: 1455220609}
+  - {fileID: 906560399}
+  currentSlideIndex: 0
 --- !u!114 &1955760856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4005,7 +4032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061780265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -175, z: -33.932953}
+  m_LocalPosition: {x: -142, y: -175, z: -33.932953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498142492}
@@ -4026,6 +4053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2061780267}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &2114769918
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,7 +4081,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114769918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -175, z: -33.932953}
+  m_LocalPosition: {x: -142, y: -175, z: -33.932953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 197431451}
@@ -4072,6 +4102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2114769920}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &2131881200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,9 +4321,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SpriteBackend, Assembly-CSharp
-        m_MethodName: moveNeuronUp
+      - m_Target: {fileID: 1955760855}
+        m_TargetAssemblyTypeName: BrainDescriptionText, Assembly-CSharp
+        m_MethodName: nextSlide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
