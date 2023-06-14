@@ -80,9 +80,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(9);
     }
 
-    public void goToScenePompa()
+    public void goToScenePrzekazywanieImpulsu()
     {
         SceneManager.LoadScene(10);
+    }
+
+    public void goToSceneNeuronObwoluta()
+    {
+        SceneManager.LoadScene(11);
+    }
+
+    public void goToScenePompa()
+    {
+        SceneManager.LoadScene(12);
     }
 
 }

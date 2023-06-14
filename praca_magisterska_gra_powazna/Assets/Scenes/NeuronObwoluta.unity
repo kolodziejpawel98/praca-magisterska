@@ -787,6 +787,7 @@ GameObject:
   - component: {fileID: 501810109}
   - component: {fileID: 501810108}
   - component: {fileID: 501810107}
+  - component: {fileID: 501810112}
   - component: {fileID: 501810106}
   m_Layer: 5
   m_Name: NeuronText
@@ -816,6 +817,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 501810107}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!114 &501810108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +903,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &501810112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501810105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756ebd4a5ae2d0343bb39808cd56660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &654609056
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +961,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 654609058}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
 --- !u!1 &760556966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,9 +1262,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 501810112}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: goToMainMenu
+        m_MethodName: goToScenePrzekazywanieImpulsu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1723,9 +1742,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SpriteBackend, Assembly-CSharp
-        m_MethodName: moveNeuronUp
+      - m_Target: {fileID: 501810112}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: goToScenePompa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

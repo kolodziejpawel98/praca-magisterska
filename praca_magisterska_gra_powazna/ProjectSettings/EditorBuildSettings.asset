@@ -36,6 +36,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Neuron.unity
     guid: 7524a10da54f14d4b8aa86195c77c82d
   - enabled: 1
-    path: Assets/Scenes/PompaSodowoPotasowa.unity
-    guid: c12543d67edb9a346a909841076be86c
+    path: Assets/Scenes/PrzekazywanieImpulsu.unity
+    guid: 4e238e004268feb419bffd543d665cbc
+  - enabled: 1
+    path: Assets/Scenes/NeuronObwoluta.unity
+    guid: a6210d1b567170a49958cdc84b90d4e8
+  - enabled: 1
+    path: Assets/Scenes/Pompa.unity
+    guid: 05584d9e0cf3fec4b880adb5d5e80d36
   m_configObjects: {}
