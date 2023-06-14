@@ -1009,7 +1009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 730.9111, y: 309.00003}
+  m_AnchoredPosition: {x: 730.9111, y: 397}
   m_SizeDelta: {x: 915.8221, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &785013440
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AKSON
+  m_text: "Neuron posiada ujemny potencja\u0142 spoczynkowy"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -287.81714, w: 0}
+  m_margin: {x: 0, y: 0, z: 525.87, w: -140.74594}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1563,7 +1563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "wr\xF3\u0107"
+  m_text: dalej
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1830,9 +1830,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Odpowiedzialny za przekazywanie sygna\u0142\xF3w do kolejnych neuron\xF3w.
-    Przep\u0142yw sygna\u0142\xF3w wzd\u0142u\u017C aksonu jest mo\u017Cliwy dzi\u0119ki
-    zmianie napi\u0119cia elektrycznego. "
+  m_text: "Neuron b\u0119d\u0105c nawet w stanie spoczynku, posiada potencja\u0142
+    elektryczny (spoczynkowy). Neuron jest negatywnie na\u0142\u0105dowany, poniewa\u017C
+    posiada w swoim wn\u0119trzu du\u017Co negatywnie na\u0142adowanych bia\u0142ek."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1895,7 +1895,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 709.84424, w: -176.16568}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
