@@ -28,12 +28,17 @@
         {
             "playerName": "y",
             "points": 71.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "fgh",
             "points": 67.0,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "dfgh",
+            "points": 57.5989990234375,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "pawel kolodziej",
@@ -201,6 +206,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "pawel",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "tyler the ruiner",
             "points": 0.0,
             "isCurrentPlayer": false
@@ -217,11 +227,6 @@
         },
         {
             "playerName": "fghfgfghfgh",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
         },

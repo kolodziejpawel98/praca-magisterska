@@ -25,7 +25,9 @@ public class TestBackend : MonoBehaviour
     public Text timeScoreText;
     public static float timeScore = 0.0f;
 
-    public int currentQuestionNumber = 1;
+    public static int currentQuestionNumber = 1;
+    public static bool isBrainTestChoosen = false;
+    public static bool isNeuronTestChoosen = false;
     public bool enterOnceInUpdate = false;
 
     public Text question;
@@ -243,7 +245,15 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "s³uch", false));
                     answers.Add(new Answer(answer_C_button, "mowa", false));
                     answers.Add(new Answer(answer_D_button, "wêch", false));
-                    updateTextElementOnScreen(true);
+                    if (isBrainTestChoosen)
+                    {
+                        updateTextElementOnScreen(true);
+                    }
+                    else
+                    {
+                        updateTextElementOnScreen();
+                    }
+                    
 
                     enterOnceInUpdate = true;
                 }
@@ -253,13 +263,21 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Rolê anten zbieraj¹cych sygna³ pe³ni¹:", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Rolê anten zbieraj¹cych sygna³ pe³ni¹:", 30);
+                    }
+                    else
+                    {
+                        currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Rolê anten zbieraj¹cych sygna³ pe³ni¹:", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "synapsy", false));
                     answers.Add(new Answer(answer_B_button, "mieliny", false));
                     answers.Add(new Answer(answer_C_button, "aksony", false));
                     answers.Add(new Answer(answer_D_button, "dendryty", true));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -275,7 +293,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "akson", false));
                     answers.Add(new Answer(answer_C_button, "drzewko koñcowe", false));
                     answers.Add(new Answer(answer_D_button, "wypustka Schwanna", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -291,7 +309,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "j¹dro", false));
                     answers.Add(new Answer(answer_C_button, "os³onka mielinowa", true));
                     answers.Add(new Answer(answer_D_button, "cia³o komórki", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -307,7 +325,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "przerwaniami skokowymi", false));
                     answers.Add(new Answer(answer_C_button, "szczelinami synaptycznymi", false));
                     answers.Add(new Answer(answer_D_button, "zwê¿eniami komórkowymi", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -323,7 +341,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "dendryt", false));
                     answers.Add(new Answer(answer_C_button, "drzewko koñcowe", true));
                     answers.Add(new Answer(answer_D_button, "akson", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -339,7 +357,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "dodatnio", false));
                     answers.Add(new Answer(answer_C_button, "nie jest na³adowane w ogóle", false));
                     answers.Add(new Answer(answer_D_button, "naprzemiennie ujemnie i dodatnio", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -355,7 +373,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "kwas bia³kowy", false));
                     answers.Add(new Answer(answer_C_button, "RNA", false));
                     answers.Add(new Answer(answer_D_button, "ATP", true));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -371,7 +389,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "wewn¹trz, zewn¹trz", false));
                     answers.Add(new Answer(answer_C_button, "jony potasu i sodu s¹ przekazywane razem na zewn¹trz", false));
                     answers.Add(new Answer(answer_D_button, "jony potasu i sodu s¹ przekazywane razem na zewn¹trz", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -387,7 +405,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "zmianie napiêcia na dodatnie", true));
                     answers.Add(new Answer(answer_C_button, "zjawisku indukcji", false));
                     answers.Add(new Answer(answer_D_button, "zjawisku perforacji b³ony komórkowej", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -403,7 +421,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "zdolnoœæ do zmiany po³o¿enia", false));
                     answers.Add(new Answer(answer_C_button, "gotowoœæ neuronu do wykonania pracy w jednostce czasu", false));
                     answers.Add(new Answer(answer_D_button, "impuls elektryczny s³u¿¹cy do komunikacji z innymi neuronami", true));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }
@@ -419,7 +437,7 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "-700mV", false));
                     answers.Add(new Answer(answer_C_button, "700mV", false));
                     answers.Add(new Answer(answer_D_button, "0.07mV", false));
-                    updateTextElementOnScreen(true);
+                    updateTextElementOnScreen();
 
                     enterOnceInUpdate = true;
                 }

@@ -30,8 +30,25 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    public void goToTest()
+    public void goToBrainTest()
     {
+        TestBackend.currentQuestionNumber = 1;
+        TestBackend.isBrainTestChoosen = true;
+        SceneManager.LoadScene(6);
+    }
+
+    public void goToNeuronTest()
+    {
+        TestBackend.currentQuestionNumber = 13;
+        TestBackend.isNeuronTestChoosen = true;
+        SceneManager.LoadScene(6);
+    }
+
+    public void goToAllTest()
+    {
+        TestBackend.currentQuestionNumber = 1;
+        TestBackend.isNeuronTestChoosen = false;
+        TestBackend.isBrainTestChoosen = false;
         SceneManager.LoadScene(6);
     }
 
