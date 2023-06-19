@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -244,6 +243,199 @@ public class TestBackend : MonoBehaviour
                     answers.Add(new Answer(answer_B_button, "s³uch", false));
                     answers.Add(new Answer(answer_C_button, "mowa", false));
                     answers.Add(new Answer(answer_D_button, "wêch", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 13:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Rolê anten zbieraj¹cych sygna³ pe³ni¹:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "synapsy", false));
+                    answers.Add(new Answer(answer_B_button, "mieliny", false));
+                    answers.Add(new Answer(answer_C_button, "aksony", false));
+                    answers.Add(new Answer(answer_D_button, "dendryty", true));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 14:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Zajmuje sie miêdzy innymi integracj¹ sygna³ów otrzymanych z dendrytów", 30);
+
+                    answers.Add(new Answer(answer_A_button, "cia³o komórki", true));
+                    answers.Add(new Answer(answer_B_button, "akson", false));
+                    answers.Add(new Answer(answer_C_button, "drzewko koñcowe", false));
+                    answers.Add(new Answer(answer_D_button, "wypustka Schwanna", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 15:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni funkcjê izolacji aksonu", 30);
+
+                    answers.Add(new Answer(answer_A_button, "os³onka synaptyczna", false));
+                    answers.Add(new Answer(answer_B_button, "j¹dro", false));
+                    answers.Add(new Answer(answer_C_button, "os³onka mielinowa", true));
+                    answers.Add(new Answer(answer_D_button, "cia³o komórki", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 16:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Przerwania w os³once mielinowej nazywamy", 30);
+
+                    answers.Add(new Answer(answer_A_button, "wêz³¹mi Ranviera", true));
+                    answers.Add(new Answer(answer_B_button, "przerwaniami skokowymi", false));
+                    answers.Add(new Answer(answer_C_button, "szczelinami synaptycznymi", false));
+                    answers.Add(new Answer(answer_D_button, "zwê¿eniami komórkowymi", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 17:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni rolê przekaŸnika sygna³u do innych neuronów", 30);
+
+                    answers.Add(new Answer(answer_A_button, "j¹dro", false));
+                    answers.Add(new Answer(answer_B_button, "dendryt", false));
+                    answers.Add(new Answer(answer_C_button, "drzewko koñcowe", true));
+                    answers.Add(new Answer(answer_D_button, "akson", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 18:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Wnêtrze neuronu w stanie spoczynku jest na³adowane", 30);
+
+                    answers.Add(new Answer(answer_A_button, "ujemnie", true));
+                    answers.Add(new Answer(answer_B_button, "dodatnio", false));
+                    answers.Add(new Answer(answer_C_button, "nie jest na³adowane w ogóle", false));
+                    answers.Add(new Answer(answer_D_button, "naprzemiennie ujemnie i dodatnio", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 19:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pompa sodowo-potasowa dzia³a dziêki naturalnemu paliwu o nazwie", 30);
+
+                    answers.Add(new Answer(answer_A_button, "kwas potasowy", false));
+                    answers.Add(new Answer(answer_B_button, "kwas bia³kowy", false));
+                    answers.Add(new Answer(answer_C_button, "RNA", false));
+                    answers.Add(new Answer(answer_D_button, "ATP", true));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 20:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pompa sodowo-potasowa przekazuje jony sodu na ____, a jony potasu na ____", 30);
+
+                    answers.Add(new Answer(answer_A_button, "zewn¹trz, wewn¹trz", true));
+                    answers.Add(new Answer(answer_B_button, "wewn¹trz, zewn¹trz", false));
+                    answers.Add(new Answer(answer_C_button, "jony potasu i sodu s¹ przekazywane razem na zewn¹trz", false));
+                    answers.Add(new Answer(answer_D_button, "jony potasu i sodu s¹ przekazywane razem na zewn¹trz", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 21:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Neuron mo¿e przekazywaæ impuls elektryczny do kolejnych neuronów dziêki", 30);
+
+                    answers.Add(new Answer(answer_A_button, "zmianie napiêcia na ujemne", false));
+                    answers.Add(new Answer(answer_B_button, "zmianie napiêcia na dodatnie", true));
+                    answers.Add(new Answer(answer_C_button, "zjawisku indukcji", false));
+                    answers.Add(new Answer(answer_D_button, "zjawisku perforacji b³ony komórkowej", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 22:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Potencja³ czynnosciowy to inaczej:", 30);
+
+                    answers.Add(new Answer(answer_A_button, "miara plastycznoœci neuronu", false));
+                    answers.Add(new Answer(answer_B_button, "zdolnoœæ do zmiany po³o¿enia", false));
+                    answers.Add(new Answer(answer_C_button, "gotowoœæ neuronu do wykonania pracy w jednostce czasu", false));
+                    answers.Add(new Answer(answer_D_button, "impuls elektryczny s³u¿¹cy do komunikacji z innymi neuronami", true));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+            case 23:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Neuron jest w stanie spoczynku przy napiêciu wynosz¹cym oko³o", 30);
+
+                    answers.Add(new Answer(answer_A_button, "-70mV", true));
+                    answers.Add(new Answer(answer_B_button, "-700mV", false));
+                    answers.Add(new Answer(answer_C_button, "700mV", false));
+                    answers.Add(new Answer(answer_D_button, "0.07mV", false));
+                    updateTextElementOnScreen(true);
+
+                    enterOnceInUpdate = true;
+                }
+                break;
+
+            case 24:
+                if (!enterOnceInUpdate)
+                {
+                    buttonNextQuestion.SetActive(false);
+                    Timer.StartTimer();
+                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Hiperpolaryzacja to", 30);
+
+                    answers.Add(new Answer(answer_A_button, "spadek napiêcia poni¿ej stanu spoczynku", true));
+                    answers.Add(new Answer(answer_B_button, "wzrost napiêcia powy¿ej stanu spoczynku", false));
+                    answers.Add(new Answer(answer_C_button, "naprzemienna zmiana napiêcia w jednostce czasu", false));
+                    answers.Add(new Answer(answer_D_button, "stan odwrotnego reagowania na sygna³y", false));
                     updateTextElementOnScreen(true);
 
                     enterOnceInUpdate = true;
