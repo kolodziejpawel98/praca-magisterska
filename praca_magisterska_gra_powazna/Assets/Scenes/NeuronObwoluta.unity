@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Neuron posiada ujemny potencja\u0142 spoczynkowy"
+  m_text: NEURON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1850,7 +1850,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Neuron b\u0119d\u0105c nawet w stanie spoczynku, posiada potencja\u0142
-    elektryczny (spoczynkowy). Neuron jest negatywnie na\u0142\u0105dowany, poniewa\u017C
+    elektryczny (spoczynkowy). Neuron jest negatywnie na\u0142adowany, poniewa\u017C
     posiada w swoim wn\u0119trzu du\u017Co negatywnie na\u0142adowanych bia\u0142ek."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
