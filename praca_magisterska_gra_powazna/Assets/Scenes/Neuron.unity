@@ -978,7 +978,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy j\u0105dra."
+  m_text: "Centralna cz\u0119\u015B\u0107 kom\xF3ki nerwower, zawiera materia\u0142
+    genetyczny niezb\u0119dny do produkcji bia\u0142ek. Zachodz\u0105 w nim istotne
+    dla funkcjonowania neuronu procesy takie jak: ekspresja gen\xF3w (odczytywanie
+    informacji i przekszta\u0142canie w bia\u0142ka), replikacja DNA (twozrenie duplikatu
+    DNA) i transkrypcja (przepisywanie informacji z DNA na cz\u0105steczki RNA). "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3050,8 +3054,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jest to forma izolacji aksonu. S\u0142u\u017Cy do tego \u017Ceby sygna\u0142
-    elektryczny by\u0142 przekazywany szybciej i bezstratnie."
+  m_text: "Pe\u0142ni rol\u0119 materia\u0142u izoluj\u0105cego, umo\u017Cliwiaj\u0105c
+    bardziej efektywn\u0105 propagacj\u0119 sygna\u0142u elektrycznego wzd\u0142u\u017C
+    aksonu. Zapobiegu rozpraszaniu si\u0119 impulsu elektycznego i minimalizuje utrat\u0119
+    energii. Jest przerwana w miejscach zwanych w\u0119z\u0142ami Ranviera."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3414,7 +3420,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "jej zadaniem jest ochrona i wspomaganie w\u0142\xF3kien nerwowych, tworz\u0105c
+    os\u0142onk\u0119 mielinow\u0105. Pe\u0142ni istotn\u0105 rol\u0119 w odbudowie
+    zniszczonych w\u0142\xF3kien nerwowych."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4104,7 +4112,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy kolbek synaptycznych."
+  m_text: "Ma\u0142e p\u0119cherzyki pe\u0142ni\u0105ce kluczow\u0105 funkcj\u0119
+    w przekazywaniu informacji mi\u0119dzy neuronami. Gdy impuls elektryczny trafia
+    do ko\u0144ca aksonu, kolbki uwalniaj\u0105 neuroprzeka\u017Anik do szczeliny
+    synaptycznej."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5155,7 +5166,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy cia\u0142a kom\xF3rki."
+  m_text: "Jest to g\u0142\xF3wna cz\u0119\u015B\u0107 neuronu, kt\xF3rej zadaniem
+    jest obs\u0142uga podstawowych mechanizm\xF3w, synteza bia\u0142ek i integracja
+    sygna\u0142\xF3w pochodz\u0105cych z dendryt\xF3w oraz przekazuje go dalej za
+    pomoc\u0105 aksonu. Dostarcza r\xF3wnie\u017C \"paliwa\" kom\xF3kowego w postaci
+    ATP"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6197,7 +6212,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy odga\u0142\u0119zienia bocznego."
+  m_text: "Zwi\u0119kszaj\u0105 powierzchni\u0119, kt\xF3ra mo\u017Ce \u0142\u0105czy\u0107
+    si\u0119 z innymi neuronami i pozwalaj\u0105 na wi\u0119ksz\u0105 elastyczno\u015B\u0107
+    w przekazywaniu informacji."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6565,9 +6582,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Odpowiedzialne s\u0105 za otrzymywanie informacji z innych neuron\xF3w
-    w postaci impulsu elektrycznego. Pe\u0142ni\u0105 funkcj\u0119 anteny zbieraj\u0105cej
-    sygna\u0142 z innych miejsc."
+  m_text: "S\u0105 to kr\xF3kie wypustki, kt\xF3rych rol\u0105 jest zbieranie sygna\u0142\xF3w
+    (impuls\xF3w elektrycznych) i przekazywanie ich do cia\u0142a kom\xF3rki. Pe\u0142ni\u0105
+    funkcj\u0119 anten dzi\u0119ki rozga\u0142\u0119zionej strukturze i receptorom
+    wra\u017Cliwym na bod\u017Ace."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7018,7 +7036,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy drzewka ko\u0144cowego."
+  m_text: "Jest to zako\u0144czenie aksonu, i pe\u0142ni funkcj\u0119 przekazywania
+    sygna\u0142u do innych neuron\xF3w. Ma rozga\u0142\u0119zion\u0105 struktur\u0119
+    przez co zwi\u0119ksza liczb\u0119 mo\u017C\u0142iwych kontakt\xF3w z innymi
+    kom\xF3kami. W momencie gdy potencja\u0142 czynnosciowy dociera do drzewka ko\u0144cowego,
+    uwalniane s\u0105 przeka\u017Aniki w szczelinie synaptycznej."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8241,7 +8263,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Opis dotycz\u0105cy odga\u0142\u0119zienia ko\u0144cowego."
+  m_text: "Rozga\u0142\u0119ziona struktura na ko\u0144cu aksonu. Ga\u0142\u0119zie
+    zako\u0144czone s\u0105 p\u0119cherzykami synaptycznymi, dzi\u0119ki kt\xF3ym
+    mo\u017Cliwe jest generowanie neuroprzeka\u017Anika do szczeliny synaptycznej.
+    Umo\u017Cliwia to przekazanie impulsu elektrycznego do kolejnych neuron\xF3w."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

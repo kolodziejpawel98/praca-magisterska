@@ -95,4 +95,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(12);
     }
 
+    public void goToScenePotencjal()
+    {
+        SceneManager.LoadScene(13);
+    }
+
 }

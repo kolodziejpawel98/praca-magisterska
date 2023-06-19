@@ -278,8 +278,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Utrzymanie odpowiedniej liczby jon\xF3w potasu i sodu jest kluczowe dla
-    utrzymania potencja\u0142u spoczynkowego i wygenerowania potencja\u0142u czynno\u015Bciowego.\n\n\n\n"
+  m_text: "Prowadzi to do spadku potencja\u0142u w kom\xF3rce, a\u017C do stanu hiperpolaryzacji
+    czyli spadku poni\u017Cej standardowego -70mV (w tym stanie neuron jest niepobudliwy)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1123,7 +1123,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nast\u0119pnie sstwarza miejsce na jony potasu. "
+  m_text: "Im wi\u0119cej kana\u0142\xF3w si\u0119 otwiera tym wi\u0119cej jon\xF3w
+    sodu wp\u0142ywa do \u015Brodka."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1339,8 +1340,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Utrzymanie odpowiedniej liczby jon\xF3w potasu i sodu jest kluczowe dla
-    utrzymania potencja\u0142u spoczynkowego i wygenerowania potencja\u0142u czynno\u015Bciowego.\n\n\n\n"
+  m_text: "Dla jon\xF3w potasu r\xF3wnie\u017C istniej\u0105 kana\u0142y bramkowane
+    napi\u0119ciem, ale one reaguj\u0105 na zmian\u0119 napi\u0119cia w kom\xF3rce
+    z op\xF3\u017Anieniem. Dzi\u0119ki temu jony potasu przedostaj\u0105 si\u0119
+    na zewn\u0105trz."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1821,7 +1824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1955,8 +1958,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Potem wydziela si\u0119 energia dzi\u0119ki kt\xF3rej pompa zmienia otwarcie
-    i przekazuje jony sodu na zewn\u0105trz."
+  m_text: "Gdy potencja\u0142 wewn\u0105trz kom\xF3rki staje si\u0119 odrobin\u0119
+    bardziej dodatni (-50 mV) to generowany jest potencja\u0142 czynno\u015Bciowy
+    i kana\u0142y bramkowane napi\u0119ciem otwieraj\u0105 si\u0119. W momencie przekroczenia
+    progu -50mV nie ma ju\u017C odwrotu i impuls musi zosta\u0107 wygenerowany. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2090,8 +2095,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Utrzymanie odpowiedniej liczby jon\xF3w potasu i sodu jest kluczowe dla
-    utrzymania potencja\u0142u spoczynkowego i wygenerowania potencja\u0142u czynno\u015Bciowego.\n\n\n\n"
+  m_text: "Po wytworzeniu potencja\u0142u czynno\u015Bciowego neuron wraca do stanu
+    spoczynku, czyli do -70mV i jest wtedy gotowy do wygenerowania kolejnego potencja\u0142u
+    czynno\u015Bciowego.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2225,8 +2231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Po zwi\u0105zaniu jon\xF3w potasu nast\u0119puje kolejna zmiana otawrcia
-    pompy dzieki ktorej przekazuje do wnetrza jony potasu.\n\n\n"
+  m_text: "Gdy potencja\u0142 dojdzie do 40 mV to te kana\u0142y si\u0119 zatykaj\u0105. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2505,7 +2510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2985,8 +2990,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pompa jest otwarta aby zwi\u0105za\u0107 jony sodu, gdy zostan\u0105 zwi\u0105zane,
-    mo\u017Cliwe jest zwi\u0105zanie atp. "
+  m_text: "Kana\u0142y te s\u0105 zamkni\u0119te gdy neuron jest w stanie spoczynku,
+    czyli dla -70mV."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3466,28 +3471,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dzi\u0119ki zmianie potencja\u0142u na dodatni, mo\u017Cliwe jest to \u017Ce
-    neuron przesy\u0142a sygna\u0142 do kolejnej kom\xF3rki nerwowej. \nPotencja\u0142
-    czynno\u015Bciowy to impuls elektryczny dzi\u0119ki kt\xF3remu neuron mo\u017Ce
-    si\u0119 komunikowa\u0107 z innym neuronem.\nJony sodu chc\u0105 wnikn\u0105\u0107
-    do wn\u0119trza kom\xF3rki. Potencja\u0142 czynno\u015Bciowy jest nag\u0142ym
-    nap\u0142ywem dodatnich jon\xF3w sodu do \u015Brodka neuronu. Ten przep\u0142yw
-    jest mo\u017Cliwy przez bierne kana\u0142y ale tak\u017Ce przez kana\u0142y bramkkowane
-    napi\u0119ciem. Kana\u0142y te s\u0105 zamkni\u0119te gdy neuron jest w stanie
-    spoczynku, czyli dla -70mV. Gdy potencja\u0142 wewn\u0105trz kom\xF3rki staje
-    si\u0119 odrobin\u0119 bardziej dodatni (-50 mV) to generowany jest potencja\u0142
-    czynno\u015Bciowy i te kana\u0142y bramkowane napi\u0119ciem otwieraj\u0105 si\u0119.
-    W momencie przekroczenia progu -50mV nie ma ju\u017C odwrotu i impuls musi zosta\u0107
-    wygenerowany. Im wi\u0119cej kana\u0142\xF3w si\u0119 otwiera tym wi\u0119cej
-    jon\xF3w sodu wp\u0142ywa do \u015Brodka. Gdy potencja\u0142 dojdzie do 40 mV
-    to te kana\u0142y si\u0119 zatykaj\u0105. DLa jon\xF3 potasu r\xF3wnie\u017C
-    istniej\u0105 kana\u0142y bramkowane napi\u0119ciem, ale one re\u0105guj\u0105
-    na zmian\u0119 napiecia w kom\xF3ce z opoznieniem. Dzi\u0119ki nim jony potasu
-    przedostaj\u0105 si\u0119 na zewn\u0105trz i prowadzi to do spadku potencja\u0142u
-    w kom\xF3ce, a\u017C do hiperpolaryzacji zyli spadku poni\u017C\u0119j standardowego
-    -70mV, w tym stanie neuron jest niepobudliwy. Po wytworzeniu potencja\u0142u
-    czynno\u015Bciowego neuron wraca do stanu spoczynku, czyli do -70mV i jest wtedy
-    gotowy do wygenerowania kolejnego potencja\u0142u czynno\u015Bciowego.\n\n\n\n\n\n"
+  m_text: "Neuron mo\u017Ce przesy\u0142a\u0107 sygna\u0142 do kolejnej kom\xF3rki
+    nerwowej, dzi\u0119ki zmianie swojego potencja\u0142u na dodatni.\r\nPotencja\u0142
+    czynno\u015Bciowy to tak naprawd\u0119 impuls elektryczny za pomoc\u0105 kt\xF3rego
+    neuron mo\u017Ce si\u0119 komunikowa\u0107 z innym neuronem.\r\nJony sodu chc\u0105
+    wnikn\u0105\u0107 do wn\u0119trza kom\xF3rki a potencja\u0142 czynno\u015Bciowy
+    jest nag\u0142ym nap\u0142ywem dodatnich jon\xF3w sodu do \u015Brodka neuronu.
+    Ten przep\u0142yw jest mo\u017Cliwy przez bierne kana\u0142y ale tak\u017Ce przez
+    kana\u0142y bramkowane napi\u0119ciem."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3919,7 +3910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4286,7 +4277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4983,7 +4974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5117,7 +5108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POMPA SODOWO-POTASOWA
+  m_text: "POTENCJA\u0141 CZYNNO\u015ACIOWY"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
