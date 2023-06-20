@@ -7,12 +7,16 @@ public class BrainDescriptionText : MonoBehaviour
     public BrainDescriptionText textContainer;
 
     public List<GameObject> slideImages = new List<GameObject>();
-    public List<GameObject> slideTexts = new List<GameObject> ();
+    public List<GameObject> slideTexts = new List<GameObject>();
 
     public int currentSlideIndex = 0;
 
+    public GameObject nextScreenButton;
+
     private void Start()
     {
+        nextScreenButton.SetActive(false);
+
         foreach (GameObject image in slideImages)
         {
             image.SetActive(false);
@@ -26,16 +30,27 @@ public class BrainDescriptionText : MonoBehaviour
 
     private void Update()
     {
-        if(slideImages.Count > 0)
+        if (slideImages.Count > 0)
         {
             slideImages[currentSlideIndex].SetActive(true);
             slideTexts[currentSlideIndex].SetActive(true);
+        }
+
+        p.r("currentSlideIndex  = " + currentSlideIndex);
+        p.r("slideImages.Count - 1  = " + (slideImages.Count - 1).ToString());
+        if (currentSlideIndex >= slideImages.Count - 1)
+        {
+            nextScreenButton.SetActive(true);
+        }
+        else
+        {
+            nextScreenButton.SetActive(false);
         }
     }
 
     public void nextSlide()
     {
-        if(currentSlideIndex < slideImages.Count - 1)
+        if (currentSlideIndex < slideImages.Count - 1)
         {
             slideImages[currentSlideIndex].SetActive(false);
             slideTexts[currentSlideIndex].SetActive(false);
@@ -45,7 +60,7 @@ public class BrainDescriptionText : MonoBehaviour
 
     public void previousSlide()
     {
-        if(currentSlideIndex > 0)
+        if (currentSlideIndex > 0)
         {
             slideImages[currentSlideIndex].SetActive(false);
             slideTexts[currentSlideIndex].SetActive(false);

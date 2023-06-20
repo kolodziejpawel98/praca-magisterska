@@ -820,6 +820,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 1919425715}
 --- !u!114 &501810108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +925,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654609057}
-  - component: {fileID: 654609058}
   m_Layer: 0
   m_Name: NeuronObwolutaContainer
   m_TagString: Untagged
@@ -948,22 +948,6 @@ Transform:
   m_Father: {fileID: 501810111}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &654609058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654609056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 654609058}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &760556966
 GameObject:
   m_ObjectHideFlags: 0

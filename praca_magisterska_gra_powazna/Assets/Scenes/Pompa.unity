@@ -482,7 +482,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 179518141}
-  - component: {fileID: 179518142}
   m_Layer: 0
   m_Name: PompaContainer1
   m_TagString: Untagged
@@ -506,22 +505,6 @@ Transform:
   m_Father: {fileID: 1955760859}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &179518142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179518140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 179518142}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &197431450
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +648,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 201713591}
-  - component: {fileID: 201713592}
   m_Layer: 0
   m_Name: PompaContainer4
   m_TagString: Untagged
@@ -689,22 +671,6 @@ Transform:
   m_Father: {fileID: 1955760859}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &201713592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201713590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 201713592}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &287743441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +2010,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 906560400}
-  - component: {fileID: 906560401}
   m_Layer: 0
   m_Name: PompaContainer6
   m_TagString: Untagged
@@ -2068,22 +2033,6 @@ Transform:
   m_Father: {fileID: 1955760859}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &906560401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906560399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 906560401}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &968632339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,7 +2929,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455220610}
-  - component: {fileID: 1455220611}
   m_Layer: 0
   m_Name: PompaContainer5
   m_TagString: Untagged
@@ -3004,22 +2952,6 @@ Transform:
   m_Father: {fileID: 1955760859}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1455220611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455220609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 1455220611}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &1473913721
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,6 +4006,7 @@ MonoBehaviour:
   - {fileID: 1455220609}
   - {fileID: 906560399}
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 1483958327}
 --- !u!114 &1955760856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4297,7 +4230,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061780266}
-  - component: {fileID: 2061780267}
   m_Layer: 0
   m_Name: PompaContainer3
   m_TagString: Untagged
@@ -4321,22 +4253,6 @@ Transform:
   m_Father: {fileID: 1955760859}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2061780267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061780265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 2061780267}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &2114769918
 GameObject:
   m_ObjectHideFlags: 0
@@ -4346,7 +4262,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114769919}
-  - component: {fileID: 2114769920}
   m_Layer: 0
   m_Name: PompaContainer2
   m_TagString: Untagged
@@ -4370,22 +4285,6 @@ Transform:
   m_Father: {fileID: 1955760859}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2114769920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114769918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 2114769920}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!1 &2131881200
 GameObject:
   m_ObjectHideFlags: 0
