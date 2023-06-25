@@ -1501,7 +1501,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e6943da3d547d84bb68dd6a2701b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b50071cba8724da49bb1edbab7531ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1582,7 +1582,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1986789925}
   timeScoreText: {fileID: 419256892}
-  currentQuestionNumber: 1
   enterOnceInUpdate: 0
   question: {fileID: 1130301816}
   answer_A_button: {fileID: 1397118918}

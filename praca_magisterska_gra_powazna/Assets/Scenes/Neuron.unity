@@ -1658,6 +1658,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &442787502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,6 +2313,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!114 &559868860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2476,7 +2478,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e6943da3d547d84bb68dd6a2701b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b50071cba8724da49bb1edbab7531ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2550,6 +2552,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &686494004
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,6 +3287,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &816062689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,6 +3367,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &885719054
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +4247,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1202284528
 GameObject:
   m_ObjectHideFlags: 0
@@ -6477,6 +6483,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1557037358
 GameObject:
   m_ObjectHideFlags: 0
@@ -6510,6 +6517,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!4 &1557037360
 Transform:
   m_ObjectHideFlags: 0
@@ -6980,6 +6988,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1935942377
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,6 +7608,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &2044591396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,6 +7791,7 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &2098566434
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,3 +8404,4 @@ MonoBehaviour:
   slideImages: []
   slideTexts: []
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}

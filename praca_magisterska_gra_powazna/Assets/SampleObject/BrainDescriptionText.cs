@@ -36,8 +36,6 @@ public class BrainDescriptionText : MonoBehaviour
             slideTexts[currentSlideIndex].SetActive(true);
         }
 
-        p.r("currentSlideIndex  = " + currentSlideIndex);
-        p.r("slideImages.Count - 1  = " + (slideImages.Count - 1).ToString());
         if (currentSlideIndex >= slideImages.Count - 1)
         {
             nextScreenButton.SetActive(true);

@@ -629,6 +629,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 60904617}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &64152978
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +679,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 64152980}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &146634104
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +729,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 146634106}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &212946682
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +913,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 231110178}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &235987227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +1600,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 471616779}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &517756215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1650,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 517756217}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &548197633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1700,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 548197635}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &641051041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2583,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 844131092}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &908996174
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,6 +2981,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1003007340}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1025567053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3839,6 +3875,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1129932945}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1238014368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3885,6 +3925,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1238014370}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1265848060
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,6 +3971,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1265848062}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!114 &1265848063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4812,6 +4860,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1590235225}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1611919519
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,6 +6452,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2029885824}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &2043241997
 GameObject:
   m_ObjectHideFlags: 0
@@ -6586,6 +6642,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2048959550}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &2066666734
 GameObject:
   m_ObjectHideFlags: 0
@@ -6643,7 +6703,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e6943da3d547d84bb68dd6a2701b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b50071cba8724da49bb1edbab7531ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

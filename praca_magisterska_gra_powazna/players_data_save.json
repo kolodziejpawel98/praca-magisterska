@@ -26,6 +26,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "asdfg",
+            "points": 81.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "y",
             "points": 71.0,
             "isCurrentPlayer": false
@@ -38,6 +43,11 @@
         {
             "playerName": "dfgh",
             "points": 57.5989990234375,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "asdhgsahgjhsa",
+            "points": 55.0,
             "isCurrentPlayer": true
         },
         {
@@ -53,6 +63,11 @@
         {
             "playerName": ":o",
             "points": 40.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "xzxzxz",
+            "points": 38.0,
             "isCurrentPlayer": false
         },
         {
@@ -206,6 +221,16 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "fghfgfghfgh",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "dsds",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
@@ -222,16 +247,6 @@
         },
         {
             "playerName": "ekk",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "fghfgfghfgh",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "dsds",
             "points": 0.0,
             "isCurrentPlayer": false
         }

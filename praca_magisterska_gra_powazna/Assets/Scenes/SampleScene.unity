@@ -477,6 +477,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 213932769}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &242274835
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +699,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 315792883}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!114 &315792884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,6 +980,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 350687001}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &392369533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,6 +1883,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 464846384}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +2045,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e6943da3d547d84bb68dd6a2701b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b50071cba8724da49bb1edbab7531ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2501,6 +2517,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 636507127}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &727638827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2567,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 727638829}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &740728216
 GameObject:
   m_ObjectHideFlags: 0
@@ -4256,3 +4280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2125624971}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}

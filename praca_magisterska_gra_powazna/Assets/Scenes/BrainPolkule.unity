@@ -1630,6 +1630,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 899406924}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &962945177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1680,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 962945179}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &967307626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1760,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1012825134}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1042314865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3143,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1417801781}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1500797423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,6 +3193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1500797425}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1598530027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,6 +3243,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1598530029}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1605083429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,7 +3438,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e6943da3d547d84bb68dd6a2701b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b50071cba8724da49bb1edbab7531ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3485,6 +3509,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1611351381}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!1 &1720198981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,6 +3790,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1958498054}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}
 --- !u!114 &1958498055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4384,3 +4416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2119263052}
+  slideImages: []
+  slideTexts: []
+  currentSlideIndex: 0
+  nextScreenButton: {fileID: 0}

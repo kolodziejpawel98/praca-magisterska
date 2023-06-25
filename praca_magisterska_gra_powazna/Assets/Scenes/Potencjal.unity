@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 15670782}
-  - component: {fileID: 15670781}
   m_Layer: 0
   m_Name: PompaContainer5
   m_TagString: Untagged
@@ -140,22 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &15670781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15670780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 15670781}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &15670782
 Transform:
   m_ObjectHideFlags: 0
@@ -181,7 +164,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 92773854}
-  - component: {fileID: 92773853}
   m_Layer: 0
   m_Name: PompaContainer8
   m_TagString: Untagged
@@ -189,22 +171,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &92773853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92773852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 92773853}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &92773854
 Transform:
   m_ObjectHideFlags: 0
@@ -1727,7 +1693,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 572400335}
-  - component: {fileID: 572400334}
   m_Layer: 0
   m_Name: PompaContainer1
   m_TagString: Untagged
@@ -1735,22 +1700,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &572400334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572400333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 572400334}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &572400335
 Transform:
   m_ObjectHideFlags: 0
@@ -2347,7 +2296,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 783380810}
-  - component: {fileID: 783380809}
   m_Layer: 0
   m_Name: PompaContainer4
   m_TagString: Untagged
@@ -2355,22 +2303,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &783380809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783380808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 783380809}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &783380810
 Transform:
   m_ObjectHideFlags: 0
@@ -2721,6 +2653,7 @@ MonoBehaviour:
   - {fileID: 1057259904}
   - {fileID: 92773852}
   currentSlideIndex: 0
+  nextScreenButton: {fileID: 2106195266}
 --- !u!114 &1033372807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2822,7 +2755,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1057259906}
-  - component: {fileID: 1057259905}
   m_Layer: 0
   m_Name: PompaContainer7
   m_TagString: Untagged
@@ -2830,22 +2762,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1057259905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057259904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 1057259905}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &1057259906
 Transform:
   m_ObjectHideFlags: 0
@@ -3240,7 +3156,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1282702622}
-  - component: {fileID: 1282702621}
   m_Layer: 0
   m_Name: PompaContainer2
   m_TagString: Untagged
@@ -3248,22 +3163,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1282702621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282702620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 1282702621}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &1282702622
 Transform:
   m_ObjectHideFlags: 0
@@ -4180,7 +4079,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1617286394}
-  - component: {fileID: 1617286393}
   m_Layer: 0
   m_Name: PompaContainer6
   m_TagString: Untagged
@@ -4188,22 +4086,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1617286393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617286392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 1617286393}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &1617286394
 Transform:
   m_ObjectHideFlags: 0
@@ -4493,7 +4375,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e6943da3d547d84bb68dd6a2701b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b50071cba8724da49bb1edbab7531ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5194,7 +5076,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1941703075}
-  - component: {fileID: 1941703074}
   m_Layer: 0
   m_Name: PompaContainer3
   m_TagString: Untagged
@@ -5202,22 +5083,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1941703074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941703073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc21fdf3c92eacf4a98081fb43de2833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textContainer: {fileID: 1941703074}
-  slideImages: []
-  slideTexts: []
-  currentSlideIndex: 0
 --- !u!4 &1941703075
 Transform:
   m_ObjectHideFlags: 0
