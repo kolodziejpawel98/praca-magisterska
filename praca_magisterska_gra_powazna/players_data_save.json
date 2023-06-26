@@ -41,6 +41,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "aa",
+            "points": 65.11000061035156,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "dfgh",
             "points": 57.5989990234375,
             "isCurrentPlayer": false
@@ -48,7 +53,7 @@
         {
             "playerName": "asdhgsahgjhsa",
             "points": 55.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "pawel kolodziej",
@@ -221,6 +226,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "ekk",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "fghfgfghfgh",
             "points": 0.0,
             "isCurrentPlayer": false
@@ -242,11 +252,6 @@
         },
         {
             "playerName": "TEST OSTATECZNY",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "ekk",
             "points": 0.0,
             "isCurrentPlayer": false
         }

@@ -269,8 +269,8 @@ public class TestBackend : MonoBehaviour
                     }
                     else
                     {
-                        currentQuestionNumber = 1;
-                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Rolê anten zbieraj¹cych sygna³ pe³ni¹:", 30);
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber-12).ToString() + ". Rolê anten zbieraj¹cych sygna³ pe³ni¹:", 30);
                     }
 
                     answers.Add(new Answer(answer_A_button, "synapsy", false));
@@ -287,7 +287,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Zajmuje sie miêdzy innymi integracj¹ sygna³ów otrzymanych z dendrytów", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Zajmuje sie miêdzy innymi integracj¹ sygna³ów otrzymanych z dendrytów", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Zajmuje sie miêdzy innymi integracj¹ sygna³ów otrzymanych z dendrytów", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "cia³o komórki", true));
                     answers.Add(new Answer(answer_B_button, "akson", false));
@@ -303,7 +311,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni funkcjê izolacji aksonu", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni funkcjê izolacji aksonu", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Pe³ni funkcjê izolacji aksonu", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "os³onka synaptyczna", false));
                     answers.Add(new Answer(answer_B_button, "j¹dro", false));
@@ -319,7 +335,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Przerwania w os³once mielinowej nazywamy", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Przerwania w os³once mielinowej nazywamy", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Przerwania w os³once mielinowej nazywamy", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "wêz³¹mi Ranviera", true));
                     answers.Add(new Answer(answer_B_button, "przerwaniami skokowymi", false));
@@ -335,7 +359,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni rolê przekaŸnika sygna³u do innych neuronów", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pe³ni rolê przekaŸnika sygna³u do innych neuronów", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Pe³ni rolê przekaŸnika sygna³u do innych neuronów", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "j¹dro", false));
                     answers.Add(new Answer(answer_B_button, "dendryt", false));
@@ -351,7 +383,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Wnêtrze neuronu w stanie spoczynku jest na³adowane", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Wnêtrze neuronu w stanie spoczynku jest na³adowane", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Wnêtrze neuronu w stanie spoczynku jest na³adowane", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "ujemnie", true));
                     answers.Add(new Answer(answer_B_button, "dodatnio", false));
@@ -367,7 +407,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pompa sodowo-potasowa dzia³a dziêki naturalnemu paliwu o nazwie", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pompa sodowo-potasowa dzia³a dziêki naturalnemu paliwu o nazwie", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Pompa sodowo-potasowa dzia³a dziêki naturalnemu paliwu o nazwie", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "kwas potasowy", false));
                     answers.Add(new Answer(answer_B_button, "kwas bia³kowy", false));
@@ -383,7 +431,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pompa sodowo-potasowa przekazuje jony sodu na ____, a jony potasu na ____", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Pompa sodowo-potasowa przekazuje jony sodu na ____, a jony potasu na ____", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Pompa sodowo-potasowa przekazuje jony sodu na ____, a jony potasu na ____", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "zewn¹trz, wewn¹trz", true));
                     answers.Add(new Answer(answer_B_button, "wewn¹trz, zewn¹trz", false));
@@ -399,7 +455,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Neuron mo¿e przekazywaæ impuls elektryczny do kolejnych neuronów dziêki", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Neuron mo¿e przekazywaæ impuls elektryczny do kolejnych neuronów dziêki", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Neuron mo¿e przekazywaæ impuls elektryczny do kolejnych neuronów dziêki", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "zmianie napiêcia na ujemne", false));
                     answers.Add(new Answer(answer_B_button, "zmianie napiêcia na dodatnie", true));
@@ -415,7 +479,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Potencja³ czynnosciowy to inaczej:", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Potencja³ czynnosciowy to inaczej:", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Potencja³ czynnosciowy to inaczej:", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "miara plastycznoœci neuronu", false));
                     answers.Add(new Answer(answer_B_button, "zdolnoœæ do zmiany po³o¿enia", false));
@@ -431,7 +503,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Neuron jest w stanie spoczynku przy napiêciu wynosz¹cym oko³o", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Neuron jest w stanie spoczynku przy napiêciu wynosz¹cym oko³o", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Neuron jest w stanie spoczynku przy napiêciu wynosz¹cym oko³o", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "-70mV", true));
                     answers.Add(new Answer(answer_B_button, "-700mV", false));
@@ -448,7 +528,15 @@ public class TestBackend : MonoBehaviour
                 {
                     buttonNextQuestion.SetActive(false);
                     Timer.StartTimer();
-                    updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Hiperpolaryzacja to", 30);
+                    if (!isNeuronTestChoosen)
+                    {
+                        updateTextElementOnScreen(question, currentQuestionNumber.ToString() + ". Hiperpolaryzacja to", 30);
+                    }
+                    else
+                    {
+                        //currentQuestionNumber = 1;
+                        updateTextElementOnScreen(question, (currentQuestionNumber - 12).ToString() + ". Hiperpolaryzacja to", 30);
+                    }
 
                     answers.Add(new Answer(answer_A_button, "spadek napiêcia poni¿ej stanu spoczynku", true));
                     answers.Add(new Answer(answer_B_button, "wzrost napiêcia powy¿ej stanu spoczynku", false));
@@ -555,6 +643,7 @@ public class TestBackend : MonoBehaviour
 
     public void updateTextElementOnScreen(bool isLastQuestion = false)
     {
+        p.r("is last question = " + isLastQuestion);
         foreach (var answer in answers)
         {
             if (answer.isButtonActive)
