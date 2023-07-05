@@ -43,7 +43,7 @@
         {
             "playerName": "aa",
             "points": 65.11000061035156,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "dfgh",
@@ -86,8 +86,18 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "aaaa",
+            "points": 28.803001403808595,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "pk",
             "points": 28.08100128173828,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "z",
+            "points": 27.89000129699707,
             "isCurrentPlayer": false
         },
         {
@@ -226,6 +236,16 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "TEST OSTATECZNY",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "tyler the ruiner",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "ekk",
             "points": 0.0,
             "isCurrentPlayer": false
@@ -242,16 +262,6 @@
         },
         {
             "playerName": "pawel",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "tyler the ruiner",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "TEST OSTATECZNY",
             "points": 0.0,
             "isCurrentPlayer": false
         }
