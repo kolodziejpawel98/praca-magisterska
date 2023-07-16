@@ -76,6 +76,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "a",
+            "points": 37.0,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "wq",
             "points": 33.319000244140628,
             "isCurrentPlayer": false
@@ -88,7 +93,7 @@
         {
             "playerName": "aaaa",
             "points": 28.803001403808595,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "pk",
@@ -236,6 +241,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "pawel",
+            "points": 0.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "TEST OSTATECZNY",
             "points": 0.0,
             "isCurrentPlayer": false
@@ -257,11 +267,6 @@
         },
         {
             "playerName": "dsds",
-            "points": 0.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "pawel",
             "points": 0.0,
             "isCurrentPlayer": false
         }

@@ -7,7 +7,9 @@ public class BrainDescriptionText : MonoBehaviour
     public BrainDescriptionText textContainer;
 
     public List<GameObject> slideImages = new List<GameObject>();
+    public List<GameObject> slideImagesPlot = new List<GameObject>();
     public List<GameObject> slideTexts = new List<GameObject>();
+    public bool isPlotVisible = false;
 
     public int currentSlideIndex = 0;
 
@@ -26,6 +28,14 @@ public class BrainDescriptionText : MonoBehaviour
         {
             text.SetActive(false);
         }
+
+        if (isPlotVisible)
+        {
+            foreach (GameObject image in slideImagesPlot)
+            {
+                image.SetActive(false);
+            }
+        }
     }
 
     private void Update()
@@ -34,6 +44,10 @@ public class BrainDescriptionText : MonoBehaviour
         {
             slideImages[currentSlideIndex].SetActive(true);
             slideTexts[currentSlideIndex].SetActive(true);
+            if (isPlotVisible)
+            {
+                slideImagesPlot[currentSlideIndex].SetActive(true);
+            }
         }
 
         if (currentSlideIndex >= slideImages.Count - 1)
@@ -52,6 +66,10 @@ public class BrainDescriptionText : MonoBehaviour
         {
             slideImages[currentSlideIndex].SetActive(false);
             slideTexts[currentSlideIndex].SetActive(false);
+            if (isPlotVisible)
+            {
+                slideImagesPlot[currentSlideIndex].SetActive(false);
+            }
             currentSlideIndex++;
         }
     }
@@ -62,6 +80,10 @@ public class BrainDescriptionText : MonoBehaviour
         {
             slideImages[currentSlideIndex].SetActive(false);
             slideTexts[currentSlideIndex].SetActive(false);
+            if (isPlotVisible)
+            {
+                slideImagesPlot[currentSlideIndex].SetActive(false);
+            }
             currentSlideIndex--;
         }
     }
