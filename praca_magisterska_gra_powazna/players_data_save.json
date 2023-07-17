@@ -31,6 +31,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "asdfghj",
+            "points": 79.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "y",
             "points": 71.0,
             "isCurrentPlayer": false
@@ -46,8 +51,18 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "sdgfhjk",
+            "points": 64.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "dfgh",
             "points": 57.5989990234375,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "aaasassasasasasasa",
+            "points": 55.0,
             "isCurrentPlayer": false
         },
         {
@@ -66,8 +81,18 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "dasdsadsadas",
+            "points": 42.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": ":o",
             "points": 40.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "walter white",
+            "points": 39.0,
             "isCurrentPlayer": false
         },
         {
@@ -78,7 +103,7 @@
         {
             "playerName": "a",
             "points": 37.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "wq",
@@ -166,6 +191,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "ds",
+            "points": 19.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "!!k!!!!",
             "points": 18.694000244140626,
             "isCurrentPlayer": false
@@ -216,6 +246,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "jan kowalski 12313",
+            "points": 13.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "xddd",
             "points": 10.699999809265137,
             "isCurrentPlayer": false
@@ -229,6 +264,11 @@
             "playerName": "test2",
             "points": 6.0,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "dsdsadsa",
+            "points": 6.0,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "polonia magna",

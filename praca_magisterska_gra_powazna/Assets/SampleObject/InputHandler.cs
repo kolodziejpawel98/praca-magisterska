@@ -10,6 +10,9 @@ public class InputHandler : MonoBehaviour
     [SerializeField] InputField nameInput;
     string filename = "players_data_save.json";
 
+    public GameObject textInputError;
+    public GameObject textInputErrorWhiteBox;
+    public static bool isPlayerNameCorrect = false;
     public List<Player> players = new List<Player>();
 
     private void Start()
@@ -24,13 +27,29 @@ public class InputHandler : MonoBehaviour
 
     public void AddNameToList()
     {
-        if (!string.IsNullOrEmpty(nameInput.text))
+        bool doesNameAlreadyExist = false;
+        foreach (var player in players)
         {
+            if(string.Equals(player.playerName, nameInput.text))
+            {
+                doesNameAlreadyExist = true;
+            }
+        }
+
+        if (!string.IsNullOrEmpty(nameInput.text) && !doesNameAlreadyExist)
+        {
+            isPlayerNameCorrect = true;
             setPlayersAsNotCurrentPlayer();
             players.Add(new Player(nameInput.text, UnityEngine.Random.Range(0, 100), true));
             nameInput.text = "";
             sortPlayers();
             SaveToJSON(players);
+        }
+        else
+        {
+            nameInput.text = "";
+            textInputError.SetActive(true);
+            textInputErrorWhiteBox.SetActive(true);
         }
     }
 

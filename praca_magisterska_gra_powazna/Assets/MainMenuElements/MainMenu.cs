@@ -22,7 +22,10 @@ public class MainMenu : MonoBehaviour
 
     public void goToMainMenu()
     {
-        SceneManager.LoadScene(1);
+        if (InputHandler.isPlayerNameCorrect)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void goToBrain()
