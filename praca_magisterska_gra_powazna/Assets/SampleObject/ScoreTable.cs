@@ -7,6 +7,9 @@ public class ScoreTable : MonoBehaviour
 {
     public InputHandler inputHandler;
 
+    public GameObject congratulationText;
+    public GameObject congratulationTrophy;
+
 
     public GameObject prefabPlayerName;
     public GameObject prefabPlayerScore;
@@ -15,13 +18,18 @@ public class ScoreTable : MonoBehaviour
     void Start()
     {
         updateCurrentPlayerScore();
-        if(getCurrentPlayerIndex() > 9)
+        if (getCurrentPlayerIndex() > 9)
         {
             printTopTenPlayersWithoutCurrentPlayer();
             printCurrentPlayerOnSide();
         }
         else
         {
+            if(getCurrentPlayerIndex() == 0)
+            {
+                congratulationText.SetActive(true);
+                congratulationTrophy.SetActive(true);
+            }
             printTopTenPlayersWithCurrentPlayer();
         }
     }
