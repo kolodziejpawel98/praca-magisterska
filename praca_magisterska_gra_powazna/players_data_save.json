@@ -6,11 +6,6 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "roger federer",
-            "points": 46.02400207519531,
-            "isCurrentPlayer": true
-        },
-        {
             "playerName": "aa",
             "points": 10.110000610351563,
             "isCurrentPlayer": false
@@ -141,12 +136,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "fdghj",
+            "playerName": "sdgfhjk",
             "points": 1.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "sdgfhjk",
+            "playerName": "fdghj",
             "points": 1.0,
             "isCurrentPlayer": false
         },
@@ -154,6 +149,11 @@
             "playerName": "xzxzxz",
             "points": 1.0,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "roger federer",
+            "points": 0.0,
+            "isCurrentPlayer": true
         }
     ]
 }

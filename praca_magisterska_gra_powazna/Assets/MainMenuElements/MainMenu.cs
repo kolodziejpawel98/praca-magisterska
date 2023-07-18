@@ -117,7 +117,7 @@ public class MainMenu : MonoBehaviour
 
     public void goToScenePotencjal()
     {
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(12);
     }
 
 }

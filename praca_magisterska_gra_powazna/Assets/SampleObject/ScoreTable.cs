@@ -63,8 +63,8 @@ public class ScoreTable : MonoBehaviour
         GameObject playerNameText = Instantiate(prefabPlayerName, transform);
         GameObject playerNameScore = Instantiate(prefabPlayerScore, transform);
 
-        playerNameText.GetComponent<Text>().color = Color.yellow;
-        playerNameScore.GetComponent<Text>().color = Color.yellow;
+        playerNameText.GetComponent<Text>().color = Color.black;
+        playerNameScore.GetComponent<Text>().color = Color.black;
 
         playerNameText.transform.position = new Vector3(980, 400, 0);
         playerNameText.GetComponent<Text>().text = "Niestety, Twój wynik nie kwalifikuje siê do najlepszej 10tki\n" + inputHandler.players[getCurrentPlayerIndex()].playerName;
