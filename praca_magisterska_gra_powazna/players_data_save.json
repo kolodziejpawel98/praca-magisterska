@@ -1,8 +1,23 @@
 {
     "items": [
         {
-            "playerName": "sdfghjk",
-            "points": 742.9940185546875,
+            "playerName": "nnnn",
+            "points": 57.0,
+            "isCurrentPlayer": true
+        },
+        {
+            "playerName": "bvcxcvbvcx",
+            "points": 47.01900100708008,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "bvcbvcbvcbvcbvc",
+            "points": 34.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "sasdgfhgfgs",
+            "points": 21.0,
             "isCurrentPlayer": false
         },
         {
@@ -56,12 +71,17 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "asdfg",
-            "points": 6.0,
+            "playerName": "b",
+            "points": 6.078998565673828,
             "isCurrentPlayer": false
         },
         {
             "playerName": "asdfghj",
+            "points": 6.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "asdfg",
             "points": 6.0,
             "isCurrentPlayer": false
         },
@@ -81,8 +101,8 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "asdhgsahgjhsa",
-            "points": 4.0,
+            "playerName": "qwerty",
+            "points": 4.9889984130859379,
             "isCurrentPlayer": false
         },
         {
@@ -92,6 +112,11 @@
         },
         {
             "playerName": "drf",
+            "points": 4.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "asdhgsahgjhsa",
             "points": 4.0,
             "isCurrentPlayer": false
         },
@@ -111,6 +136,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "sdfghjk",
+            "points": 2.9940185546875,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "gotye",
             "points": 2.9910011291503908,
             "isCurrentPlayer": false
@@ -121,12 +151,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "a",
+            "playerName": "pk",
             "points": 2.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "pk",
+            "playerName": "a",
             "points": 2.0,
             "isCurrentPlayer": false
         },
@@ -153,7 +183,7 @@
         {
             "playerName": "roger federer",
             "points": 0.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         }
     ]
 }
