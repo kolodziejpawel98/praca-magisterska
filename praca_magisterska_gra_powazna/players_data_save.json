@@ -3,7 +3,12 @@
         {
             "playerName": "nnnn",
             "points": 57.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "sadsa",
+            "points": 54.0,
+            "isCurrentPlayer": false
         },
         {
             "playerName": "bvcxcvbvcx",
@@ -19,6 +24,11 @@
             "playerName": "sasdgfhgfgs",
             "points": 21.0,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "dfghj",
+            "points": 19.0,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "aa",
