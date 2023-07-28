@@ -1,6 +1,11 @@
 {
     "items": [
         {
+            "playerName": "dsa",
+            "points": 86.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "nnnn",
             "points": 57.0,
             "isCurrentPlayer": false
@@ -16,6 +21,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "ds",
+            "points": 37.27199935913086,
+            "isCurrentPlayer": true
+        },
+        {
             "playerName": "bvcbvcbvcbvcbvc",
             "points": 34.0,
             "isCurrentPlayer": false
@@ -28,7 +38,7 @@
         {
             "playerName": "dfghj",
             "points": 19.0,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "aa",
@@ -46,12 +56,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "y",
+            "playerName": ":o",
             "points": 8.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": ":o",
+            "playerName": "y",
             "points": 8.0,
             "isCurrentPlayer": false
         },
@@ -86,12 +96,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "asdfghj",
+            "playerName": "asdfg",
             "points": 6.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "asdfg",
+            "playerName": "asdfghj",
             "points": 6.0,
             "isCurrentPlayer": false
         },
@@ -176,17 +186,17 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "xzxzxz",
+            "points": 1.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "sdgfhjk",
             "points": 1.0,
             "isCurrentPlayer": false
         },
         {
             "playerName": "fdghj",
-            "points": 1.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "xzxzxz",
             "points": 1.0,
             "isCurrentPlayer": false
         },
