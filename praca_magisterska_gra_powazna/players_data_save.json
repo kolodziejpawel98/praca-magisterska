@@ -1,208 +1,103 @@
 {
     "items": [
         {
-            "playerName": "dsa",
-            "points": 86.0,
+            "playerName": "gracz12",
+            "points": 911.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "nnnn",
-            "points": 57.0,
+            "playerName": "gracz5",
+            "points": 711.0189819335938,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "sadsa",
-            "points": 54.0,
+            "playerName": "gracz6",
+            "points": 411.68499755859377,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "bvcxcvbvcx",
-            "points": 47.01900100708008,
+            "playerName": "gracz7",
+            "points": 311.2720031738281,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "ds",
-            "points": 37.27199935913086,
+            "playerName": "jan kowalski",
+            "points": 218.41400146484376,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz3",
+            "points": 133.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz4",
+            "points": 132.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz42",
+            "points": 128.25799560546876,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz2",
+            "points": 122.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz13",
+            "points": 119.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz14",
+            "points": 119.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz23",
+            "points": 118.98500061035156,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz20",
+            "points": 118.94999694824219,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz9",
+            "points": 112.92999267578125,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz11",
+            "points": 111.11000061035156,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz10",
+            "points": 111.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "gracz1",
+            "points": 111.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "andrzej nowak",
+            "points": 29.037002563476564,
             "isCurrentPlayer": true
         },
         {
-            "playerName": "bvcbvcbvcbvcbvc",
-            "points": 34.0,
+            "playerName": "jan nowak",
+            "points": 28.989002227783204,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "sasdgfhgfgs",
-            "points": 21.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "dfghj",
-            "points": 19.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "aa",
-            "points": 10.110000610351563,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "walter white",
-            "points": 9.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "fgh",
-            "points": 9.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": ":o",
-            "points": 8.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "y",
-            "points": 8.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "z",
-            "points": 7.89000129699707,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "novak djokovic",
-            "points": 7.108001708984375,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "dasdsadsadas",
-            "points": 7.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "test1",
-            "points": 6.134002685546875,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "pk",
-            "points": 6.081001281738281,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "b",
-            "points": 6.078998565673828,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "asdfg",
-            "points": 6.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "asdfghj",
-            "points": 6.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "aaaa",
-            "points": 5.803001403808594,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "pawel kolodziej",
-            "points": 5.0460052490234379,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "walter white",
-            "points": 5.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "qwerty",
-            "points": 4.9889984130859379,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "fgh",
+            "playerName": "gracz8",
             "points": 4.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "drf",
-            "points": 4.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "asdhgsahgjhsa",
-            "points": 4.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "wq",
-            "points": 3.319000244140625,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "aaasassasasasasasa",
-            "points": 3.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "jessie pinkman",
-            "points": 3.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "sdfghjk",
-            "points": 2.9940185546875,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "gotye",
-            "points": 2.9910011291503908,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "dfgh",
-            "points": 2.5989990234375,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "pk",
-            "points": 2.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "a",
-            "points": 2.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "annasz",
-            "points": 1.4319992065429688,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "xzxzxz",
-            "points": 1.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "sdgfhjk",
-            "points": 1.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "fdghj",
-            "points": 1.0,
-            "isCurrentPlayer": false
-        },
-        {
-            "playerName": "roger federer",
-            "points": 0.0,
             "isCurrentPlayer": false
         }
     ]
