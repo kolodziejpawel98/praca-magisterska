@@ -134,4 +134,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(15);
     }
 
+    public void goToNeuronTutorial()
+    {
+        SceneManager.LoadScene(16);
+    }
+
 }

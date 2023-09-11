@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ModelTutorial.unity
     guid: b16e171abee28f24fbff785287ff6517
+  - enabled: 1
+    path: Assets/Scenes/NeuronTutorial.unity
+    guid: 32ea2072ac6818f4baef617803de95cf
   m_configObjects: {}

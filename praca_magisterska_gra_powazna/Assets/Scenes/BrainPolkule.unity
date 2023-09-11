@@ -344,7 +344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: cofnij
+  m_text: "wr\xF3\u0107 do poprzedniego ekranu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "wy\u015Brodkuj"
+  m_text: cofnij
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -952,8 +952,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: -330.5}
-  m_SizeDelta: {x: 253.2, y: 30}
+  m_AnchoredPosition: {x: 448.82764, y: -330.5}
+  m_SizeDelta: {x: 405.5447, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423626578
 MonoBehaviour:
@@ -1806,8 +1806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -572, y: 338}
-  m_SizeDelta: {x: 146.46, y: 30}
+  m_AnchoredPosition: {x: -447.07745, y: 338}
+  m_SizeDelta: {x: 396.3051, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1042314867
 MonoBehaviour:
@@ -2892,7 +2892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "wejd\u017A g\u0142\u0119biej"
+  m_text: "przejd\u017A do p\u0142at\xF3w m\xF3zgu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

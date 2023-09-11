@@ -1656,7 +1656,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 395081213}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &442787502
@@ -2311,7 +2313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 559868859}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!114 &559868860
@@ -2550,7 +2554,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 627456620}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &686494004
@@ -3285,7 +3291,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 787402117}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &816062689
@@ -3365,7 +3373,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 863777858}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &885719054
@@ -4245,7 +4255,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1188358959}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1202284528
@@ -5746,7 +5758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: cofnij
+  m_text: "wr\xF3\u0107 do poprzedniego ekranu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6065,8 +6077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -572, y: 338}
-  m_SizeDelta: {x: 146.46, y: 30}
+  m_AnchoredPosition: {x: -447, y: 338}
+  m_SizeDelta: {x: 396, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510059720
 MonoBehaviour:
@@ -6481,7 +6493,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1554183439}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1557037358
@@ -6515,7 +6529,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1557037359}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!4 &1557037360
@@ -6986,7 +7002,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1825908080}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1935942377
@@ -7606,7 +7624,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2003262836}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &2044591396
@@ -7789,7 +7809,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2081964881}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &2098566434
@@ -8402,6 +8424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2146090082}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}

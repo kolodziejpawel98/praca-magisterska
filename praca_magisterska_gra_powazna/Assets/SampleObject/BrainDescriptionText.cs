@@ -88,4 +88,18 @@ public class BrainDescriptionText : MonoBehaviour
         }
     }
 
+    public void firstSlide()
+    {
+        if (currentSlideIndex > 0)
+        {
+            slideImages[currentSlideIndex].SetActive(false);
+            slideTexts[currentSlideIndex].SetActive(false);
+            if (isPlotVisible)
+            {
+                slideImagesPlot[currentSlideIndex].SetActive(false);
+            }
+            currentSlideIndex = 0;
+        }
+    }
+
 }

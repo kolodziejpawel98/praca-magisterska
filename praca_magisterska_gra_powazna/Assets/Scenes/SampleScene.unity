@@ -478,7 +478,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 213932769}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &242274835
@@ -700,7 +702,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 315792883}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!114 &315792884
@@ -981,7 +985,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 350687001}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &392369533
@@ -1884,7 +1890,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 464846384}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &519420028
@@ -2261,7 +2269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "wy\u015Brodkuj"
+  m_text: cofnij
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2374,8 +2382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -572, y: 338}
-  m_SizeDelta: {x: 146.46, y: 30}
+  m_AnchoredPosition: {x: -447, y: 338}
+  m_SizeDelta: {x: 396, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625668215
 MonoBehaviour:
@@ -2518,7 +2526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 636507127}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &727638827
@@ -2568,7 +2578,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 727638829}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &740728216
@@ -2798,8 +2810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: -330.5}
-  m_SizeDelta: {x: 253.2, y: 30}
+  m_AnchoredPosition: {x: 448, y: -330.5}
+  m_SizeDelta: {x: 405, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832760797
 MonoBehaviour:
@@ -3220,7 +3232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: cofnij
+  m_text: "wr\xF3\u0107 do poprzedniego ekranu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3647,7 +3659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "wejd\u017A g\u0142\u0119biej"
+  m_text: "przejd\u017A do przekroju m\xF3zgu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4281,6 +4293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2125624971}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
