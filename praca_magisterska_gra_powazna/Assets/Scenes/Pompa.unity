@@ -3998,6 +3998,7 @@ MonoBehaviour:
   - {fileID: 1792786614}
   - {fileID: 315062831}
   - {fileID: 1367465044}
+  slideImagesPlot: []
   slideTexts:
   - {fileID: 179518140}
   - {fileID: 2114769918}
@@ -4005,6 +4006,7 @@ MonoBehaviour:
   - {fileID: 201713590}
   - {fileID: 1455220609}
   - {fileID: 906560399}
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 1483958327}
 --- !u!114 &1955760856

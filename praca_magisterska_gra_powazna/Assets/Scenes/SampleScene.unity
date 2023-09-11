@@ -2431,7 +2431,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1827040025}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: previousScreen
+        m_MethodName: goToSceneBrainPolkole
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
