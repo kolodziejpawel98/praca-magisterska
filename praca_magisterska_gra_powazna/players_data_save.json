@@ -46,12 +46,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz13",
+            "playerName": "gracz14",
             "points": 119.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz14",
+            "playerName": "gracz13",
             "points": 119.0,
             "isCurrentPlayer": false
         },
@@ -86,13 +86,48 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "sdfghvjbn",
+            "points": 56.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "bvbcvc",
+            "points": 44.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "jhgfdhgfd",
+            "points": 36.236000061035159,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "andrzej nowak",
             "points": 29.037002563476564,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "jan nowak",
             "points": 28.989002227783204,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "ukhfdgfs",
+            "points": 10.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "sdadsadsadsa",
+            "points": 10.0,
+            "isCurrentPlayer": true
+        },
+        {
+            "playerName": "xd",
+            "points": 9.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "testtttt",
+            "points": 6.0,
             "isCurrentPlayer": false
         },
         {

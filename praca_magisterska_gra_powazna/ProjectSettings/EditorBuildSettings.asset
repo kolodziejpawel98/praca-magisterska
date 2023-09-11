@@ -44,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Potencjal.unity
     guid: 2850c2b4c04c3f441bf861af21162b38
+  - enabled: 1
+    path: Assets/Scenes/MenuTest.unity
+    guid: 2a4714e864845ea43b90f8b2226178f4
+  - enabled: 1
+    path: Assets/Scenes/ekranPowitalny.unity
+    guid: 196d164d0ecd816459d50e59a7d08642
+  - enabled: 1
+    path: Assets/Scenes/ModelTutorial.unity
+    guid: b16e171abee28f24fbff785287ff6517
   m_configObjects: {}

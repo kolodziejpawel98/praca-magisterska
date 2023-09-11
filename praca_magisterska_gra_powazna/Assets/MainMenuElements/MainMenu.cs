@@ -120,4 +120,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(12);
     }
 
+    public void goToMenuTest()
+    {
+        SceneManager.LoadScene(13);
+    }
+
+    public void goToEkranPowitalny()
+    {
+        SceneManager.LoadScene(14);
+    }
+    public void goToModelTutorial()
+    {
+        SceneManager.LoadScene(15);
+    }
+
 }

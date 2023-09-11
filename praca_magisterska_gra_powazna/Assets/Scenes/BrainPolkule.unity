@@ -1631,7 +1631,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 899406924}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &962945177
@@ -1681,7 +1683,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 962945179}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &967307626
@@ -1761,7 +1765,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1012825134}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1042314865
@@ -1849,7 +1855,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2005770138}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: goToMainMenu
+        m_MethodName: goToEkranPowitalny
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3144,7 +3150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1417801781}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1500797423
@@ -3194,7 +3202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1500797425}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1598530027
@@ -3244,7 +3254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1598530029}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1605083429
@@ -3510,7 +3522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1611351381}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!1 &1720198981
@@ -3791,7 +3805,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 1958498054}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
 --- !u!114 &1958498055
@@ -4417,6 +4433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 2119263052}
   slideImages: []
+  slideImagesPlot: []
   slideTexts: []
+  isPlotVisible: 0
   currentSlideIndex: 0
   nextScreenButton: {fileID: 0}
