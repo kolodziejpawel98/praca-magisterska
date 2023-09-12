@@ -101,6 +101,11 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "llll",
+            "points": 81.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "vcvc",
             "points": 78.0,
             "isCurrentPlayer": false
@@ -108,7 +113,7 @@
         {
             "playerName": "pppp",
             "points": 66.86199951171875,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "gfhhghgdfh",
@@ -178,6 +183,16 @@
         {
             "playerName": "hjhgjghjhg",
             "points": 28.14299774169922,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "bvnvbn",
+            "points": 0.0,
+            "isCurrentPlayer": true
+        },
+        {
+            "playerName": "ujhgjghjhg",
+            "points": 27.0,
             "isCurrentPlayer": false
         },
         {
