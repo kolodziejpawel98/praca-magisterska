@@ -46,12 +46,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz13",
+            "playerName": "gracz14",
             "points": 119.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz14",
+            "playerName": "gracz13",
             "points": 119.0,
             "isCurrentPlayer": false
         },
@@ -168,6 +168,11 @@
         {
             "playerName": "BBBBBBBBBBB",
             "points": 28.76799964904785,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "hjhgjghjhg",
+            "points": 28.14299774169922,
             "isCurrentPlayer": true
         },
         {

@@ -232,6 +232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameInput: {fileID: 0}
+  textInputError: {fileID: 0}
+  textInputErrorWhiteBox: {fileID: 0}
   players: []
 --- !u!4 &332279208
 Transform:
@@ -318,7 +320,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2da5eb9e32038bb4ebe6d1cf5a62a21c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd2141300497cd848866b027c90a5367, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
