@@ -46,12 +46,12 @@
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz14",
+            "playerName": "gracz13",
             "points": 119.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz13",
+            "playerName": "gracz14",
             "points": 119.0,
             "isCurrentPlayer": false
         },
@@ -76,13 +76,23 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "gracz1",
+            "points": 111.0,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "gracz10",
             "points": 111.0,
             "isCurrentPlayer": false
         },
         {
-            "playerName": "gracz1",
-            "points": 111.0,
+            "playerName": "hgfhfg",
+            "points": 94.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "jhgfjhfgjhfg",
+            "points": 86.1189956665039,
             "isCurrentPlayer": false
         },
         {
@@ -96,9 +106,19 @@
             "isCurrentPlayer": false
         },
         {
+            "playerName": "gfhhghgdfh",
+            "points": 65.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "ABCDEF",
+            "points": 57.84199905395508,
+            "isCurrentPlayer": false
+        },
+        {
             "playerName": "rfhghtdncb ",
             "points": 57.78400421142578,
-            "isCurrentPlayer": true
+            "isCurrentPlayer": false
         },
         {
             "playerName": "sdfghvjbn",
@@ -113,6 +133,11 @@
         {
             "playerName": "ddddddddd",
             "points": 48.0,
+            "isCurrentPlayer": false
+        },
+        {
+            "playerName": "AAAAAAAAAAA",
+            "points": 46.555999755859378,
             "isCurrentPlayer": false
         },
         {
@@ -139,6 +164,11 @@
             "playerName": "jan nowak",
             "points": 28.989002227783204,
             "isCurrentPlayer": false
+        },
+        {
+            "playerName": "BBBBBBBBBBB",
+            "points": 28.76799964904785,
+            "isCurrentPlayer": true
         },
         {
             "playerName": "ukhfdgfs",

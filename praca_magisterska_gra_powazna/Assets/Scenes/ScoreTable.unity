@@ -437,6 +437,8 @@ GameObject:
   - component: {fileID: 587955545}
   - component: {fileID: 587955544}
   - component: {fileID: 587955548}
+  - component: {fileID: 587955549}
+  - component: {fileID: 587955550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -538,6 +540,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756ebd4a5ae2d0343bb39808cd56660b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &587955549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587955543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9290289f32d56cc4a9f25dbe663c668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInput: {fileID: 0}
+  textInputError: {fileID: 0}
+  textInputErrorWhiteBox: {fileID: 0}
+  players: []
+--- !u!114 &587955550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587955543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4868b82fa7d9974da9701522b9bcb43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  timeScoreText: {fileID: 0}
+  enterOnceInUpdate: 0
+  question: {fileID: 0}
+  answer_A_button: {fileID: 0}
+  answer_B_button: {fileID: 0}
+  answer_C_button: {fileID: 0}
+  answer_D_button: {fileID: 0}
+  buttonGoToResume: {fileID: 0}
+  buttonNextQuestion: {fileID: 0}
 --- !u!1 &637835981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1361,30 @@ MonoBehaviour:
       - m_Target: {fileID: 587955548}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: goToEkranPowitalny
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 587955549}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: resetCurrentPlayerScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 587955550}
+        m_TargetAssemblyTypeName: TestBackend, Assembly-CSharp
+        m_MethodName: resetScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -550,6 +550,12 @@ public class TestBackend : MonoBehaviour
         }
     }
 
+    public void resetScore()
+    {
+        p.r("score = " + score);
+        score = 0.0f;
+    }
+
     public void answerCorrectnessHandler(Answer answer, bool isLastQuestion)
     {
         if (answer.isAnswerCorrect)

@@ -76,6 +76,20 @@ public class InputHandler : MonoBehaviour
         }
     }
 
+    public  void resetCurrentPlayerScore()
+    {
+        foreach (var player in players)
+        {
+            if (player.isCurrentPlayer) {
+                p.r("zeruje wynik gracza: " + player.playerName);
+                p.r("jego wynik = " + player.points);
+                player.points = 0.0f;
+                p.r("jego wynik po zerowaniu = " + player.points);
+                SaveToJSON(players);
+            }
+        }
+    }
+
     public void SaveToJSON(List<Player> toSave)
     {
         Wrapper wrapper = new Wrapper();
